@@ -1,0 +1,77 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockSetup", "DockSetup\DockSetup.csproj", "{3E0D63DE-B8CE-4E49-8B70-075AEB892855}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemSetup", "ItemSetup\ItemSetup.csproj", "{7FE5047D-90DC-40A1-AC17-6FA1935BFC23}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitServicesClient", "OrbitServicesClient\OrbitServicesClient.csproj", "{9D916FD6-06FD-46A6-99D6-F42F3F78BAF8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageLoader", "LanguageLoader\LanguageLoader.csproj", "{C0F6C056-3F02-407C-873A-E9F7D0F963DE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orbit.Utilities", "Orbit.Utilities\Orbit.Utilities.csproj", "{B540B987-2B95-436E-AE41-67DB8F4633D2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orbit.Interop.Win32", "Orbit.Interop.Win32\Orbit.Interop.Win32.csproj", "{565CEA5D-9E3D-415A-9BBF-132770AB7338}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Orbit.Hook", "Orbit.Hook\Orbit.Hook.vcproj", "{65A09451-7F65-4B6E-B142-9719616A34DF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orbit", "Orbit\Orbit.csproj", "{EAAA73BE-EA93-4E07-A489-A5F52DFDEF71}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3E0D63DE-B8CE-4E49-8B70-075AEB892855}.Debug.ActiveCfg = Debug|.NET
+		{3E0D63DE-B8CE-4E49-8B70-075AEB892855}.Debug.Build.0 = Debug|.NET
+		{3E0D63DE-B8CE-4E49-8B70-075AEB892855}.Release.ActiveCfg = Release|.NET
+		{3E0D63DE-B8CE-4E49-8B70-075AEB892855}.Release.Build.0 = Release|.NET
+		{7FE5047D-90DC-40A1-AC17-6FA1935BFC23}.Debug.ActiveCfg = Debug|.NET
+		{7FE5047D-90DC-40A1-AC17-6FA1935BFC23}.Debug.Build.0 = Debug|.NET
+		{7FE5047D-90DC-40A1-AC17-6FA1935BFC23}.Release.ActiveCfg = Release|.NET
+		{7FE5047D-90DC-40A1-AC17-6FA1935BFC23}.Release.Build.0 = Release|.NET
+		{9D916FD6-06FD-46A6-99D6-F42F3F78BAF8}.Debug.ActiveCfg = Debug|.NET
+		{9D916FD6-06FD-46A6-99D6-F42F3F78BAF8}.Debug.Build.0 = Debug|.NET
+		{9D916FD6-06FD-46A6-99D6-F42F3F78BAF8}.Release.ActiveCfg = Release|.NET
+		{9D916FD6-06FD-46A6-99D6-F42F3F78BAF8}.Release.Build.0 = Release|.NET
+		{C0F6C056-3F02-407C-873A-E9F7D0F963DE}.Debug.ActiveCfg = Debug|.NET
+		{C0F6C056-3F02-407C-873A-E9F7D0F963DE}.Debug.Build.0 = Debug|.NET
+		{C0F6C056-3F02-407C-873A-E9F7D0F963DE}.Release.ActiveCfg = Release|.NET
+		{C0F6C056-3F02-407C-873A-E9F7D0F963DE}.Release.Build.0 = Release|.NET
+		{B540B987-2B95-436E-AE41-67DB8F4633D2}.Debug.ActiveCfg = Debug|.NET
+		{B540B987-2B95-436E-AE41-67DB8F4633D2}.Debug.Build.0 = Debug|.NET
+		{B540B987-2B95-436E-AE41-67DB8F4633D2}.Release.ActiveCfg = Release|.NET
+		{B540B987-2B95-436E-AE41-67DB8F4633D2}.Release.Build.0 = Release|.NET
+		{565CEA5D-9E3D-415A-9BBF-132770AB7338}.Debug.ActiveCfg = Debug|.NET
+		{565CEA5D-9E3D-415A-9BBF-132770AB7338}.Debug.Build.0 = Debug|.NET
+		{565CEA5D-9E3D-415A-9BBF-132770AB7338}.Release.ActiveCfg = Release|.NET
+		{565CEA5D-9E3D-415A-9BBF-132770AB7338}.Release.Build.0 = Release|.NET
+		{65A09451-7F65-4B6E-B142-9719616A34DF}.Debug.ActiveCfg = Debug|Win32
+		{65A09451-7F65-4B6E-B142-9719616A34DF}.Debug.Build.0 = Debug|Win32
+		{65A09451-7F65-4B6E-B142-9719616A34DF}.Release.ActiveCfg = Release|Win32
+		{65A09451-7F65-4B6E-B142-9719616A34DF}.Release.Build.0 = Release|Win32
+		{EAAA73BE-EA93-4E07-A489-A5F52DFDEF71}.Debug.ActiveCfg = Debug|.NET
+		{EAAA73BE-EA93-4E07-A489-A5F52DFDEF71}.Debug.Build.0 = Debug|.NET
+		{EAAA73BE-EA93-4E07-A489-A5F52DFDEF71}.Release.ActiveCfg = Release|.NET
+		{EAAA73BE-EA93-4E07-A489-A5F52DFDEF71}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

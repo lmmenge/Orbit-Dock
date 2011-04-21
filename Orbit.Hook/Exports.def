@@ -1,0 +1,5 @@
+LIBRARY	"Orbit.Hook.dll"
+EXPORTS
+	StartHook
+	StopHook
+	SetShortcutKey

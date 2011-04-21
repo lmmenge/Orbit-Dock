@@ -1,0 +1,1506 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Orbit.Interop.Win32</name>
+    </assembly>
+    <members>
+        <member name="T:Win32.GDI.GDIAPI">
+            <summary>
+            Provides declarations for the GDI API Calls
+            </summary>
+        </member>
+        <member name="M:Win32.GDI.GDIAPI.GetBitmapBits(System.IntPtr,System.Int64,System.IntPtr)">
+            <summary>
+            Copies the Contents of a Bitmap to a buffer
+            </summary>
+            <param name="hbmp">Handle to bitmap</param>
+            <param name="cbBuffer">Number of bytes to copy</param>
+            <param name="lpvBits">Buffer to receive bits</param>
+            <returns></returns>
+        </member>
+        <member name="M:Win32.GDI.GDIAPI.DeleteObject(System.IntPtr)">
+            <summary>
+            Deletes a GDI object
+            </summary>
+            <param name="hObject">GDI object to delete</param>
+            <returns>True if succeeded.</returns>
+        </member>
+        <member name="M:Win32.GDI.GDIAPI.SelectObject(System.IntPtr,System.IntPtr)">
+            <summary>
+            Selects a GDI object into memory
+            </summary>
+            <param name="hDC">Device context to insert the object</param>
+            <param name="hObject">The GDI object to insert</param>
+            <returns>Handle to the object being replaced if succeeds.</returns>
+        </member>
+        <member name="M:Win32.GDI.GDIAPI.CreateCompatibleDC(System.IntPtr)">
+            <summary>
+            Creates a compatible device context
+            </summary>
+            <param name="hDC">Device context to be compatible to</param>
+            <returns>A device context</returns>
+        </member>
+        <member name="M:Win32.GDI.GDIAPI.BitBlt(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr,System.Int32,System.Int32,Win32.GDI.RasterOperation)">
+            <summary>
+            Copies a region from a device context into another
+            </summary>
+            <param name="hdcDest">handle to destination DC</param>
+            <param name="nXDest">x-coord of destination upper-left corner</param>
+            <param name="nYDest">y-coord of destination upper-left corner</param>
+            <param name="nWidth">width of destination rectangle</param>
+            <param name="nHeight">height of destination rectangle</param>
+            <param name="hdcSrc">handle to source DC</param>
+            <param name="nXSrc">x-coordinate of source upper-left corner</param>
+            <param name="nYSrc">y-coordinate of source upper-left corner</param>
+            <param name="dwRop">raster operation code</param>
+            <returns>True if succeeded.</returns>
+        </member>
+        <member name="M:Win32.GDI.GDIAPI.CreateDC(System.String,System.String,System.String,System.IntPtr)">
+            <summary>
+            Creates a device context
+            </summary>
+            <param name="lpszDriver">driver name</param>
+            <param name="lpszDevice">device name</param>
+            <param name="lpszOutput">not used; should be NULL</param>
+            <param name="lpInitData">optional printer data</param>
+            <returns>A device context</returns>
+        </member>
+        <member name="M:Win32.GDI.GDIAPI.DeleteDC(System.IntPtr)">
+            <summary>
+            Deletes a device context
+            </summary>
+            <param name="hdc">The DC to delete</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="T:Win32.GDI.RasterOperation">
+            <summary>
+            Specifies a raster-operation code. These codes define how the color data for the source rectangle is to be combined with the color data for the destination rectangle to achieve the final color.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.Blackness">
+            <summary>
+            Fills the destination rectangle using the color associated with index 0 in the physical palette. (This color is black for the default physical palette.)
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.CaptureBlit">
+            <summary>
+            Windows 98/Me, Windows 2000/XP: Includes any windows that are layered on top of your window in the resulting image. By default, the image only contains your window. Note that this generally cannot be used for printing device contexts.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.DestinationInvert">
+            <summary>
+            Inverts the destination rectangle.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.MergeCopy">
+            <summary>
+            Merges the colors of the source rectangle with the brush currently selected in hdcDest, by using the Boolean AND operator.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.MergePaint">
+            <summary>
+            Merges the colors of the inverted source rectangle with the colors of the destination rectangle by using the Boolean OR operator.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.NoMirrorBitmap">
+            <summary>
+            Windows 98/Me, Windows 2000/XP: Prevents the bitmap from being mirrored.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.NotSourceCopy">
+            <summary>
+            Copies the inverted source rectangle to the destination.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.NotSourceErase">
+            <summary>
+            Combines the colors of the source and destination rectangles by using the Boolean OR operator and then inverts the resultant color.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.PatternCopy">
+            <summary>
+            Copies the brush currently selected in hdcDest, into the destination bitmap.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.PatternInvert">
+            <summary>
+            Combines the colors of the brush currently selected in hdcDest, with the colors of the destination rectangle by using the Boolean XOR operator.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.PatternPaint">
+            <summary>
+            Combines the colors of the brush currently selected in hdcDest, with the colors of the inverted source rectangle by using the Boolean OR operator. The result of this operation is combined with the colors of the destination rectangle by using the Boolean OR operator.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.SourceAnd">
+            <summary>
+            Combines the colors of the source and destination rectangles by using the Boolean AND operator.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.SourceCopy">
+            <summary>
+            Copies the source rectangle directly to the destination rectangle.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.SourceErase">
+            <summary>
+            Combines the inverted colors of the destination rectangle with the colors of the source rectangle by using the Boolean AND operator.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.SourceInvert">
+            <summary>
+            Combines the colors of the source and destination rectangles by using the Boolean XOR operator.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.SourcePaint">
+            <summary>
+            Combines the colors of the source and destination rectangles by using the Boolean OR operator.
+            </summary>
+        </member>
+        <member name="F:Win32.GDI.RasterOperation.Whiteness">
+            <summary>
+            Fills the destination rectangle using the color associated with index 1 in the physical palette. (This color is white for the default physical palette.)
+            </summary>
+        </member>
+        <member name="T:Win32.Kernel32.DesiredAccess">
+            <summary>
+            The valid access rights for process objects include the DELETE, READ_CONTROL, SYNCHRONIZE, WRITE_DAC, and WRITE_OWNER standard access rights, in addition to the following process-specific access rights.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DesiredAccess.AllAccess">
+            <summary>
+            All possible access rights for a process object.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DesiredAccess.CreateProcess">
+            <summary>
+            Required to create a process.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DesiredAccess.CreateThread">
+            <summary>
+            Required to create a thread.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DesiredAccess.DuplicateHandle">
+            <summary>
+            Required to duplicate a handle using DuplicateHandle.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DesiredAccess.QueryInformation">
+            <summary>
+            Required to retrieve certain information about a process, such as its token, exit code, and priority class (see OpenProcessToken, GetExitCodeProcess, GetPriorityClass, and IsProcessInJob).
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DesiredAccess.SetQuota">
+            <summary>
+            Required to set memory limits using SetProcessWorkingSetSize.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DesiredAccess.SetInformation">
+            <summary>
+            Required to set certain information about a process, such as its priority class (see SetPriorityClass).
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DesiredAccess.Terminate">
+            <summary>
+            Required to terminate a process using TerminateProcess.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DesiredAccess.VMOperation">
+            <summary>
+            Required to perform an operation on the address space of a process (see VirtualProtectEx and WriteProcessMemory).
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DesiredAccess.VMRead">
+            <summary>
+            Required to read memory in a process using ReadProcessMemory.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DesiredAccess.VMWrite">
+            <summary>
+            Required to write to memory in a process using WriteProcessMemory.																																																																																																													   SYNCHRONIZE 	Required to wait for the process to terminate using the wait functions.
+            </summary>
+        </member>
+        <member name="T:Win32.Kernel32.DriveType">
+            <summary>
+            Types of logical drives
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DriveType.CD">
+            <summary>
+            CD-ROM
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DriveType.Fixed">
+            <summary>
+            Fixed Disk
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DriveType.Removable">
+            <summary>
+            Removable Disk
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DriveType.Remote">
+            <summary>
+            Remote Disk
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.DriveType.RamDisk">
+            <summary>
+            Ram Disk
+            </summary>
+        </member>
+        <member name="T:Win32.Kernel32.Kernel32API">
+            <summary>
+            Summary description for Kernel32API.
+            </summary>
+        </member>
+        <member name="M:Win32.Kernel32.Kernel32API.GetDriveType(System.String)">
+            <summary>
+            Gets the media type of a logical drive
+            </summary>
+            <param name="driveLetter">Letter to the logical drive</param>
+            <returns>Returns the media type of a logical drive</returns>
+        </member>
+        <member name="M:Win32.Kernel32.Kernel32API.OpenProcess(Win32.Kernel32.DesiredAccess,System.Int32,System.Int32)">
+            <summary>
+            The OpenProcess function opens an existing process object.
+            </summary>
+            <param name="dwDesiredAccess">Access to the process object. This access right is checked against any security descriptor for the process. This parameter can be one or more of the process access rights.</param>
+            <param name="bInheritHandle">If this parameter is TRUE, the handle is inheritable. If the parameter is FALSE, the handle cannot be inherited.</param>
+            <param name="dwProcessId">Identifier of the process to open.</param>
+            <returns>If the function succeeds, the return value is an open handle to the specified process. If the function fails, the return value is NULL</returns>
+        </member>
+        <member name="M:Win32.Kernel32.Kernel32API.CloseHandle(System.IntPtr)">
+            <summary>
+            The CloseHandle function closes an open object handle.
+            </summary>
+            <param name="hObject">Handle to an open object. This parameter can be a pseudo handle or INVALID_HANDLE_VALUE.</param>
+            <returns>If the function succeeds, the return value is nonzero. If the function fails, the return value is zero.</returns>
+        </member>
+        <member name="T:Win32.PSAPI.PSAPI">
+            <summary>
+            Summary description for PSAPI.
+            </summary>
+        </member>
+        <member name="M:Win32.PSAPI.PSAPI.EnumProcessModules(System.IntPtr,System.IntPtr@,System.UInt32,System.UInt32@)">
+            <summary>
+            The EnumProcessModules function retrieves a handle for each module in the specified process.
+            </summary>
+            <param name="hProcess">Handle to the process.</param>
+            <param name="lphModule">Pointer to the array that receives the list of module handles.</param>
+            <param name="cb">Size of the lphModule array, in bytes.</param>
+            <param name="lpcbNeeded">Number of bytes required to store all module handles in the lphModule array.</param>
+            <returns>If the function succeeds, the return value is nonzero.</returns>
+        </member>
+        <member name="M:Win32.PSAPI.PSAPI.GetModuleFileNameExW(System.IntPtr,System.IntPtr,System.Text.StringBuilder,System.UInt32)">
+            <summary>
+            The GetModuleFileNameEx function retrieves the fully-qualified path for the file containing the specified module.
+            </summary>
+            <param name="hProcess">Handle to the process that contains the module. The handle must have the PROCESS_QUERY_INFORMATION and PROCESS_VM_READ access rights. For more information, see Process Security and Access Rights.</param>
+            <param name="hModule">Handle to the module. If this parameter is NULL, GetModuleFileNameEx returns the path of the executable file of the process specified in hProcess.</param>
+            <param name="lpFilename">Pointer to the null-terminated buffer that receives the fully-qualified path to the module. If the size of the file name is larger than the value of the nSize parameter, the file name is truncated and null terminated.</param>
+            <param name="nSize">Size of the lpFilename buffer, in characters.</param>
+            <returns>If the function succeeds, the return value specifies the length of the string copied to the buffer. If the function fails, the return value is zero.</returns>
+        </member>
+        <member name="T:Win32.Shell32.Shell32API">
+            <summary>
+            Summary description for Shell32API.
+            </summary>
+        </member>
+        <member name="M:Win32.Shell32.Shell32API.ShellExecuteEx(Win32.Shell32.ShellExecuteInfo)">
+            <summary>
+            Executes an action with a file
+            </summary>
+            <param name="lpExecInfo">Information on how to execute the file</param>
+            <returns>True if succeeded. False if not</returns>
+        </member>
+        <member name="M:Win32.Shell32.Shell32API.SHGetFileInfo(System.String,System.UInt32,Win32.Shell32.SHFileInfo@,System.UInt32,Win32.Shell32.ShellGetFileInfoFlags)">
+            <summary>
+            Gets information on a file
+            </summary>
+            <param name="pszPath">Path to the file</param>
+            <param name="dwFileAttributes">User attribute flags</param>
+            <param name="psfi">The SHFileInfo structure to receive the information</param>
+            <param name="cbSizeFileInfo">Size of the structured indicated in psfi</param>
+            <param name="uFlags">Flags to indicate what file information to receive</param>
+            <returns>0 if fails. Otherwise either succeeded and optionally the EXE type.</returns>
+        </member>
+        <member name="T:Win32.Shell32.ShellExecuteInfo">
+            <summary>
+            Contains information used by ShellExecuteEx.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.cbSize">
+            <summary>
+            Size of the structure, in bytes.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.fMask">
+            <summary>
+            Array of flags that indicate the content and validity of the other structure members. This can be a combination of the following values.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.hwnd">
+            <summary>
+            Window handle to any message boxes that the system might produce while executing this function.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.lpVerb">
+            <summary>
+            String, referred to as a verb, that specifies the action to be performed. The set of available verbs depends on the particular file or folder. Generally, the actions available from an object's shortcut menu are available verbs. For more specific information about verbs, see Object Verbs. For further discussion of shortcut menus, see Extending Shortcut Menus. If you set this parameter to NULL:
+            
+            * For systems prior to Windows 2000, the default verb is used if it is valid and available in the registry. If not, the "open" verb is used.
+            * For Windows 2000 and later systems, the default verb is used if available. If not, the "open" verb is used. If neither verb is available, the system uses the first verb listed in the registry.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.lpFile">
+            <summary>
+            Address of a null-terminated string that specifies the name of the file or object on which ShellExecuteEx will perform the action specified by the lpVerb parameter. The system registry verbs that are supported by the ShellExecuteEx function include "open" for executable files and document files and "print" for document files for which a print handler has been registered. Other applications might have added Shell verbs through the system registry, such as "play" for .avi and .wav files. To specify a Shell namespace object, pass the fully qualified parse name and set the SEE_MASK_INVOKEIDLIST flag in the fMask parameter.
+            
+            Note If the SEE_MASK_INVOKEIDLIST flag is set, you can use either lpFile or lpIDList to identify the item by its file system path or its PIDL respectively.
+            Note If the path is not included with the name, the current directory is assumed. 
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.lpParameters">
+            <summary>
+            Address of a null-terminated string that contains the application parameters. The parameters must be separated by spaces. If the lpFile member specifies a document file, lpParameters should be NULL.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.lpDirectory">
+            <summary>
+            Address of a null-terminated string that specifies the name of the working directory. If this member is not specified, the current directory is used as the working directory.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.nShow">
+            <summary>
+            Flags that specify how an application is to be shown when it is opened. It can be one of the SW_ values listed for the ShellExecute function. If lpFile specifies a document file, the flag is simply passed to the associated application. It is up to the application to decide how to handle it.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.hInstApp">
+            <summary>
+            If the function succeeds, it sets this member to a value greater than 32. If the function fails, it is set to an SE_ERR_XXX error value that indicates the cause of the failure. Although hInstApp is declared as an HINSTANCE for compatibility with 16-bit Windows applications, it is not a true HINSTANCE. It can be cast only to an int and compared to either 32 or the following SE_ERR_XXX error codes.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.lpIDList">
+            <summary>
+            Address of an ITEMIDLIST structure to contain an item identifier list uniquely identifying the file to execute. This member is ignored if the fMask member does not include SEE_MASK_IDLIST or SEE_MASK_INVOKEIDLIST.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.lpClass">
+            <summary>
+            Address of a null-terminated string that specifies the name of a file class or a globally unique identifier (GUID). This member is ignored if fMask does not include SEE_MASK_CLASSNAME.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.hkeyClass">
+            <summary>
+            Handle to the registry key for the file class. This member is ignored if fMask does not include SEE_MASK_CLASSKEY.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.dwHotKey">
+            <summary>
+            Hot key to associate with the application. The low-order word is the virtual key code, and the high-order word is a modifier flag (HOTKEYF_). For a list of modifier flags, see the description of the WM_SETHOTKEY message. This member is ignored if fMask does not include SEE_MASK_HOTKEY.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.hIcon">
+            <summary>
+            Handle to the icon for the file class. This member is ignored if fMask does not include SEE_MASK_ICON.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellExecuteInfo.hProcess">
+            <summary>
+            Handle to the newly started application. This member is set on return and is always NULL unless fMask is set to SEE_MASK_NOCLOSEPROCESS. Even if fMask is set to SEE_MASK_NOCLOSEPROCESS, hProcess will be NULL if no process was launched. For example, if a document to be launched is a URL and an instance of Microsoft Internet Explorer is already running, it will display the document. No new process is launched, and hProcess will be NULL.
+            				
+            Note ShellExecuteEx does not always return an hProcess, even if a process is launched as the result of the call. For example, an hProcess does not return when you use SEE_MASK_INVOKEIDLIST to invoke IContextMenu.
+            </summary>
+        </member>
+        <member name="T:Win32.Shell32.ShellGetFileInfoFlags">
+            <summary>
+            Summary description for ShellGetFileInfoFlags.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.AddOverlays">
+            <summary>
+            Version 5.0. Apply the appropriate overlays to the file's icon. The SHGFI_ICON flag must also be set.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.SpecifiedAttributes">
+            <summary>
+            Modify SHGFI_ATTRIBUTES to indicate that the dwAttributes member of the SHFILEINFO structure at psfi contains the specific attributes that are desired. These attributes are passed to IShellFolder::GetAttributesOf. If this flag is not specified, 0xFFFFFFFF is passed to IShellFolder::GetAttributesOf, requesting all attributes. This flag cannot be specified with the SHGFI_ICON flag.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.Attributes">
+            <summary>
+            Retrieve the item attributes. The attributes are copied to the dwAttributes member of the structure specified in the psfi parameter. These are the same attributes that are obtained from IShellFolder::GetAttributesOf.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.DisplayName">
+            <summary>
+            Retrieve the display name for the file. The name is copied to the szDisplayName member of the structure specified in psfi. The returned display name uses the long file name, if there is one, rather than the 8.3 form of the file name.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.EXEType">
+            <summary>
+            Retrieve the type of the executable file if pszPath identifies an executable file. The information is packed into the return value. This flag cannot be specified with any other flags.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.Icon">
+            <summary>
+            Retrieve the handle to the icon that represents the file and the index of the icon within the system image list. The handle is copied to the hIcon member of the structure specified by psfi, and the index is copied to the iIcon member.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.IconLocation">
+            <summary>
+            Retrieve the name of the file that contains the icon representing the file specified by pszPath, as returned by the IExtractIcon::GetIconLocation method of the file's icon handler. Also retrieve the icon index within that file. The name of the file containing the icon is copied to the szDisplayName member of the structure specified by psfi. The icon's index is copied to that structure's iIcon member.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.LargeIcon">
+            <summary>
+            Modify SHGFI_ICON, causing the function to retrieve the file's large icon. The SHGFI_ICON flag must also be set.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.AddLinkOverlay">
+            <summary>
+            Modify SHGFI_ICON, causing the function to add the link overlay to the file's icon. The SHGFI_ICON flag must also be set.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.OpenIcon">
+            <summary>
+            Modify SHGFI_ICON, causing the function to retrieve the file's open icon. Also used to modify SHGFI_SYSICONINDEX, causing the function to return the handle to the system image list that contains the file's small open icon. A container object displays an open icon to indicate that the container is open. The SHGFI_ICON and/or SHGFI_SYSICONINDEX flag must also be set.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.OverlayIndex">
+            <summary>
+            Version 5.0. Return the index of the overlay icon. The value of the overlay index is returned in the upper eight bits of the iIcon member of the structure specified by psfi.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.PathIsItemIDList">
+            <summary>
+            Indicate that pszPath is the address of an ITEMIDLIST structure rather than a path name.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.SelectedIcon">
+            <summary>
+            Modify SHGFI_ICON, causing the function to blend the file's icon with the system highlight color. The SHGFI_ICON flag must also be set.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.ShellIconSize">
+            <summary>
+            Modify SHGFI_ICON, causing the function to retrieve a Shell-sized icon. If this flag is not specified the function sizes the icon according to the system metric values. The SHGFI_ICON flag must also be set.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.SmallIcon">
+            <summary>
+            Modify SHGFI_ICON, causing the function to retrieve the file's small icon. Also used to modify SHGFI_SYSICONINDEX, causing the function to return the handle to the system image list that contains small icon images. The SHGFI_ICON and/or SHGFI_SYSICONINDEX flag must also be set.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.SystemImageListIconIndex">
+            <summary>
+            Retrieve the index of a system image list icon. If successful, the index is copied to the iIcon member of psfi. The return value is a handle to the system image list. Only those images whose indices are successfully copied to iIcon are valid. Attempting to access other images in the system image list will result in undefined behavior.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.FileTypeName">
+            <summary>
+            Retrieve the string that describes the file's type. The string is copied to the szTypeName member of the structure specified in psfi.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.ShellGetFileInfoFlags.UseFileAttributes">
+            <summary>
+            Indicates that the function should not attempt to access the file specified by pszPath. Rather, it should act as if the file specified by pszPath exists with the file attributes passed in dwFileAttributes. This flag cannot be combined with the SHGFI_ATTRIBUTES, SHGFI_EXETYPE, or SHGFI_PIDL flags.
+            </summary>
+        </member>
+        <member name="T:Win32.Shell32.SHFileInfo">
+            <summary>
+            Contains information about a file object.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.SHFileInfo.hIcon">
+            <summary>
+            Handle to the icon that represents the file. You are responsible for destroying this handle with DestroyIcon when you no longer need it.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.SHFileInfo.iIcon">
+            <summary>
+            Index of the icon image within the system image list.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.SHFileInfo.dwAttributes">
+            <summary>
+            Array of values that indicates the attributes of the file object. For information about these values, see the IShellFolder::GetAttributesOf method.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.SHFileInfo.szDisplayName">
+            <summary>
+            String that contains the name of the file as it appears in the Microsoft Windows Shell, or the path and file name of the file that contains the icon representing the file.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.SHFileInfo.szTypeName">
+            <summary>
+            String that describes the type of file.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.AlphaFormat">
+            <summary>
+            Controls the way the source and destination bitmaps are interpreted.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.AlphaFormat.SourceAlpha">
+            <summary>
+            This flag is set when the bitmap has an Alpha channel (that is, per-pixel alpha). Note that the APIs use premultiplied alpha, which means that the red, green and blue channel values in the bitmap must be premultiplied with the alpha channel value. For example, if the alpha channel value is x, the red, green and blue channels must be multiplied by x and divided by 0xff prior to the call.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.BlendFunction">
+            <summary>
+            Represents the Win32 BLENDFUNCTION structure which controls blending by specifying the blending functions for source and destination bitmaps.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.BlendFunction.BlendOp">
+            <summary>
+            Specifies the source blend operation. Currently, the only source and destination blend operation that has been defined is AC_SRC_OVER. For details, see the following Remarks section.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.BlendFunction.BlendFlags">
+            <summary>
+            Must be zero.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.BlendFunction.SourceConstantAlpha">
+            <summary>
+            Specifies an alpha transparency value to be used on the entire source bitmap. The SourceConstantAlpha value is combined with any per-pixel alpha values in the source bitmap. If you set SourceConstantAlpha to 0, it is assumed that your image is transparent. Set the SourceConstantAlpha value to 255 (opaque) when you only want to use per-pixel alpha values.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.BlendFunction.AlphaFormat">
+            <summary>
+            This member controls the way the source and destination bitmaps are interpreted. AlphaFormat has the following value.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.BlendOperation">
+            <summary>
+            Specifies the source blend operation.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.BlendOperation.SourceOver">
+            <summary>
+            The source bitmap is placed over the destination bitmap based on the alpha values of the source pixels.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.ClassLongValues">
+            <summary>
+            Specifies the 32-bit value to retrieve. To retrieve a 32-bit value from the extra class memory, specify the positive, zero-based byte offset of the value to be retrieved. Valid values are in the range zero through the number of bytes of extra class memory, minus four; for example, if you specified 12 or more bytes of extra class memory, a value of 8 would be an index to the third 32-bit integer. To retrieve any other value from the WNDCLASSEX structure, specify one of the following values.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassLongValues.Atom">
+            <summary>
+            Retrieves an ATOM value that uniquely identifies the window class. This is the same atom that the RegisterClassEx function returns.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassLongValues.ExtraClassMemory">
+            <summary>
+            Retrieves the size, in bytes, of the extra memory associated with the class.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassLongValues.ExtraWindowMemory">
+            <summary>
+            Retrieves the size, in bytes, of the extra window memory associated with each window in the class. For information on how to access this memory, see GetWindowLong.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassLongValues.BackgroundBrush">
+            <summary>
+            Retrieves a handle to the background brush associated with the class.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassLongValues.Cursor">
+            <summary>
+            Retrieves a handle to the cursor associated with the class.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassLongValues.LargeIcon">
+            <summary>
+            Retrieves a handle to the icon associated with the class.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassLongValues.SmallIcon">
+            <summary>
+            Retrieves a handle to the small icon associated with the class.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassLongValues.RegistrantModule">
+            <summary>
+            Retrieves a handle to the module that registered the class.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassLongValues.MenuName">
+            <summary>
+            Retrieves the address of the menu name string. The string identifies the menu resource associated with the class.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassLongValues.Style">
+            <summary>
+            Retrieves the window-class style bits.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassLongValues.WindowProcedure">
+            <summary>
+            Retrieves the address of the window procedure, or a handle representing the address of the window procedure. You must use the CallWindowProc function to call the window procedure.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.EnumWindowsProc">
+            <summary>
+            The EnumWindowsProc function is an application-defined callback function used with the EnumWindows or EnumDesktopWindows function. It receives top-level window handles. The WNDENUMPROC type defines a pointer to this callback function. EnumWindowsProc is a placeholder for the application-defined function name.
+            </summary>
+            <param name="hWnd">Handle to a top-level window.</param>
+            <param name="lParam">Specifies the application-defined value given in EnumWindows or EnumDesktopWindows.</param>
+            <returns>To continue enumeration, the callback function must return TRUE; to stop enumeration, it must return FALSE.</returns>
+        </member>
+        <member name="T:Win32.User32.GetWindowCommand">
+            <summary>
+            Specifies the relationship between the specified window and the window whose handle is to be retrieved. This parameter can be one of the following values.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.GetWindowCommand.Child">
+            <summary>
+            The retrieved handle identifies the child window at the top of the Z order, if the specified window is a parent window; otherwise, the retrieved handle is NULL. The function examines only child windows of the specified window. It does not examine descendant windows.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.GetWindowCommand.First">
+            <summary>
+            The retrieved handle identifies the window of the same type that is highest in the Z order. If the specified window is a topmost window, the handle identifies the topmost window that is highest in the Z order. If the specified window is a top-level window, the handle identifies the top-level window that is highest in the Z order. If the specified window is a child window, the handle identifies the sibling window that is highest in the Z order.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.GetWindowCommand.Last">
+            <summary>
+            The retrieved handle identifies the window of the same type that is lowest in the Z order. If the specified window is a topmost window, the handle identifies the topmost window that is lowest in the Z order. If the specified window is a top-level window, the handle identifies the top-level window that is lowest in the Z order. If the specified window is a child window, the handle identifies the sibling window that is lowest in the Z order.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.GetWindowCommand.Next">
+            <summary>
+            The retrieved handle identifies the window below the specified window in the Z order. If the specified window is a topmost window, the handle identifies the topmost window below the specified window. If the specified window is a top-level window, the handle identifies the top-level window below the specified window. If the specified window is a child window, the handle identifies the sibling window below the specified window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.GetWindowCommand.Previous">
+            <summary>
+            The retrieved handle identifies the window above the specified window in the Z order. If the specified window is a topmost window, the handle identifies the topmost window above the specified window. If the specified window is a top-level window, the handle identifies the top-level window above the specified window. If the specified window is a child window, the handle identifies the sibling window above the specified window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.GetWindowCommand.EnabledPopUp">
+            <summary>
+            Windows 2000/XP: The retrieved handle identifies the enabled popup window owned by the specified window (the search uses the first such window found using GW_HWNDNEXT); otherwise, if there are no enabled popup windows, the retrieved handle is that of the specified window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.GetWindowCommand.Owner">
+            <summary>
+            The retrieved handle identifies the specified window's owner window, if any.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.HookProc">
+            <summary>
+            Delegate for the hook process
+            </summary>
+        </member>
+        <member name="T:Win32.User32.HookType">
+            <summary>
+            Specifies the type of hook procedure to be installed. This parameter can be one of the following values.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_CALLWNDPROC">
+            <summary>
+            Installs a hook procedure that monitors messages before the system sends them to the destination window procedure. For more information, see the CallWndProc hook procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_CALLWNDPROCRET">
+            <summary>
+            Installs a hook procedure that monitors messages after they have been processed by the destination window procedure. For more information, see the CallWndRetProc hook procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_CBT">
+            <summary>
+            Installs a hook procedure that receives notifications useful to a computer-based training (CBT) application. For more information, see the CBTProc hook procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_DEBUG">
+            <summary>
+            Installs a hook procedure useful for debugging other hook procedures. For more information, see the DebugProc hook procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_FOREGROUNDIDLE">
+            <summary>
+            Installs a hook procedure that will be called when the application's foreground thread is about to become idle. This hook is useful for performing low priority tasks during idle time. For more information, see the ForegroundIdleProc hook procedure. 
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_GETMESSAGE">
+            <summary>
+            Installs a hook procedure that monitors messages posted to a message queue. For more information, see the GetMsgProc hook procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_JOURNALPLAYBACK">
+            <summary>
+            Installs a hook procedure that posts messages previously recorded by a WH_JOURNALRECORD hook procedure. For more information, see the JournalPlaybackProc hook procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_JOURNALRECORD">
+            <summary>
+            Installs a hook procedure that records input messages posted to the system message queue. This hook is useful for recording macros. For more information, see the JournalRecordProc hook procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_KEYBOARD">
+            <summary>
+            Installs a hook procedure that monitors keystroke messages. For more information, see the KeyboardProc hook procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_KEYBOARD_LL">
+            <summary>
+            Windows NT/2000/XP: Installs a hook procedure that monitors low-level keyboard input events. For more information, see the LowLevelKeyboardProc hook procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_MOUSE">
+            <summary>
+            Installs a hook procedure that monitors mouse messages. For more information, see the MouseProc hook procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_MOUSE_LL">
+            <summary>
+            Windows NT/2000/XP: Installs a hook procedure that monitors low-level mouse input events. For more information, see the LowLevelMouseProc hook procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_MSGFILTER">
+            <summary>
+            Installs a hook procedure that monitors messages generated as a result of an input event in a dialog box, message box, menu, or scroll bar. For more information, see the MessageProc hook procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_SHELL">
+            <summary>
+            Installs a hook procedure that receives notifications useful to shell applications. For more information, see the ShellProc hook procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookType.WH_SYSMSGFILTER">
+            <summary>
+            Installs a hook procedure that monitors messages generated as a result of an input event in a dialog box, message box, menu, or scroll bar. The hook procedure monitors these messages for all applications in the same desktop as the calling thread. For more information, see the SysMsgProc hook procedure.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.HookWindowMessage">
+            <summary>
+            Specifies the identifier of the mouse message.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookWindowMessage.WM_LBUTTONDOWN">
+            <summary>
+            Left mouse button down
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookWindowMessage.WM_LBUTTONUP">
+            <summary>
+            Left mouse button up
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookWindowMessage.WM_MOUSEMOVE">
+            <summary>
+            Mouse move
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookWindowMessage.WM_MOUSEWHEEL">
+            <summary>
+            Mouse wheel scroll
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookWindowMessage.WM_RBUTTONDOWN">
+            <summary>
+            Right mouse button down
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookWindowMessage.WM_RBUTTONUP">
+            <summary>
+            Right mouse button up
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookWindowMessage.WM_MBUTTONDOWN">
+            <summary>
+            Middle mouse button down
+            </summary>
+        </member>
+        <member name="F:Win32.User32.HookWindowMessage.WM_MBUTTONUP">
+            <summary>
+            Middle mouse button up
+            </summary>
+        </member>
+        <member name="T:Win32.User32.IconInformation">
+            <summary>
+            Represents the Win32 ICONINFO structure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.IconInformation.fIcon">
+            <summary>
+            Specifies whether this structure defines an icon or a cursor. A value of TRUE specifies an icon; FALSE specifies a cursor.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.IconInformation.xHotspot">
+            <summary>
+            Specifies the x-coordinate of a cursor's hot spot. If this structure defines an icon, the hot spot is always in the center of the icon, and this member is ignored.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.IconInformation.yHotspot">
+            <summary>
+            Specifies the y-coordinate of the cursor's hot spot. If this structure defines an icon, the hot spot is always in the center of the icon, and this member is ignored.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.IconInformation.hbmMask">
+            <summary>
+            Specifies the icon bitmask bitmap. If this structure defines a black and white icon, this bitmask is formatted so that the upper half is the icon AND bitmask and the lower half is the icon XOR bitmask. Under this condition, the height should be an even multiple of two. If this structure defines a color icon, this mask only defines the AND bitmask of the icon.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.IconInformation.hbmColor">
+            <summary>
+            Handle to the icon color bitmap. This member can be optional if this structure defines a black and white icon. The AND bitmask of hbmMask is applied with the SRCAND flag to the destination; subsequently, the color bitmap is applied (using XOR) to the destination by using the SRCINVERT flag.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.KeyModifiers">
+            <summary>
+            Specifies keys that must be pressed in combination with the key specified.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.KeyModifiers.None">
+            <summary>
+            No Key.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.KeyModifiers.Alt">
+            <summary>
+            Either ALT key must be held down.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.KeyModifiers.Control">
+            <summary>
+            Either CTRL key must be held down.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.KeyModifiers.Shift">
+            <summary>
+            Either SHIFT key must be held down.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.KeyModifiers.Windows">
+            <summary>
+            Either WINDOWS key was held down. These keys are labeled with the Microsoft® Windows® logo.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.MouseHookStruct">
+            <summary>
+            The MOUSEHOOKSTRUCT structure contains information about a mouse event passed to a WH_MOUSE hook procedure, MouseProc.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.MouseHookStruct.pt">
+            <summary>
+            Specifies a POINT structure that contains the x- and y-coordinates of the cursor, in screen coordinates.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.MouseHookStruct.hwnd">
+            <summary>
+            Handle to the window that will receive the mouse message corresponding to the mouse event.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.MouseHookStruct.wHitTestCode">
+            <summary>
+            Specifies the hit-test value. For a list of hit-test values, see the description of the WM_NCHITTEST message.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.MouseHookStruct.dwExtraInfo">
+            <summary>
+            Specifies extra information associated with the message.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.UpdateLayeredWindowFlags">
+            <summary>
+            UpdateLayeredWindow API flags
+            </summary>
+        </member>
+        <member name="F:Win32.User32.UpdateLayeredWindowFlags.Alpha">
+            <summary>
+            Use pblend as the blend function. If the display mode is 256 colors or less, the effect of this value is the same as the effect of
+            </summary>
+        </member>
+        <member name="F:Win32.User32.UpdateLayeredWindowFlags.ColorKey">
+            <summary>
+            Use crKey as the transparency color.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.UpdateLayeredWindowFlags.Opaque">
+            <summary>
+            Draw an opaque layered window.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.User32API">
+            <summary>
+            Provides declarations for the User32 API Calls
+            </summary>
+        </member>
+        <member name="M:Win32.User32.User32API.DrawIcon(System.IntPtr,System.Int32,System.Int32,System.IntPtr)">
+            <summary>
+            Draws an icon onto a Device Context
+            </summary>
+            <param name="hDC">Handle to the DC to draw to</param>
+            <param name="X">X position</param>
+            <param name="Y">Y position</param>
+            <param name="hIcon">Handle to the icon to draw</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.GetIconInfo(System.IntPtr,Win32.User32.IconInformation@)">
+            <summary>
+            Gets information on an icon
+            </summary>
+            <param name="hIcon">HICON to extract information from</param>
+            <param name="piconinfo">Pointer to a IconInformation object to receive the information</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.RegisterHotKey(System.IntPtr,System.Int32,Win32.User32.KeyModifiers,System.Windows.Forms.Keys)">
+            <summary>
+            Registers a hotkey
+            </summary>
+            <param name="hWnd">Handle to the window to receive WM_HOTKEY messages</param>
+            <param name="id">The hotkey identifier returned by the GlobalAddAtom</param>
+            <param name="fsModifiers">Combination to be checked along with the hotkey</param>
+            <param name="vk">Virtual key code for the key</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.UnregisterHotKey(System.IntPtr,System.Int32)">
+            <summary>
+            Unregisters a hotkey
+            </summary>
+            <param name="hWnd">Handle to the window which registered</param>
+            <param name="id">Hotkey id</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.SwitchToThisWindow(System.IntPtr,System.Boolean)">
+            <summary>
+            Switches to a window
+            </summary>
+            <param name="hWnd">Handle to the window</param>
+            <param name="fAltTab">Switch using Alt+Tab</param>
+        </member>
+        <member name="M:Win32.User32.User32API.EnumWindows(Win32.User32.EnumWindowsProc,System.Int32)">
+            <summary>
+            Enumerates all the windows
+            </summary>
+            <param name="ewp">Callback function</param>
+            <param name="lParam">Optional parameter to pass to the callback</param>
+            <returns>Nonzero if successful</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.PrintWindow(System.IntPtr,System.IntPtr,System.Int64)">
+            <summary>
+            Prints a windows' contents into a device context
+            </summary>
+            <param name="hwnd">Handle to the window</param>
+            <param name="hdcBlt">Device context to copy to</param>
+            <param name="nFlags">Optional flags</param>
+            <returns></returns>
+        </member>
+        <member name="M:Win32.User32.User32API.GetClassLong(System.IntPtr,Win32.User32.ClassLongValues)">
+            <summary>
+            Gets information from a window class
+            </summary>
+            <param name="hWnd">Handle to the window</param>
+            <param name="nIndex">Information to retrieve</param>
+            <returns>Pointer to the information requested</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.GetClassName(System.IntPtr,System.Text.StringBuilder,System.Int32)">
+            <summary>
+            Gets the class name from a window
+            </summary>
+            <param name="hWnd">Handle to the window</param>
+            <param name="lpClassName">StringBuilder where to store the class name</param>
+            <param name="nMaxCount">Max count of characters to retrieve from the name</param>
+            <returns></returns>
+        </member>
+        <member name="M:Win32.User32.User32API.GetWindowRect(System.IntPtr,Win32.Rectangle@)">
+            <summary>
+            Gets the window bounds
+            </summary>
+            <param name="hWnd">Handle to the window</param>
+            <param name="lpRect">Out to the rectangle structure to receive the bounds</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.IsWindowVisible(System.IntPtr)">
+            <summary>
+            Finds out if window is visible
+            </summary>
+            <param name="hWnd">Handle to the window</param>
+            <returns>True if window is visible. False if not.</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.GetWindowText(System.IntPtr,System.Text.StringBuilder,System.Int32)">
+            <summary>
+            Gets the title text of a window
+            </summary>
+            <param name="h">Handle to the window to get the text from</param>
+            <param name="s">StringBuilder where to store the title</param>
+            <param name="nMaxCount">Max count of characters to retrieve from the name</param>
+        </member>
+        <member name="M:Win32.User32.User32API.SetWindowPos(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Win32.User32.WindowPositionSizeFlags)">
+            <summary>
+            Set the size, position and Z ordering of a window
+            </summary>
+            <param name="hwnd">Handle to the window</param>
+            <param name="hWndInsertAfter">Z Ordering flag or handle to a window</param>
+            <param name="X">X position</param>
+            <param name="Y">Y position</param>
+            <param name="cx">Width</param>
+            <param name="cy">Height</param>
+            <param name="wFlags">Window sizing and positioning flags</param>
+            <returns>Nonzero if succeeds</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.GetDC(System.IntPtr)">
+            <summary>
+            Gets the device context to a window
+            </summary>
+            <param name="hWnd">Handle to the window</param>
+            <returns>A device context</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.SetForegroundWindow(System.IntPtr)">
+            <summary>
+            Brings a window to the foreground
+            </summary>
+            <param name="hWnd">Handle to the window</param>
+        </member>
+        <member name="M:Win32.User32.User32API.SetActiveWindow(System.IntPtr)">
+            <summary>
+            Activates a window
+            </summary>
+            <param name="hWnd">Handle to the window</param>
+        </member>
+        <member name="M:Win32.User32.User32API.GetAsyncKeyState(System.Int32)">
+            <summary>
+            Gets the state of a key
+            </summary>
+            <param name="vKey">Virtual key code for the key</param>
+            <returns>Most significant bit on: Key is pressed. Least significant bit on: Key was pressed between this call and the previous call to this function</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.SetWindowLong(System.IntPtr,Win32.User32.WindowLongValues,Win32.User32.WindowExtendedStyles)">
+            <summary>
+            Sets the properties of a window
+            </summary>
+            <param name="hWnd">Handle to the window</param>
+            <param name="nIndex">Property to set</param>
+            <param name="dwNewLong">Value</param>
+            <returns>0 if failed</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.UpdateLayeredWindow(System.IntPtr,System.IntPtr,Win32.Point@,Win32.Size@,System.IntPtr,Win32.Point@,System.Int32,Win32.User32.BlendFunction@,Win32.User32.UpdateLayeredWindowFlags)">
+            <summary>
+            Updates the contents of a layered window
+            </summary>
+            <param name="hwnd">Handle to the window</param>
+            <param name="hdcDst">Destination device context</param>
+            <param name="pptDst">Destination Point</param>
+            <param name="psize">Destination Size</param>
+            <param name="hdcSrc">Source device context</param>
+            <param name="pprSrc">Source Point</param>
+            <param name="crKey">Color Key for the destination window</param>
+            <param name="pblend">Blend information</param>
+            <param name="dwFlags">Blend method</param>
+            <returns>True if succeeded. False if not.</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.DestroyIcon(System.IntPtr)">
+            <summary>
+            Destroys an instance of an icon
+            </summary>
+            <param name="hIcon">Handle to the icon to destroy</param>
+            <returns>True if succeeded.</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.GetWindowThreadProcessId(System.IntPtr,System.Int32@)">
+            <summary>
+            Gets the process id of a thread
+            </summary>
+            <param name="hwnd">Handle to the thread</param>
+            <param name="lpdwProcessId">Int where the processid will be outputted</param>
+            <returns></returns>
+        </member>
+        <member name="M:Win32.User32.User32API.GetForegroundWindow">
+            <summary>
+            Gets the handle to the foreground window
+            </summary>
+            <returns>The handle to the foreground window</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.GetWindow(System.IntPtr,Win32.User32.GetWindowCommand)">
+            <summary>
+            Gets the the handle to a window according to a the wCmd issued
+            </summary>
+            <param name="hWnd">Handle to the reference window</param>
+            <param name="wCmd">Command to use based on the reference window</param>
+            <returns>The handle to a window. IntPtr.Zero when done</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.UpdateWindow(System.IntPtr)">
+            <summary>
+            Updates the client area of a window
+            </summary>
+            <param name="hWnd">Handle to the window to repaint</param>
+            <returns>True if succeeded.</returns>
+        </member>
+        <member name="M:Win32.User32.User32API.SetWindowsHookEx(Win32.User32.HookType,Win32.User32.HookProc,System.IntPtr,System.Int32)">
+            <summary>
+            The SetWindowsHookEx function installs an application-defined hook procedure into a hook chain. You would install a hook procedure to monitor the system for certain types of events. These events are associated either with a specific thread or with all threads in the same desktop as the calling thread.
+            </summary>
+            <param name="idHook">[in] Specifies the type of hook procedure to be installed. This parameter can be one of the following values.</param>
+            <param name="lpfn">[in] Pointer to the hook procedure. If the dwThreadId parameter is zero or specifies the identifier of a thread created by a different process, the lpfn parameter must point to a hook procedure in a dynamic-link library (DLL). Otherwise, lpfn can point to a hook procedure in the code associated with the current process.</param>
+            <param name="hInstance">[in] Handle to the DLL containing the hook procedure pointed to by the lpfn parameter. The hMod parameter must be set to NULL if the dwThreadId parameter specifies a thread created by the current process and if the hook procedure is within the code associated with the current process.</param>
+            <param name="threadId">[in] Specifies the identifier of the thread with which the hook procedure is to be associated. If this parameter is zero, the hook procedure is associated with all existing threads running in the same desktop as the calling thread.</param>
+            <returns>If the function succeeds, the return value is the handle to the hook procedure.</returns>
+            <remarks>An error may occur if the hMod parameter is NULL and the dwThreadId parameter is zero or specifies the identifier of a thread created by another process. Calling the CallNextHookEx function to chain to the next hook procedure is optional, but it is highly recommended; otherwise, other applications that have installed hooks will not receive hook notifications and may behave incorrectly as a result. You should call CallNextHookEx unless you absolutely need to prevent the notification from being seen by other applications. Before terminating, an application must call the UnhookWindowsHookEx function to free system resources associated with the hook.</remarks>
+        </member>
+        <member name="M:Win32.User32.User32API.UnhookWindowsHookEx(System.Int32)">
+            <summary>
+            The UnhookWindowsHookEx function removes a hook procedure installed in a hook chain by the SetWindowsHookEx function.
+            </summary>
+            <param name="idHook">[in] Handle to the hook to be removed. This parameter is a hook handle obtained by a previous call to SetWindowsHookEx.</param>
+            <returns>If the function succeeds, the return value is nonzero.</returns>
+            <remarks>The hook procedure can be in the state of being called by another thread even after UnhookWindowsHookEx returns. If the hook procedure is not being called concurrently, the hook procedure is removed immediately before UnhookWindowsHookEx returns.</remarks>
+        </member>
+        <member name="M:Win32.User32.User32API.CallNextHookEx(System.Int32,System.Int32,System.IntPtr,System.IntPtr)">
+            <summary>
+            The CallNextHookEx function passes the hook information to the next hook procedure in the current hook chain. A hook procedure can call this function either before or after processing the hook information.
+            </summary>
+            <param name="idHook">Ignored.</param>
+            <param name="nCode">[in] Specifies the hook code passed to the current hook procedure. The next hook procedure uses this code to determine how to process the hook information.</param>
+            <param name="wParam">[in] Specifies the wParam value passed to the current hook procedure. The meaning of this parameter depends on the type of hook associated with the current hook chain.</param>
+            <param name="lParam">[in] Specifies the lParam value passed to the current hook procedure. The meaning of this parameter depends on the type of hook associated with the current hook chain.</param>
+            <returns>This value is returned by the next hook procedure in the chain. The current hook procedure must also return this value. The meaning of the return value depends on the hook type. For more information, see the descriptions of the individual hook procedures.</returns>
+            <remarks>Hook procedures are installed in chains for particular hook types. CallNextHookEx calls the next hook in the chain. Calling CallNextHookEx is optional, but it is highly recommended; otherwise, other applications that have installed hooks will not receive hook notifications and may behave incorrectly as a result. You should call CallNextHookEx unless you absolutely need to prevent the notification from being seen by other applications.</remarks>
+        </member>
+        <member name="T:Win32.User32.WindowExtendedStyles">
+            <summary>
+            Specifies the extended window style of the window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.AcceptFiles">
+            <summary>
+            Specifies that a window created with this style accepts drag-drop files.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.ShowInTaskbar">
+            <summary>
+            Forces a top-level window onto the taskbar when the window is visible.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.ClientEdge">
+            <summary>
+            Specifies that a window has a border with a sunken edge.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.Composited">
+            <summary>
+            Windows XP: Paints all descendants of a window in bottom-to-top painting order using double-buffering. For more information, see Remarks. This cannot be used if the window has a class style of either CS_OWNDC or CS_CLASSDC.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.ContextHelpBox">
+            <summary>
+            Includes a question mark in the title bar of the window. When the user clicks the question mark, the cursor changes to a question mark with a pointer. If the user then clicks a child window, the child receives a WM_HELP message. The child window should pass the message to the parent window procedure, which should call the WinHelp function using the HELP_WM_HELP command. The Help application displays a pop-up window that typically contains help for the child window.
+            WS_EX_CONTEXTHELP cannot be used with the WS_MAXIMIZEBOX or WS_MINIMIZEBOX styles.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.ControlParent">
+            <summary>
+            The window itself contains child windows that should take part in dialog box navigation. If this style is specified, the dialog manager recurses into children of this window when performing navigation operations such as handling the TAB key, an arrow key, or a keyboard mnemonic.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.DialogModalFrame">
+            <summary>
+            Creates a window that has a double border; the window can, optionally, be created with a title bar by specifying the WS_CAPTION style in the dwStyle parameter.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.Layered">
+            <summary>
+            Windows 2000/XP: Creates a layered window. Note that this cannot be used for child windows. Also, this cannot be used if the window has a class style of either CS_OWNDC or CS_CLASSDC.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.LayoutRightToLeft">
+            <summary>
+            Arabic and Hebrew versions of Windows 98/Me, Windows 2000/XP: Creates a window whose horizontal origin is on the right edge. Increasing horizontal values advance to the left.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.LeftAlignedProperties">
+            <summary>
+            Creates a window that has generic left-aligned properties. This is the default.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.LeftScrollBar">
+            <summary>
+            If the shell language is Hebrew, Arabic, or another language that supports reading order alignment, the vertical scroll bar (if present) is to the left of the client area. For other languages, the style is ignored.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.LeftToRightReading">
+            <summary>
+            The window text is displayed using left-to-right reading-order properties. This is the default.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.MDIChild">
+            <summary>
+            Creates a multiple-document interface (MDI) child window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.NoActivate">
+            <summary>
+            Windows 2000/XP: A top-level window created with this style does not become the foreground window when the user clicks it. The system does not bring this window to the foreground when the user minimizes or closes the foreground window.
+            To activate the window, use the SetActiveWindow or SetForegroundWindow function.
+            The window does not appear on the taskbar by default. To force the window to appear on the taskbar, use the WS_EX_APPWINDOW style.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.NoInheritLayout">
+            <summary>
+            Windows 2000/XP: A window created with this style does not pass its window layout to its child windows.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.NoParentNotify">
+            <summary>
+            Specifies that a child window created with this style does not send the WM_PARENTNOTIFY message to its parent window when it is created or destroyed.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.OverlappedWindow">
+            <summary>
+            Combines the WS_EX_CLIENTEDGE and WS_EX_WINDOWEDGE styles.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.PalleteWindow">
+            <summary>
+            Combines the WS_EX_WINDOWEDGE, WS_EX_TOOLWINDOW, and WS_EX_TOPMOST styles.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.RightAlignedProperties">
+            <summary>
+            The window has generic "right-aligned" properties. This depends on the window class. This style has an effect only if the shell language is Hebrew, Arabic, or another language that supports reading-order alignment; otherwise, the style is ignored.
+            Using the WS_EX_RIGHT style for static or edit controls has the same effect as using the SS_RIGHT or ES_RIGHT style, respectively. Using this style with button controls has the same effect as using BS_RIGHT and BS_RIGHTBUTTON styles. 
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.RightScrollBar">
+            <summary>
+            Vertical scroll bar (if present) is to the right of the client area. This is the default.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.RightToLeftReading">
+            <summary>
+            If the shell language is Hebrew, Arabic, or another language that supports reading-order alignment, the window text is displayed using right-to-left reading-order properties. For other languages, the style is ignored.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.StaticEdge">
+            <summary>
+            Creates a window with a three-dimensional border style intended to be used for items that do not accept user input.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.ToolWindow">
+            <summary>
+            Creates a tool window; that is, a window intended to be used as a floating toolbar. A tool window has a title bar that is shorter than a normal title bar, and the window title is drawn using a smaller font. A tool window does not appear in the taskbar or in the dialog that appears when the user presses ALT+TAB. If a tool window has a system menu, its icon is not displayed on the title bar. However, you can display the system menu by right-clicking or by typing ALT+SPACE.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.TopMost">
+            <summary>
+            Specifies that a window created with this style should be placed above all non-topmost windows and should stay above them, even when the window is deactivated. To add or remove this style, use the SetWindowPos function.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.Transparent">
+            <summary>
+            Specifies that a window created with this style should not be painted until siblings beneath the window (that were created by the same thread) have been painted. The window appears transparent because the bits of underlying sibling windows have already been painted.
+            To achieve transparency without these restrictions, use the SetWindowRgn function.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowExtendedStyles.WindowEdge">
+            <summary>
+            Specifies that a window has a border with a raised edge.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.WindowLongValues">
+            <summary>
+            Attribute to change.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowLongValues.ExtendedStyle">
+            <summary>
+            Sets a new extended window style. For more information, see CreateWindowEx.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowLongValues.Style">
+            <summary>
+            Sets a new window style.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowLongValues.WindowProcedure">
+            <summary>
+            Sets a new address for the window procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowLongValues.Handle">
+            <summary>
+            Sets a new application instance handle.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowLongValues.Id">
+            <summary>
+            Sets a new identifier of the window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowLongValues.UserData">
+            <summary>
+            Sets the user data associated with the window. This data is intended for use by the application that created the window. Its value is initially zero.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowLongValues.DialogProcedure">
+            <summary>
+            Sets the new pointer to the dialog box procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowLongValues.MessageResult">
+            <summary>
+            Sets the return value of a message processed in the dialog box procedure.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowLongValues.User">
+            <summary>
+            Sets new extra information that is private to the application, such as handles or pointers.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.WindowPositionSizeFlags">
+            <summary>
+            Specifies the window sizing and positioning flags. This parameter can be a combination of the following values
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.AsyncWindowPositioning">
+            <summary>
+            If the calling thread and the thread that owns the window are attached to different input queues, the system posts the request to the thread that owns the window. This prevents the calling thread from blocking its execution while other threads process the request.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.DeferErase">
+            <summary>
+            Prevents generation of the WM_SYNCPAINT message.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.DrawFrame">
+            <summary>
+            Draws a frame (defined in the window's class description) around the window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.FrameChanged">
+            <summary>
+            Applies new frame styles set using the SetWindowLong function. Sends a WM_NCCALCSIZE message to the window, even if the window's size is not being changed. If this flag is not specified, WM_NCCALCSIZE is sent only when the window's size is being changed.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.HideWindow">
+            <summary>
+            Hides the window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.NoActivate">
+            <summary>
+            Does not activate the window. If this flag is not set, the window is activated and moved to the top of either the topmost or non-topmost group (depending on the setting of the hWndInsertAfter parameter).
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.NoCopyBits">
+            <summary>
+            Discards the entire contents of the client area. If this flag is not specified, the valid contents of the client area are saved and copied back into the client area after the window is sized or repositioned.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.NoMove">
+            <summary>
+            Retains the current position (ignores X and Y parameters).
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.NoOwnerZOrder">
+            <summary>
+            Does not change the owner window's position in the Z order.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.NoRedraw">
+            <summary>
+            Does not redraw changes. If this flag is set, no repainting of any kind occurs. This applies to the client area, the nonclient area (including the title bar and scroll bars), and any part of the parent window uncovered as a result of the window being moved. When this flag is set, the application must explicitly invalidate or redraw any parts of the window and parent window that need redrawing.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.NoRePosition">
+            <summary>
+            Same as the SWP_NOOWNERZORDER flag.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.NoSendChanging">
+            <summary>
+            Prevents the window from receiving the WM_WINDOWPOSCHANGING message.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.NoSize">
+            <summary>
+            Retains the current size (ignores the cx and cy parameters).
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.NoZOrder">
+            <summary>
+            Retains the current Z order (ignores the hWndInsertAfter parameter).
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowPositionSizeFlags.ShowWindow">
+            <summary>
+            Displays the window.
+            </summary>
+        </member>
+        <member name="T:Win32.Point">
+            <summary>
+            Represents a Win32 POINT structure
+            </summary>
+        </member>
+        <member name="F:Win32.Point.x">
+            <summary>
+            The X coordinate
+            </summary>
+        </member>
+        <member name="F:Win32.Point.y">
+            <summary>
+            The Y coordinate
+            </summary>
+        </member>
+        <member name="M:Win32.Point.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Creates a new instance of the Point structure from two given coordinates
+            </summary>
+            <param name="x">The X coordinate</param>
+            <param name="y">The Y coordinate</param>
+        </member>
+        <member name="T:Win32.Rectangle">
+            <summary>
+            Represents a Win32 RECT structure
+            </summary>
+        </member>
+        <member name="F:Win32.Rectangle.left">
+            <summary>
+            The X coordinate from the top left point
+            </summary>
+        </member>
+        <member name="F:Win32.Rectangle.top">
+            <summary>
+            The Y coordinate from the top left point
+            </summary>
+        </member>
+        <member name="F:Win32.Rectangle.right">
+            <summary>
+            The X coordinate from the bottom right point
+            </summary>
+        </member>
+        <member name="F:Win32.Rectangle.bottom">
+            <summary>
+            The Y coordinate from the bottom right point
+            </summary>
+        </member>
+        <member name="T:Win32.Size">
+            <summary>
+            Represents a Win32 SIZE structure
+            </summary>
+        </member>
+        <member name="F:Win32.Size.cx">
+            <summary>
+            The Width parameter
+            </summary>
+        </member>
+        <member name="F:Win32.Size.cy">
+            <summary>
+            The Height parameter
+            </summary>
+        </member>
+        <member name="M:Win32.Size.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Creates a new instance of the size structure from two parameters
+            </summary>
+            <param name="cx">The Width parameter</param>
+            <param name="cy">The Height parameter</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Orbit>
+    <Menu>
+      <StartLoopsHere>ここでループを開く</StartLoopsHere>
+      <OpenInExplorer>エクスプローラで開く</OpenInExplorer>
+      <AddItemTo>"%ItemName%" にアイテムを追加する...</AddItemTo>
+      <RemoveItem>"%ItemName%" を削除する</RemoveItem>
+      <ItemProperties>"%ItemName%" のプロパティ...</ItemProperties>
+      <Configuration>設定...</Configuration>
+      <Language>Language</Language>
+      <OnlineManual>オンラインマニュアル(英語)...</OnlineManual>
+      <CheckForUpdate>更新の確認...</CheckForUpdate>
+      <Exit>終了</Exit>
+    </Menu>
+    <Messages>
+      <ConfirmRemove>"%ItemName%" を削除しますか？</ConfirmRemove>
+      <TransparentModeNotSupported>ビデオカードが透過処理をサポートしていません。オフスクリーンレンダーターゲットを作成できません。不透明モードを使用してください。</TransparentModeNotSupported>
+      <UnexpectedErrorOccurred>予想外のエラーが発生しました。オフスクリーンレンダーターゲットを作成できません。不透明モードを使用してください。</UnexpectedErrorOccurred>
+      <CannotCreateD3DDevice>Direct3D ディバイスを作成できません。制作者にシステムのスペックなど詳細な情報をメールで送ってください。</CannotCreateD3DDevice>
+      <VideoCardNotSupported>Orbit を起動可能なビデオカードが存在しません。Orbit は3Dハードウェアアクセレータに対応したカードを必要とします。</VideoCardNotSupported>
+      <ImageDirectoryNotFound>画像のディレクトリが見つかりません！</ImageDirectoryNotFound>
+      <ItemsDirectoryNotFound>アイテム構成設定のディレクトリが見つかりません！</ItemsDirectoryNotFound>
+      <InvalidINIFile>不正な config.ini ファイルです。 もう一度Orbitを設定してください。</InvalidINIFile>
+      <UnableToConnect>Orbit サービスサーバーに接続できません。</UnableToConnect>
+      <UpdateAvailable>新しいバージョンのOrbitが存在します。Orbitのホームページへ移動しますか？</UpdateAvailable>
+      <YouAreUpToDate>現在使用中の Orbit は最新版です。</YouAreUpToDate>
+    </Messages>
+  </Orbit>
+  <DockSetup>
+    <OrbitConfigurationLabel>Orbit の設定</OrbitConfigurationLabel>
+    <OrbitConfigurationDescriptionLabel>Orbit が如何に振舞うかカスタマイズできます。
+</OrbitConfigurationDescriptionLabel>
+    <Messages>
+      <NeedsImageDirectory>画像のディレクトリを指定してください。
+</NeedsImageDirectory>
+    </Messages>
+    <Locations>
+      <LocationsLabel>ディレクトリ</LocationsLabel>
+      <PreferredImagesLocationLabel>画像のディレクトリ</PreferredImagesLocationLabel>
+      <ItemsStructureLocationLabel>アイテム構成設定のディレクトリ</ItemsStructureLocationLabel>
+    </Locations>
+    <Images>
+      <ImagesLabel>画像</ImagesLabel>
+      <ChangeLabel>変更...</ChangeLabel>
+      <DisableLabel>無効</DisableLabel>
+      <BgImageUseWindowsLabel>Windowsの壁紙を使用する</BgImageUseWindowsLabel>
+      <PickAnotherColorLabel>別の色を使用する...</PickAnotherColorLabel>
+      <NonTransparentBackgroundLabel>不透明モードの背景</NonTransparentBackgroundLabel>
+      <NonTransparentColorLabel>不透明モードの背景色</NonTransparentColorLabel>
+      <IconAreaBackgroundLabel>アイコンエリアの背景</IconAreaBackgroundLabel>
+      <SelectedItemLabel>選択アイテムのインジケータ</SelectedItemLabel>
+      <ScrollUpLabel>スクロール (上)のインジケータ</ScrollUpLabel>
+      <ScrollDownLabel>スクロール (下)のインジケータ</ScrollDownLabel>
+    </Images>
+    <Fonts>
+      <FontsLabel>フォント</FontsLabel>
+      <LabelFontLabel>ラベルのフォント</LabelFontLabel>
+      <DescriptionFontLabel>説明文のフォント</DescriptionFontLabel>
+      <ChangeFontFamilyLink>フォントを変更する...</ChangeFontFamilyLink>
+      <ChangeBorderColorLink>縁取りの色を変更する...</ChangeBorderColorLink>
+      <ChangeFillColorLink>フォントの色を変更する...</ChangeFillColorLink>
+      <DisplayBorderLabel>縁取りを使用する</DisplayBorderLabel>
+      <LabelColorsLabel>ラベルの色</LabelColorsLabel>
+      <DescriptionColorsLabel>説明文の色</DescriptionColorsLabel>
+      <BorderLabel>縁取り</BorderLabel>
+      <FillLabel>フォント</FillLabel>
+    </Fonts>
+    <Appearance>
+      <AppearanceLabel>外観</AppearanceLabel>
+      <SelectASettingLabel>外観の設定</SelectASettingLabel>
+      <UseSliderLabel>スライダーを調整してください</UseSliderLabel>
+      <OtherSettingsLabel>その他の設定</OtherSettingsLabel>
+      <IconSizeLink>通常のアイコンサイズ...</IconSizeLink>
+      <IconMagnifiedLink>拡大時のアイコンサイズ...</IconMagnifiedLink>
+      <IconOpacityLink>アイコンの透明度...</IconOpacityLink>
+      <BgOpacityLink>アイコンエリアの背景の透明度...</BgOpacityLink>
+      <AnimSpeedLink>アニメーションの速度...</AnimSpeedLink>
+      <MouseWheelLink>マウスホイールへの反応速度...</MouseWheelLink>
+      <ItemsShownPerLineLink>アイテムをラインごとに表示する...</ItemsShownPerLineLink>
+      <ShowItemLabelsLink>アイテムラベルを表示する</ShowItemLabelsLink>
+      <UseTransparencyLink>透過モードを使用する</UseTransparencyLink>
+      <UseMultipleWindowsLink>各アイテムを個別のウィンドウにする</UseMultipleWindowsLink>
+      <ShowThumbnailsLink>サムネイルを表示する</ShowThumbnailsLink>
+      <GroupIconsLink>アイコンをグループ化する</GroupIconsLink>
+      <FakeTransparencyLink>擬似透明モード</FakeTransparencyLink>
+    </Appearance>
+    <Behavior>
+      <BehaviorLabel>振舞い</BehaviorLabel>
+      <TransitionEffectsLabel>動き</TransitionEffectsLabel>
+      <ClickAndMouseResponseLabel>クリックとマウスの反応</ClickAndMouseResponseLabel>
+      <BehaviorOtherSettingsLabel>その他の設定</BehaviorOtherSettingsLabel>
+      <PopUpKeyLabel>ショートカットキー:</PopUpKeyLabel>
+      <SpinOutLabel>スピン</SpinOutLabel>
+      <SlideOutLabel>スライド</SlideOutLabel>
+      <ZoomOutLabel>拡大</ZoomOutLabel>
+      <OpenInStartLabel>「ここでループを開く」を常に有効にする</OpenInStartLabel>
+      <OpenOnMouseOverLabel>マウスオーバーでフォルダを開く</OpenOnMouseOverLabel>
+      <StartWithWindows>スタートアップする</StartWithWindows>
+    </Behavior>
+    <About>
+      <AboutLabel>Orbit について</AboutLabel>
+      <OrbitDescriptionLabel>フローティングラウンドドックを Windows で・・・</OrbitDescriptionLabel>
+      <AuthorLabel>製作者</AuthorLabel>
+      <HelpTheProjectLabel>プロジェクトを支援してください！</HelpTheProjectLabel>
+      <VersionInformationLabel>バージョン情報</VersionInformationLabel>
+      <HomepageLink>オフィシャルホームページ</HomepageLink>
+      <BugLink>バグレポート</BugLink>
+      <ImproveLink>アイデアを募集します</ImproveLink>
+    </About>
+  </DockSetup>
+  <ItemSetup>
+    <Actions>
+      <ActionsLabel>機能</ActionsLabel>
+      <ShortcutLocationLabel>リンク</ShortcutLocationLabel>
+      <ShortcutArgumentsLabel>引数/パラメータ</ShortcutArgumentsLabel>
+      <ChangeItemLink>このアイテムの分類を変更する...</ChangeItemLink>
+      <ShortcutToFileLink>このアイテムはファイルへのショートカットです...</ShortcutToFileLink>
+      <ShortcutToFolderLink>このアイテムはフォルダへのショートカットです...</ShortcutToFolderLink>
+      <ShortcutToWebLink>このアイテムはインターネットショートカットです...</ShortcutToWebLink>
+      <PhysicalFolderLink>このアイテムはフォルダの中身を展開表示します...</PhysicalFolderLink>
+      <FolderLink>このアイテムは Orbit フォルダです...</FolderLink>
+      <ConfigurationLink>このアイテムは Orbit の設定ダイアログを表示します...</ConfigurationLink>
+      <TasksLink>このアイテムは起動中のタスクを表示します...</TasksLink>
+      <ActionsDescriptionLabel>You can either select an option from above or drag a file, folder or URL into this dialog to set this item to it.</ActionsDescriptionLabel>
+    </Actions>
+    <Display>
+      <DisplayLabel>表示</DisplayLabel>
+      <ItemNameLabel>ラベル</ItemNameLabel>
+      <ItemDescriptionLabel>説明文</ItemDescriptionLabel>
+      <ItemImageLabel>画像</ItemImageLabel>
+      <BrowsePictureLink>ほかの画像を参照するか、 表示したい画像をドラッグインしてください</BrowsePictureLink>
+      <BrowsePictureLinkStart>0</BrowsePictureLinkStart>
+      <BrowsePictureLinkLength>24</BrowsePictureLinkLength>
+    </Display>
+    <Messages>
+      <InvalidConfiguration>不正なアイテム設定です。</InvalidConfiguration>
+      <NeedsName>ラベルを設定してください。</NeedsName>
+      <NeedsAction>動作を設定してください。</NeedsAction>
+      <NeedsImage>画像を設定してください。</NeedsImage>
+      <ItemAlreadyExists>このフォルダ内に同名のアイテムが存在します。</ItemAlreadyExists>
+    </Messages>
+    <DialogTitleLabel>%ItemName% のプロパティ</DialogTitleLabel>
+    <DialogDescriptionLabel>このアイテムを設定します</DialogDescriptionLabel>
+  </ItemSetup>
+</LanguageFile>

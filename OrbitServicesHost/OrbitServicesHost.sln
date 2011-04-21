@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitServicesHost", "http://orbitservices.menge.mine.nu/OrbitServicesHost.csproj", "{E1566EB2-78EE-4A42-92FF-A720D109A99D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorReports", "http://orbitservices.menge.mine.nu/ErrorReports/ErrorReports.csproj", "{D26741CF-62BB-46C7-910F-DC6F448E9337}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E1566EB2-78EE-4A42-92FF-A720D109A99D}.Debug.ActiveCfg = Debug|.NET
+		{E1566EB2-78EE-4A42-92FF-A720D109A99D}.Debug.Build.0 = Debug|.NET
+		{E1566EB2-78EE-4A42-92FF-A720D109A99D}.Release.ActiveCfg = Release|.NET
+		{E1566EB2-78EE-4A42-92FF-A720D109A99D}.Release.Build.0 = Release|.NET
+		{D26741CF-62BB-46C7-910F-DC6F448E9337}.Debug.ActiveCfg = Debug|.NET
+		{D26741CF-62BB-46C7-910F-DC6F448E9337}.Debug.Build.0 = Debug|.NET
+		{D26741CF-62BB-46C7-910F-DC6F448E9337}.Release.ActiveCfg = Release|.NET
+		{D26741CF-62BB-46C7-910F-DC6F448E9337}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,2 @@
+- use drop shadows instead of borders for labels
+- gift glass background ring for dayle :P

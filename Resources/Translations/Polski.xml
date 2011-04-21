@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Orbit>
+    <Menu>
+      <StartLoopsHere>Początek koła Orbity</StartLoopsHere>
+      <OpenInExplorer>Otwórz w Eksploratorze Windows</OpenInExplorer>
+      <AddItemTo>Dodaj element do "%ItemName%"...</AddItemTo>
+      <RemoveItem>Usuń "%ItemName%"</RemoveItem>
+      <ItemProperties>"%ItemName%" Właściowości...</ItemProperties>
+      <Configuration>Konfiguracja...</Configuration>
+      <Language>Język</Language>
+      <OnlineManual>Pomoc Online...</OnlineManual>
+      <CheckForUpdate>Sprawdź czy są aktualizacje...</CheckForUpdate>
+      <Exit>Wyjście</Exit>
+    </Menu>
+    <Messages>
+      <ConfirmRemove>Czy chcesz usunąć "%ItemName%"?</ConfirmRemove>
+      <TransparentModeNotSupported>Tryb przezroczystości nie jest wspierany przez twoją kartę graficzną.Program przejdzie do trybu nieprzezroczystego.</TransparentModeNotSupported>
+      <UnexpectedErrorOccurred>Wystąpił nieoczekiwany błąd.Program przejdzie do trybu nieprzezroczystego.</UnexpectedErrorOccurred>
+      <CannotCreateD3DDevice>Nie można zainicjować urządzenia Direct3D . Proszę , wyślij autorowi specyfikacje swojego systemu operacyjnego dla uzyskania dalszych informacji.</CannotCreateD3DDevice>
+      <VideoCardNotSupported>Nie posiadasz karty graficznej umożliwiającej uruchomienie Orbit. Orbit wymaga karty z akceleratorem 3D.</VideoCardNotSupported>
+      <ImageDirectoryNotFound>Nie odnaleziono folderu plików z obrazami !</ImageDirectoryNotFound>
+      <ItemsDirectoryNotFound>Nie odnaleziono folderu plików z elementami !</ItemsDirectoryNotFound>
+      <InvalidINIFile>Błąd pliku config.ini .Skonfiguruj Orbit ponownie.</InvalidINIFile>
+      <UnableToConnect>Nie można połączyć się z serwerem usług Orbit.</UnableToConnect>
+      <UpdateAvailable>Znaleziono aktualizację do używanej wersji Orbit. Czy chcesz przejść na stronę domową Orbit ?</UpdateAvailable>
+      <YouAreUpToDate>Posiadasz ostatnią wersje Orbit.</YouAreUpToDate>
+    </Messages>
+  </Orbit>
+  <DockSetup>
+    <OrbitConfigurationLabel>Konfiguracja Orbit</OrbitConfigurationLabel>
+    <OrbitConfigurationDescriptionLabel>Wybierz sposób w jaki Orbit pojawi się na ekranie</OrbitConfigurationDescriptionLabel>
+    <Messages>
+      <NeedsImageDirectory>Musisz wybrać folder z obrazami.</NeedsImageDirectory>
+    </Messages>
+    <Locations>
+      <LocationsLabel>Miejsca</LocationsLabel>
+      <PreferredImagesLocationLabel>Preferowane miejsce na pliki obrazów</PreferredImagesLocationLabel>
+      <ItemsStructureLocationLabel>Lokalizacja struktury elementów</ItemsStructureLocationLabel>
+    </Locations>
+    <Images>
+      <ImagesLabel>Obrazy</ImagesLabel>
+      <ChangeLabel>Zmiana...</ChangeLabel>
+      <DisableLabel>Wyłączenie</DisableLabel>
+      <BgImageUseWindowsLabel>Użyj tapety Windows</BgImageUseWindowsLabel>
+      <PickAnotherColorLabel>Wybierz inny kolor...</PickAnotherColorLabel>
+      <NonTransparentBackgroundLabel>Tryb podkładu nieprzezroczystego</NonTransparentBackgroundLabel>
+      <NonTransparentColorLabel>Tryb podkładu nieprzezroczystego z użyciem koloru</NonTransparentColorLabel>
+      <IconAreaBackgroundLabel>Podkład obszaru ikon</IconAreaBackgroundLabel>
+      <SelectedItemLabel>Indykator obszaru zaznaczenia</SelectedItemLabel>
+      <ScrollUpLabel>Wskaźnik "Do góry"</ScrollUpLabel>
+      <ScrollDownLabel>Wskaźnik "W Dół"</ScrollDownLabel>
+    </Images>
+    <Fonts>
+      <FontsLabel>Czcionki</FontsLabel>
+      <LabelFontLabel>Etykieta czcionki</LabelFontLabel>
+      <DescriptionFontLabel>Opis czcionki</DescriptionFontLabel>
+      <ChangeFontFamilyLink>Zmień typ czcionki...</ChangeFontFamilyLink>
+      <ChangeBorderColorLink>Zmień kolor obwódki...</ChangeBorderColorLink>
+      <ChangeFillColorLink>Zmień kolor wypełnienia...</ChangeFillColorLink>
+      <DisplayBorderLabel>Pokaż etykietę obwódki</DisplayBorderLabel>
+      <LabelColorsLabel>Etykieta kolorów</LabelColorsLabel>
+      <DescriptionColorsLabel>Opis kolorów</DescriptionColorsLabel>
+      <BorderLabel>Obwódka</BorderLabel>
+      <FillLabel>Wypełnienie</FillLabel>
+    </Fonts>
+    <Appearance>
+      <AppearanceLabel>Wygląd</AppearanceLabel>
+      <SelectASettingLabel>Wybierz ustawienia wyglądu</SelectASettingLabel>
+      <UseSliderLabel>I użyj suwaka by dostosować wartość</UseSliderLabel>
+      <OtherSettingsLabel>Inne ustawienia</OtherSettingsLabel>
+      <IconSizeLink>Normalne wymiary ikon...</IconSizeLink>
+      <IconMagnifiedLink>Wymiary ikon po powiększeniu...</IconMagnifiedLink>
+      <IconOpacityLink>Przezroczystość ikon...</IconOpacityLink>
+      <BgOpacityLink>Przezroczystość obszaru wokół ikon...</BgOpacityLink>
+      <AnimSpeedLink>Szybkość animacji...</AnimSpeedLink>
+      <MouseWheelLink>Czułość kółka myszki...</MouseWheelLink>
+      <ItemsShownPerLineLink>Ilość elementów w linii...</ItemsShownPerLineLink>
+      <ShowItemLabelsLink>Pokaż etykiety elementów</ShowItemLabelsLink>
+      <UseTransparencyLink>Użyj trybu przezroczystego</UseTransparencyLink>
+      <UseMultipleWindowsLink>Wyświetlaj każdy element w osobnym oknie</UseMultipleWindowsLink>
+      <ShowThumbnailsLink>Pokaż podgląd plików obrazów</ShowThumbnailsLink>
+      <GroupIconsLink>Grupuj ikony</GroupIconsLink>
+      <FakeTransparencyLink>Użyj pozornej przezroczystości</FakeTransparencyLink>
+    </Appearance>
+    <Behavior>
+      <BehaviorLabel>Zachowanie</BehaviorLabel>
+      <TransitionEffectsLabel>Efekty przejścia</TransitionEffectsLabel>
+      <ClickAndMouseResponseLabel>Kliknięcie i odpowiedź myszki</ClickAndMouseResponseLabel>
+      <BehaviorOtherSettingsLabel>Inne ustawienia</BehaviorOtherSettingsLabel>
+      <PopUpKeyLabel>Klawisz wywołujący:</PopUpKeyLabel>
+      <SpinOutLabel>Obrót</SpinOutLabel>
+      <SlideOutLabel>Ślizg</SlideOutLabel>
+      <ZoomOutLabel>Powiększenie</ZoomOutLabel>
+      <OpenInStartLabel>Zawsze otwieraj foldery w tej samej pętli</OpenInStartLabel>
+      <OpenOnMouseOverLabel>Otwieraj foldery po zatrymaniu nad nimi kursora myszki</OpenOnMouseOverLabel>
+      <StartWithWindows>Startuj z Windows</StartWithWindows>
+    </Behavior>
+    <About>
+      <AboutLabel>O programie</AboutLabel>
+      <OrbitDescriptionLabel>Obracające się zdalnie wywoływane menu dla Windows</OrbitDescriptionLabel>
+      <AuthorLabel>Autor</AuthorLabel>
+      <HelpTheProjectLabel>Wspomóż projekt</HelpTheProjectLabel>
+      <VersionInformationLabel>Informacja o wersji</VersionInformationLabel>
+      <HomepageLink>Oficjalna strona</HomepageLink>
+      <BugLink>Zgłoś usterki</BugLink>
+      <ImproveLink>Zaproponuj  ulepszenie</ImproveLink>
+    </About>
+  </DockSetup>
+  <ItemSetup>
+    <Actions>
+      <ActionsLabel>Działania</ActionsLabel>
+      <ShortcutLocationLabel>Lokalizacja skrótów</ShortcutLocationLabel>
+      <ShortcutArgumentsLabel>Parametry skrótów</ShortcutArgumentsLabel>
+      <ChangeItemLink>Zmień klasyfikację tego elementu...</ChangeItemLink>
+      <ShortcutToFileLink>Ten element jest skrótem do pliku...</ShortcutToFileLink>
+      <ShortcutToFolderLink>Ten element jest skrótem do folderu...</ShortcutToFolderLink>
+      <ShortcutToWebLink>Ten element jest skrótem do adresu WWW...</ShortcutToWebLink>
+      <PhysicalFolderLink>Ten element pokazuje zawartość folderu na dysku...</PhysicalFolderLink>
+      <FolderLink>Ten element jest folderem wewnątrz Orbit...</FolderLink>
+      <ConfigurationLink>Ten element wywołuje ustawienia Orbit...</ConfigurationLink>
+      <TasksLink>Ten element pokazuje bieżące aktywne aplikacje...</TasksLink>
+      <ActionsDescriptionLabel>Możesz zarówno wybrać jedną z wyżej wymienionych opcji lub przeciągnąć plik , folder lub adres do tego okna dialogowego by przypisać go do elementu.</ActionsDescriptionLabel>
+    </Actions>
+    <Display>
+      <DisplayLabel>Wyświetlanie</DisplayLabel>
+      <ItemNameLabel>Nazwa</ItemNameLabel>
+      <ItemDescriptionLabel>Opis</ItemDescriptionLabel>
+      <ItemImageLabel>Obraz</ItemImageLabel>
+      <BrowsePictureLink>Wybierz inny obraz lub przeciągnij plik obrazu do okienka z obrazem by zmienić obraz elementu</BrowsePictureLink>
+      <BrowsePictureLinkStart>0</BrowsePictureLinkStart>
+      <BrowsePictureLinkLength>24</BrowsePictureLinkLength>
+    </Display>
+    <Messages>
+      <InvalidConfiguration>Błędna konfiguracja elementu.</InvalidConfiguration>
+      <NeedsName>Musisz wybrać nazwę dla elementu.</NeedsName>
+      <NeedsAction>Musisz przypisać działanie dla elementu.</NeedsAction>
+      <NeedsImage>Nie wybrano obrazu dla elementu.</NeedsImage>
+      <ItemAlreadyExists>Element o tej nazwie już istnieje w danym folderze.</ItemAlreadyExists>
+    </Messages>
+    <DialogTitleLabel>%ItemName% Własności</DialogTitleLabel>
+    <DialogDescriptionLabel>Dostosuj własności elementu</DialogDescriptionLabel>
+  </ItemSetup>
+</LanguageFile>

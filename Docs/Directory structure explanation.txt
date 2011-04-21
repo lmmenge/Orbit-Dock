@@ -1,0 +1,22 @@
+Directory structure explanation
+===============================
+
+There are various directories in this solution. Here are explanations of what are they for:
+(items marked by * are actual project folders)
+
+BasicBinFolders		- This is the basic subdirectory structure needed along with the Orbit binaries in order for Orbit to run in its default distribution
+Bin			- Where the Orbit project builds to
+*DockSetup		- The Orbit Configuration Dialog and all the configuration saving DLL
+Docs			- Folder with documents related to this solution
+Images			- Where the media shared by all projects is located
+*ItemSetup		- The Item Configuration Dialog and all the item saving DLL
+*LanguageLoader		- The language information provider assembly for all projects
+*Orbit			- The main EXE
+*Orbit.Hook		- The mouse and keyboard hook project
+*Orbit.Interop.Win32	- The Win32 API Interop DLL
+*Orbit.Utilities	- The utilities DLL
+*OrbitServicesClient	- The Client assembly to connect to the OrbitServices host
+			  (Error reporting, update checking, homepage address retrieval)
+OrbitServicesHost	- The Solution for the OrbitServices WebService. The source code isn't there, though :P
+Referenced Assemblies	- The Managed DirectX DLL files needed to build this program
+Resources		- Miscelaneous resources used thoughout the program (including the main translation files

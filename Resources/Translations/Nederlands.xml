@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Orbit>
+    <Menu>
+      <StartLoopsHere>Start lussen hier</StartLoopsHere>
+      <OpenInExplorer>Open in de Verkenner</OpenInExplorer>
+      <AddItemTo>Voeg bij "%ItemName%"...</AddItemTo>
+      <RemoveItem>Verwijder "%ItemName%"</RemoveItem>
+      <ItemProperties>"%ItemName%" Instellingen...</ItemProperties>
+      <Configuration>Configuratie...</Configuration>
+      <Language>Taal</Language>
+      <OnlineManual>Online Handleiding...</OnlineManual>
+      <CheckForUpdate>Controleer op updates...</CheckForUpdate>
+      <Exit>Sluit Orbit</Exit>
+    </Menu>
+    <Messages>
+      <ConfirmRemove>Wil je alle "%ItemName%" verwijderen?</ConfirmRemove>
+      <TransparentModeNotSupported>Transparante modus word niet ondersteund door je Videokaart. Non-transparante modus word gebruikt.</TransparentModeNotSupported>
+      <UnexpectedErrorOccurred>Er is een onverwachte fout opgetreden. Non-transparante modus word gebruikt.</UnexpectedErrorOccurred>
+      <CannotCreateD3DDevice>Kan het Direct3D apparaat niet creëren. Neem aub contact op met de auteur en geef hem uw systeem specificaties.</CannotCreateD3DDevice>
+      <VideoCardNotSupported>U heeft een te oude videokaart, hierdoor kan Orbit niet draaien. Orbit heeft een door 3D Hardware geaccellereerde kaart nodig.</VideoCardNotSupported>
+      <ImageDirectoryNotFound>Plaatjesmap niet gevonden!</ImageDirectoryNotFound>
+      <ItemsDirectoryNotFound>Onderdelenmap niet gevonden!</ItemsDirectoryNotFound>
+      <InvalidINIFile>Invalide config.ini bestand. Neem contact op met Orbit.</InvalidINIFile>
+      <UnableToConnect>Kon niet verbinden met de Orbit Services server.</UnableToConnect>
+      <UpdateAvailable>Er is een nieuwe versie van Orbit beschikbaar. Wil je naar de Orbit hoofdpagina gaan?</UpdateAvailable>
+      <YouAreUpToDate>You have the latest version of Orbit.</YouAreUpToDate>
+    </Messages>
+  </Orbit>
+  <DockSetup>
+    <OrbitConfigurationLabel>Orbit Configuratie</OrbitConfigurationLabel>
+    <OrbitConfigurationDescriptionLabel>Bewerk de weergave van Orbit op je scherm.</OrbitConfigurationDescriptionLabel>
+    <Messages>
+      <NeedsImageDirectory>Je moet een plaatjesmap selecteren.</NeedsImageDirectory>
+    </Messages>
+    <Locations>
+      <LocationsLabel>Lokaties</LocationsLabel>
+      <PreferredImagesLocationLabel>Plaatjes lokatie</PreferredImagesLocationLabel>
+      <ItemsStructureLocationLabel>Bestandstructuur lokatie</ItemsStructureLocationLabel>
+    </Locations>
+    <Images>
+      <ImagesLabel>Plaatjes</ImagesLabel>
+      <ChangeLabel>Verander...</ChangeLabel>
+      <DisableLabel>Schakel uit</DisableLabel>
+      <BgImageUseWindowsLabel>Gebruik Windows wallpaper</BgImageUseWindowsLabel>
+      <PickAnotherColorLabel>Kies een andere kleur...</PickAnotherColorLabel>
+      <NonTransparentBackgroundLabel>Non-transparante Modus Achtergrond.</NonTransparentBackgroundLabel>
+      <NonTransparentColorLabel>Non-transparante Modus Achtergrondkleur.</NonTransparentColorLabel>
+      <IconAreaBackgroundLabel>Icoon Achtergrond</IconAreaBackgroundLabel>
+      <SelectedItemLabel>Geselecteerde Onderdeel Indicator</SelectedItemLabel>
+      <ScrollUpLabel>Scroll Omhoog Indicator</ScrollUpLabel>
+      <ScrollDownLabel>Scroll Omlaag Indicator</ScrollDownLabel>
+    </Images>
+    <Fonts>
+      <FontsLabel>Lettertypen</FontsLabel>
+      <LabelFontLabel>Label Lettertype</LabelFontLabel>
+      <DescriptionFontLabel>Beschrijving Lettertype</DescriptionFontLabel>
+      <ChangeFontFamilyLink>Verander dit lettertype...</ChangeFontFamilyLink>
+      <ChangeBorderColorLink>Verander rand kleur...</ChangeBorderColorLink>
+      <ChangeFillColorLink>Verander vullende kleur...</ChangeFillColorLink>
+      <DisplayBorderLabel>Rand zichtbaar</DisplayBorderLabel>
+      <LabelColorsLabel>Label Kleuren</LabelColorsLabel>
+      <DescriptionColorsLabel>Beschrijving Kleuren</DescriptionColorsLabel>
+      <BorderLabel>Rand</BorderLabel>
+      <FillLabel>Vulling</FillLabel>
+    </Fonts>
+    <Appearance>
+      <AppearanceLabel>Uiterlijk</AppearanceLabel>
+      <SelectASettingLabel>Selecteer een Uiterlijk Instelling</SelectASettingLabel>
+      <UseSliderLabel>En gebruik de schuifbalk om de waarde te veranderen</UseSliderLabel>
+      <OtherSettingsLabel>Overige Instellingen</OtherSettingsLabel>
+      <IconSizeLink>Normale Icoon Grootte...</IconSizeLink>
+      <IconMagnifiedLink>Ingezoomde Icoon Grootte...</IconMagnifiedLink>
+      <IconOpacityLink>Icoon Zichtbaarheid...</IconOpacityLink>
+      <BgOpacityLink>Icoon Achtergrond Zichtbaarheid...</BgOpacityLink>
+      <AnimSpeedLink>Animatie Snelheid...</AnimSpeedLink>
+      <MouseWheelLink>Muiswiel Gevoeligheid...</MouseWheelLink>
+      <ItemsShownPerLineLink>Onderdelen Per Regel...</ItemsShownPerLineLink>
+      <ShowItemLabelsLink>Laat Onderdeel Labels zien</ShowItemLabelsLink>
+      <UseTransparencyLink>Gebruik Transparante Modus</UseTransparencyLink>
+      <UseMultipleWindowsLink>Maak Voor Elk Onderdeel Een Nieuw Venster</UseMultipleWindowsLink>
+      <ShowThumbnailsLink>Laat Thumbnails zien</ShowThumbnailsLink>
+      <GroupIconsLink>Groepeer Iconen</GroupIconsLink>
+      <FakeTransparencyLink>Gebruik nep-transparantie</FakeTransparencyLink>
+    </Appearance>
+    <Behavior>
+      <BehaviorLabel>Gedrag</BehaviorLabel>
+      <TransitionEffectsLabel>Overgangs Effecten</TransitionEffectsLabel>
+      <ClickAndMouseResponseLabel>Klik en Muis Reactie</ClickAndMouseResponseLabel>
+      <BehaviorOtherSettingsLabel>Overige Instellingen</BehaviorOtherSettingsLabel>
+      <PopUpKeyLabel>Pop up toets:</PopUpKeyLabel>
+      <SpinOutLabel>Draaien</SpinOutLabel>
+      <SlideOutLabel>Schuiven</SlideOutLabel>
+      <ZoomOutLabel>Zoomen</ZoomOutLabel>
+      <OpenInStartLabel>Open mappen altijd in dezelfde lus</OpenInStartLabel>
+      <OpenOnMouseOverLabel>Open mappen op Mouse-Over</OpenOnMouseOverLabel>
+      <StartWithWindows>Start met Windows</StartWithWindows>
+    </Behavior>
+    <About>
+      <AboutLabel>Over</AboutLabel>
+      <OrbitDescriptionLabel>Het zwevende dock voor Windows</OrbitDescriptionLabel>
+      <AuthorLabel>Auteur</AuthorLabel>
+      <HelpTheProjectLabel>Help het Project</HelpTheProjectLabel>
+      <VersionInformationLabel>Versie Informatie</VersionInformationLabel>
+      <HomepageLink>Officiële Homepagina</HomepageLink>
+      <BugLink>Rapporteer een Bug</BugLink>
+      <ImproveLink>Suggesteer een Verbetering</ImproveLink>
+    </About>
+  </DockSetup>
+  <ItemSetup>
+    <Actions>
+      <ActionsLabel>Akties</ActionsLabel>
+      <ShortcutLocationLabel>Snelkoppeling lokatie</ShortcutLocationLabel>
+      <ShortcutArgumentsLabel>Opmerkingen</ShortcutArgumentsLabel>
+      <ChangeItemLink>Verander de klassificatie...</ChangeItemLink>
+      <ShortcutToFileLink>Dit is een snelkoppeling naar een bestand...</ShortcutToFileLink>
+      <ShortcutToFolderLink>Dit is een snelkoppeling naar een map...</ShortcutToFolderLink>
+      <ShortcutToWebLink>Dit is een snelkoppeling naar een URL...</ShortcutToWebLink>
+      <PhysicalFolderLink>Dit laat de inhoud zien van de inhoud van een map...</PhysicalFolderLink>
+      <FolderLink>Dit is een map in Orbit...</FolderLink>
+      <ConfigurationLink>Dit laat de Orbit Configuratie zien...</ConfigurationLink>
+      <TasksLink>This item shows the tasks that are running...</TasksLink>
+      <ActionsDescriptionLabel>Je kunt een van de bovenstaande opties selecteren of een bestand, map of URL hier naartoe slepen.</ActionsDescriptionLabel>
+    </Actions>
+    <Display>
+      <DisplayLabel>Weergave</DisplayLabel>
+      <ItemNameLabel>Naam</ItemNameLabel>
+      <ItemDescriptionLabel>Beschrijving</ItemDescriptionLabel>
+      <ItemImageLabel>Plaatje</ItemImageLabel>
+      <BrowsePictureLink>Zoek naar een ander plaatje of sleep het naar het vak hiernaast.</BrowsePictureLink>
+      <BrowsePictureLinkStart>0</BrowsePictureLinkStart>
+      <BrowsePictureLinkLength>24</BrowsePictureLinkLength>
+    </Display>
+    <Messages>
+      <InvalidConfiguration>Incorrecte configuratie.</InvalidConfiguration>
+      <NeedsName>Je moet een naam geven.</NeedsName>
+      <NeedsAction>Je moet een aktie kiezen.</NeedsAction>
+      <NeedsImage>Er is geen plaatje geselecteerd.</NeedsImage>
+      <ItemAlreadyExists>Er bestaat al een bestand met deze naam in deze map.</ItemAlreadyExists>
+    </Messages>
+    <DialogTitleLabel>%ItemName% Instellingen</DialogTitleLabel>
+    <DialogDescriptionLabel>Bewerk de instellingen</DialogDescriptionLabel>
+  </ItemSetup>
+</LanguageFile>

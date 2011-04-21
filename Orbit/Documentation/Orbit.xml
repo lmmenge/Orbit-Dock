@@ -1,0 +1,2166 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Orbit</name>
+    </assembly>
+    <members>
+        <member name="T:Orbit.Core.OrbitResourceManager">
+            <summary>
+            Manages the common resources in the Orbit environment
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.#ctor(Microsoft.DirectX.Direct3D.Device)">
+            <summary>
+            Creates a new instance of the OrbitResourceManager class
+            </summary>
+            <param name="D3DDevice">The Direct3D Device that this class should load the resources onto</param>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.InitDeviceMem">
+            <summary>
+            Initializes all the Textures based on the configuration settings
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.DeInitDeviceMem">
+            <summary>
+            Disposes all the Textures based on the configuration settings
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.SetIconBg(System.String)">
+            <summary>
+            Sets the icon background Texture
+            </summary>
+            <param name="Path">Path to load the Texture from</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.SetIconSelected(System.String)">
+            <summary>
+            Sets the selected item indicator Texture
+            </summary>
+            <param name="Path">Path to load the Texture from</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.SetScrollUp(System.String)">
+            <summary>
+            Sets the Scroll Up indicator Texture
+            </summary>
+            <param name="Path">Path to load the Texture from</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.SetScrollDown(System.String)">
+            <summary>
+            Sets the Scroll Down indicator Texture
+            </summary>
+            <param name="Path">Path to load the Texture from</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.InitCompositeTexture">
+            <summary>
+            Initializes the Composite buffer
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.InitScreenGrabber(System.Drawing.Rectangle)">
+            <summary>
+            Initializes a new managed instance of the ScreenGrabber object
+            </summary>
+            <param name="SourceRectangle">Area of the screen that this grabber should capture</param>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.DrawTextureOnGenericQuad(Microsoft.DirectX.Direct3D.Texture,System.Drawing.RectangleF,System.Drawing.Color)">
+            <summary>
+            Draws a given texture on our GenericQuad onto the screen
+            </summary>
+            <param name="texture">Texture to draw</param>
+            <param name="rectangle">Destination Rectangle</param>
+            <param name="colorKey">Optional Color Keying</param>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.DrawTextureOnVertexBuffer(Microsoft.DirectX.Direct3D.Texture,Microsoft.DirectX.Direct3D.VertexBuffer,System.Drawing.RectangleF,System.Drawing.Color)">
+            <summary>
+            Draws a given texture on a VertexBuffer onto the screen
+            </summary>
+            <param name="texture">Texture to draw</param>
+            <param name="buffer">VertexBuffer to draw the texture in</param>
+            <param name="rectangle">Destination Rectangle</param>
+            <param name="colorKey">Optional Color Keying</param>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.DrawIconBg(System.Boolean,System.Drawing.Size,System.Drawing.Point)">
+            <summary>
+            Draws the Icon Background Texture
+            </summary>
+            <param name="InitSprite">Indicates whether to initialize the Sprite object or not (if it's already initialized)</param>
+            <param name="Size">Size of the destination rectangle</param>
+            <param name="Center">Point of the center of the background</param>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.DrawSelectedOverlay(System.Boolean,System.Drawing.RectangleF,System.Byte)">
+            <summary>
+            Draws the Icon Selected overlay Texture
+            </summary>
+            <param name="InitSprite">Indicates whether to initialize the Sprite object or not (if it's already initialized)</param>
+            <param name="Bounds">Destination rectangle of the overlay</param>
+            <param name="Alpha">Alpha value</param>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.DrawScrollDownIndicator(System.Boolean,System.Drawing.RectangleF)">
+            <summary>
+            Draws the Scroll Down indicator Texture
+            </summary>
+            <param name="InitSprite">Indicates whether to initialize the Sprite object or not (if it's already initialized)</param>
+            <param name="Bounds">Destination rectangle of the indicator</param>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.DrawScrollUpIndicator(System.Boolean,System.Drawing.RectangleF)">
+            <summary>
+            Draws the Scroll Up indicator Texture
+            </summary>
+            <param name="InitSprite">Indicates whether to initialize the Sprite object or not (if it's already initialized)</param>
+            <param name="Bounds">Destination rectangle of the indicator</param>
+        </member>
+        <member name="M:Orbit.Core.OrbitResourceManager.Dispose">
+            <summary>
+            Disposes the OrbitResourceManager class
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitResourceManager.ScreenGrabber">
+            <summary>
+            Gets the ScreenGrabber object
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitResourceManager.Sprite">
+            <summary>
+            Gets the Direct3D Sprite object
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitResourceManager.LabelFont">
+            <summary>
+            Gets the object for the Direct3D object that draws the item's labels
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitResourceManager.DescriptionFont">
+            <summary>
+            Gets the object for the Direct3D object that draws the item's descriptions
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitResourceManager.DebugFont">
+            <summary>
+            Gets the object for the Direct3D object that draws the program debug information
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitResourceManager.BackBuffer">
+            <summary>
+            Gets the Back Buffer Surface
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitResourceManager.CompositeBuffer">
+            <summary>
+            Gets the Composite Buffer Surface (used to draw the labels)
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitResourceManager.BackgroundProvider">
+            <summary>
+            Gets the loaded background provider
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitResourceManager.IconBackground">
+            <summary>
+            Gets the Icon Background Texture
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitResourceManager.IconSelectedIndicator">
+            <summary>
+            Gets the Texture for the selected icon indicator
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitResourceManager.ScrollUpIndicator">
+            <summary>
+            Gets the Texture for the scroll up indicator
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitResourceManager.ScrollDownIndicator">
+            <summary>
+            Gets the texture for the scroll down indicator
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitResourceManager.Composite">
+            <summary>
+            Gets the Composite Buffer Texture (used to draw the labels)
+            </summary>
+            <remarks>This Texture contains the CompositeBuffer Surface</remarks>
+        </member>
+        <member name="T:Orbit.Core.Direct3DManager">
+            <summary>
+            This class encapsulates the Direct3D Device and its resources
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.Direct3DManager.#ctor(System.Windows.Forms.Control)">
+            <summary>
+            Creates a new instance of the Direct3DManager class
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.Direct3DManager.Dispose">
+            <summary>
+            Disposes the Direct3DManager object
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.Direct3DManager.Start">
+            <summary>
+            Initializes all Direct3D resources and enables the program
+            </summary>
+            <returns>The result of the initialization attempt</returns>
+        </member>
+        <member name="M:Orbit.Core.Direct3DManager.Stop">
+            <summary>
+            Deinitializes all the Direct3D resources and stops the program
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.Direct3DManager.Pause">
+            <summary>
+            Pauses all the rendering timers
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.Direct3DManager.Resume">
+            <summary>
+            Resumes all the rendering timers
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.Direct3DManager.MainLoop">
+            <summary>
+            Executes the main drawing methods for both Transparent and Non-Transparent modes
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.Direct3DManager.UpdateTransparentBackground">
+            <summary>
+            Forces an update on the background window for the Transparent mode
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.Direct3DManager.UpdateTransparentOverlay">
+            <summary>
+            Forces an update on the overlay window for the Transparent mode
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.Direct3DManager.ForceRenderNextFrame">
+            <summary>
+            Forces the renderer to render a frame on the upcoming MainLoop call
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.Direct3DManager.ForceRenderNextFrameWait">
+            <summary>
+            Forces the renderer to render a frame on the upcoming MainLoop call and waits for it to render to force again
+            </summary>
+            <remarks>This ensures that the next frame is rendered because it renders two frames. But this causes a 10ms wait on the thread from which this was called</remarks>
+        </member>
+        <member name="E:Orbit.Core.Direct3DManager.FrameTick">
+            <summary>
+            Occurs when the frame timer ticks
+            </summary>
+        </member>
+        <member name="E:Orbit.Core.Direct3DManager.Tick">
+            <summary>
+            Occurs when the frame timer ticks (independently of being enabled or not)
+            </summary>
+        </member>
+        <member name="E:Orbit.Core.Direct3DManager.RendererReset">
+            <summary>
+            Occurs when the Direct3D Device was lost while rendering. 
+            When this happens, all _Items must be unloaded 
+            and the window re-popped to continue rendering.
+            Whenever this happens, a DeviceLost event has happened before, 
+            so all you need to implement is registry re-loading and window popping
+            </summary>
+        </member>
+        <member name="E:Orbit.Core.Direct3DManager.DeviceLost">
+            <summary>
+            Occurs when the Direct3D Device is lost.
+            When this happens, all _Items must be unloaded
+            </summary>
+        </member>
+        <member name="E:Orbit.Core.Direct3DManager.WindowResize">
+            <summary>
+            Occurs when the render mode changes and the window has to be resized.
+            </summary>
+            <remarks>When in transparent mode, it's recommended that the window be sized to 1024x768</remarks>
+        </member>
+        <member name="E:Orbit.Core.Direct3DManager.ForcedModeSwitch">
+            <summary>
+            Occurs when the manager deliberately switches from 
+            Transparent mode to Non-Transparent mode because it 
+            failed to initialize or your video card didn't support it
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.Direct3DManager.Center">
+            <summary>
+            Gets/Sets the centerpoint of all the loops
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.Direct3DManager.MultiMonitorCenter">
+            <summary>
+            Gets the Multi-monitor compliant center
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.Direct3DManager.AverageDockBounds">
+            <summary>
+            Gets the bounds of the dock calculated using the average icon size
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.Direct3DManager.ScreenToDraw">
+            <summary>
+            Gets the screen to which orbit's drawing to
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.Direct3DManager.Device">
+            <summary>
+            Gets the Direct3D Device associated with this renderer
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.Direct3DManager.ResourceManager">
+            <summary>
+            Gets the OrbitResourceManager associated with this renderer
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.Direct3DManager.TransparentResourceManager">
+            <summary>
+            Gets the TransparentResourceManager associated with this renderer
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.Direct3DManager.ScreenGrabber">
+            <summary>
+            Gets the ScreenGrabber used by this renderer
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.Direct3DManager.Items">
+            <summary>
+            Gets/Sets the item registry used by the renderer
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.Direct3DManager.State">
+            <summary>
+            Gets/Sets the renderer state
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.Direct3DManager.IsDeviceLost">
+            <summary>
+            Gets the state of the device
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.Direct3DManager.ShowFPS">
+            <summary>
+            Gets/Sets if the program should display FPS onscreen
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.Direct3DManager.IsPaused">
+            <summary>
+            Gets the state of the engine
+            </summary>
+        </member>
+        <member name="T:Orbit.Core.FeatureSets">
+            <summary>
+            Describes the possible feature sets of Orbit that should be available
+            </summary>
+        </member>
+        <member name="F:Orbit.Core.FeatureSets.UseHQLabels">
+            <summary>
+            Indicates if Orbit should use High Quality rendering for labels
+            </summary>
+        </member>
+        <member name="F:Orbit.Core.FeatureSets.UseHQPreviews">
+            <summary>
+            Indicates if Orbit should use High Quality rendering for previews. 
+            This enables a transition animation when items acquire their previews
+            </summary>
+        </member>
+        <member name="F:Orbit.Core.FeatureSets.HideMinimizedWindows">
+            <summary>
+            Hides Minimized windows in the task manager
+            </summary>
+        </member>
+        <member name="T:Orbit.Core.ForcedModeSwitchEventArgs">
+            <summary>
+            Represents the arguments for the ForcedModeSwitch event
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.ForcedModeSwitchEventArgs.#ctor(Orbit.Core.ModeSwitchReason)">
+            <summary>
+            Creates a new instance of the ForcedModeSwitchEventArgs class
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.ForcedModeSwitchEventArgs.ModeSwitchReason">
+            <summary>
+            Gets the reason why the mode was changed
+            </summary>
+        </member>
+        <member name="T:Orbit.Core.ForcedModeSwitchEventHandler">
+            <summary>
+            Signature for the ForcedModeSwitch event from the Direct3DManager class
+            </summary>
+        </member>
+        <member name="T:Orbit.Core.InitializationResult">
+            <summary>
+            Represents all the possible outcomes of the initialization process of the Direct3DManager class
+            </summary>
+        </member>
+        <member name="F:Orbit.Core.InitializationResult.Successful">
+            <summary>
+            Initialization was successful
+            </summary>
+        </member>
+        <member name="F:Orbit.Core.InitializationResult.Failed">
+            <summary>
+            Initialization failed due to a Direct3D Device creation error
+            </summary>
+        </member>
+        <member name="F:Orbit.Core.InitializationResult.VideoCardNotSupported">
+            <summary>
+            Initialization failed because the Video card can't cope with requirements to start Orbit
+            </summary>
+        </member>
+        <member name="T:Orbit.Core.ModeSwitchReason">
+            <summary>
+            Represents the possible reasons why the Direct3DManager class switched modes
+            </summary>
+        </member>
+        <member name="F:Orbit.Core.ModeSwitchReason.TransparentModeNotSupported">
+            <summary>
+            Transparent mode is not supported. Attempting to switch to Non-Transparent mode
+            </summary>
+        </member>
+        <member name="F:Orbit.Core.ModeSwitchReason.UnexpectedError">
+            <summary>
+            Transparent mode failed to start. Attempting to switch to Non-Transparent mode
+            </summary>
+        </member>
+        <member name="T:Orbit.Core.OrbitItemRegistry">
+            <summary>
+            Encapsulates a full OrbitItem Registry
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.OrbitItemRegistry.#ctor">
+            <summary>
+            Creates a new instance of the OrbitItemRegistry class
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.OrbitItemRegistry.AllocateItem(System.Int32)">
+            <summary>
+            Allocates space on the registry for an item and returns the index of the first allocated item
+            </summary>
+            <param name="amount">Amount of items to allocate</param>
+        </member>
+        <member name="M:Orbit.Core.OrbitItemRegistry.Remove(System.Int32)">
+            <summary>
+            Unloads an item (for internal use)
+            </summary>
+            <param name="index">Index of the OrbitItem to unload</param>
+        </member>
+        <member name="M:Orbit.Core.OrbitItemRegistry.RemoveLine(System.Int32)">
+            <summary>
+            Unloads/removes a line (a directory)
+            </summary>
+            <param name="line">Line to unload until</param>
+            <remarks>All lines above that specified line's index will also be unloaded too</remarks>
+        </member>
+        <member name="M:Orbit.Core.OrbitItemRegistry.CreateRoot(System.String,Microsoft.DirectX.Direct3D.Device)">
+            <summary>
+            Loads a folder in the hard drive as the root line
+            </summary>
+            <param name="path">Path to load items from</param>
+            <param name="device">Direct3D Device to use to load the root items</param>
+        </member>
+        <member name="M:Orbit.Core.OrbitItemRegistry.CreateRoot(Orbit.Items.OrbitItem[],System.String)">
+            <summary>
+            Loads an OrbitItem array as the root line
+            </summary>
+            <param name="items">OrbitItem array containing the new root items</param>
+            <param name="originatingPath">The path to the folder that contains these items</param>
+        </member>
+        <member name="M:Orbit.Core.OrbitItemRegistry.ExpandFrom(Orbit.Items.OrbitItem)">
+            <summary>
+            Loads a dir (a line) resizing the registry only once and filling the items
+            </summary>
+            <param name="parentItem">Item in the registry to expand the registry from</param>
+        </member>
+        <member name="M:Orbit.Core.OrbitItemRegistry.Count(System.Int32)">
+            <summary>
+            Returns how many items are there in a line
+            </summary>
+            <param name="line">Line to find items</param>
+            <returns>Amount of items in that line</returns>
+        </member>
+        <member name="M:Orbit.Core.OrbitItemRegistry.IndexOf(Orbit.Items.OrbitItem)">
+            <summary>
+            Returns the index of an item in the registry
+            </summary>
+            <param name="item">Item to be found</param>
+            <returns>The index of the OrbitItem in the registry</returns>
+        </member>
+        <member name="M:Orbit.Core.OrbitItemRegistry.GetSelectedItem">
+            <summary>
+            Returns the currently selected item index
+            </summary>
+            <returns>The index of the currently selected item. -1 if no item is selected</returns>
+        </member>
+        <member name="M:Orbit.Core.OrbitItemRegistry.GetToggledItem(System.Int32)">
+            <summary>
+            Returns toggled item from a line
+            </summary>
+            <param name="line">Line to find the toggled item from</param>
+            <returns>The index of the currently toggled item in that line. -1 if no item is toggled.</returns>
+        </member>
+        <member name="M:Orbit.Core.OrbitItemRegistry.SetToggledItem(System.Int32)">
+            <summary>
+            Sets the toggled item on a line
+            </summary>
+            <param name="itemIndex">Index of the item to be toggled</param>
+            <remarks>The previous toggled item in the line where this item belongs to will be untoggled automatically</remarks>
+        </member>
+        <member name="P:Orbit.Core.OrbitItemRegistry.Item(System.Int64)">
+            <summary>
+            Gets an item in the registry
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitItemRegistry.Length">
+            <summary>
+            Gets the amount if items in the registry
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitItemRegistry.Lines">
+            <summary>
+            Gets the information on the line registry
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.OrbitItemRegistry.Items">
+            <summary>
+            Gets the OrbitItems contained in this object
+            </summary>
+            <remarks>This can be also accessed via the OrbitItemRegistry[] operator</remarks>
+        </member>
+        <member name="E:Orbit.Core.OrbitItemRegistry.LineQuantityChanged">
+            <summary>
+            Occurs when the amount of lines in the registry has changed. 
+            This happens when you load/unload a line
+            </summary>
+        </member>
+        <member name="E:Orbit.Core.OrbitItemRegistry.Paint">
+            <summary>
+            Occurs when the thumbnail thread requests a paint event
+            </summary>
+        </member>
+        <member name="T:Orbit.Core.ThumbnailSync">
+            <summary>
+            Class specialized in running through an Item array and, in a threaded fashion, acquiring their respective thumbnails
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.ThumbnailSync.#ctor(Orbit.Items.OrbitItem[],System.Int32)">
+            <summary>
+            Creates a new instance of the ThumbnailSync class and starts the thumbnail acquiring thread
+            </summary>
+            <param name="RegistryToSync">Array of Item objects to acquire thumbnails</param>
+            <param name="LineToSync">Loop number to sync</param>
+        </member>
+        <member name="M:Orbit.Core.ThumbnailSync.AbortSync">
+            <summary>
+            Aborts the thumbnail acquiring process
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.ThumbnailSync.Dispose">
+            <summary>
+            Disposes the ThumbnailSync Object
+            </summary>
+        </member>
+        <member name="T:Orbit.Core.TransparentResourceManager">
+            <summary>
+            Manages the resources used in Transparent Mode
+            </summary>
+        </member>
+        <member name="F:Orbit.Core.TransparentResourceManager.ProjectionSize">
+            <summary>
+            Size of the surface
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.TransparentResourceManager.#ctor(Microsoft.DirectX.Direct3D.Device)">
+            <summary>
+            Creates a new instance of the TransparentResourceManager class
+            </summary>
+            <param name="D3DDevice">Direct3D Device that this class should use</param>
+        </member>
+        <member name="M:Orbit.Core.TransparentResourceManager.InitializeTransparentWindows">
+            <summary>
+            Initialized new instances of the managed transparent windows
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.TransparentResourceManager.Dispose">
+            <summary>
+            Disposes the TransparentResourceManager class
+            </summary>
+        </member>
+        <member name="M:Orbit.Core.TransparentResourceManager.GetCropFrontBuffer(System.Drawing.Rectangle@)">
+            <summary>
+            Blits the front buffer to a system buffer and returns a Bitmap from that buffer
+            </summary>
+            <param name="Rectangle">Region to capture</param>
+            <returns>Returns a Bitmap with the front buffer contents</returns>
+        </member>
+        <member name="M:Orbit.Core.TransparentResourceManager.SetUpFrontBuffer(System.Drawing.Size)">
+            <summary>
+            Sets up the front buffer
+            </summary>
+            <param name="BufferSize">Size of the buffer</param>
+        </member>
+        <member name="M:Orbit.Core.TransparentResourceManager.SetUpBlitBuffer(System.Drawing.Size)">
+            <summary>
+            Sets up the secondary blit buffer
+            </summary>
+            <param name="BufferSize">Size of the secondary buffer</param>
+            <remarks>It is recommended that the Size be the same as the Front Buffer one's</remarks>
+        </member>
+        <member name="M:Orbit.Core.TransparentResourceManager.HookFormEvents(System.EventHandler,System.EventHandler,System.Windows.Forms.MouseEventHandler,System.Windows.Forms.MouseEventHandler,System.Windows.Forms.MouseEventHandler,System.Windows.Forms.KeyEventHandler,System.Windows.Forms.KeyEventHandler)">
+            <summary>
+            Hooks the transparent forms's events
+            </summary>
+            <param name="Closed">Callback to the Closed event</param>
+            <param name="Deactivate">Callback to the Deactivate event</param>
+            <param name="MouseMove">Callback to the MouseMove event</param>
+            <param name="MouseUp">Callback to the MouseUp event</param>
+            <param name="MouseWheel">Callback to the MouseWheel event</param>
+            <param name="KeyDown">Callback to the KeyDown event</param>
+            <param name="KeyUp">Callback to the KeyUp event</param>
+        </member>
+        <member name="P:Orbit.Core.TransparentResourceManager.FrontBuffer">
+            <summary>
+            Gets the Front Buffer
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.TransparentResourceManager.BlitBuffer">
+            <summary>
+            Gets the Secondary Blit Buffer
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.TransparentResourceManager.DisplayForm">
+            <summary>
+            Gets the Display Window
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.TransparentResourceManager.OverlayForm">
+            <summary>
+            Gets the Overlay Window
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.TransparentResourceManager.BackForm">
+            <summary>
+            Gets the Background Window
+            </summary>
+        </member>
+        <member name="P:Orbit.Core.TransparentResourceManager.LabelForm">
+            <summary>
+            Gets the Label Window
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.Collections.OrbitItemLinkedList">
+            <summary>
+            Linked list implementation for OrbitItems
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.Collections.OrbitItemLinkedList.#ctor">
+            <summary>
+            Creates a new instance of the OrbitItemLinkedList object
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.Collections.OrbitItemLinkedList.IndexOf(Orbit.Items.OrbitItem)">
+            <summary>
+            Finds the index of an OrbitItem in the list
+            </summary>
+            <param name="item">OrbitItem to search for</param>
+            <returns>Index of the OrbitItem. -1 if not found</returns>
+        </member>
+        <member name="M:Orbit.Items.Collections.OrbitItemLinkedList.Add(Orbit.Items.OrbitItem)">
+            <summary>
+            Adds a new OrbitItem to the list
+            </summary>
+            <param name="item">OrbitItem to add</param>
+        </member>
+        <member name="M:Orbit.Items.Collections.OrbitItemLinkedList.Remove(Orbit.Items.OrbitItem)">
+            <summary>
+            Removes an OrbitItem from the list
+            </summary>
+            <param name="item">OrbitItem to be removed</param>
+            <remarks>This is the slowest of all three overloads. If you already know the node you want to remove, please use the Remove(OrbitItemLinkNode node) overload. If you have to search for it, then don't bother. This is what this overload will do</remarks>
+        </member>
+        <member name="M:Orbit.Items.Collections.OrbitItemLinkedList.Remove(System.Int32)">
+            <summary>
+            Removes an OrbitItem from the list
+            </summary>
+            <param name="index">The index of the OrbitItem to be removed</param>
+            <remarks>This is the second slowest of all three overloads. If you already know the node you want to remove, please use the Remove(OrbitItemLinkNode node) overload. If you have to search for it, then don't bother. This is what this overload will do</remarks>
+        </member>
+        <member name="M:Orbit.Items.Collections.OrbitItemLinkedList.Remove(Orbit.Items.Collections.OrbitItemLinkNode)">
+            <summary>
+            Removes an OrbitItem from the list
+            </summary>
+            <param name="node">The OrbitItemLinkNode to be removed</param>
+        </member>
+        <member name="M:Orbit.Items.Collections.OrbitItemLinkedList.Move(Orbit.Items.OrbitItem,System.Int32,Orbit.Items.Collections.RelativePlace)">
+            <summary>
+            Moves an OrbitItem in the list
+            </summary>
+            <param name="item">OrbitItem to be moved</param>
+            <param name="index">Index for that item to be placed in</param>
+            <param name="place">Position of this new item relative to the existing item on that index</param>
+        </member>
+        <member name="P:Orbit.Items.Collections.OrbitItemLinkedList.Item(System.Int32)">
+            <summary>
+            Returns the OrbitItem in the specified index
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.Collections.OrbitItemLinkedList.Length">
+            <summary>
+            Indicates how many items are there on the list
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.Collections.OrbitItemLinkNode">
+            <summary>
+            Encapsulates a node on the OrbitItemLinkedList
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.Collections.OrbitItemLinkNode.#ctor">
+            <summary>
+            Creates a new instance of the OrbitItemLinkNode class
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.Collections.OrbitItemLinkNode.Dispose">
+            <summary>
+            Disposes the OrbitItemLinkNode object
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.Collections.OrbitItemLinkNode.Item">
+            <summary>
+            Gets/Sets the OrbitItem that this node holds
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.Collections.OrbitItemLinkNode.Next">
+            <summary>
+            Gets/Sets the next node in the list
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.Collections.OrbitItemLinkNode.Previous">
+            <summary>
+            Gets/Sets the previous node in the list
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.Collections.RelativePlace">
+            <summary>
+            Indicates the relative position of a node
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.Collections.RelativePlace.Before">
+            <summary>
+            Before a certain node
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.Collections.RelativePlace.After">
+            <summary>
+            After a certain node
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.ConfigurationItem">
+            <summary>
+            Summary description for ConfigurationItem.
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.StoredOrbitItem">
+            <summary>
+            This item represents an OrbitItem that's been loaded from the hard disk (INI)
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.OrbitItem">
+            <summary>
+            Future base class for Orbit Items
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.OrbitItem._MenuFlags">
+            <summary>
+            Sets which context menu items are shown for this item
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.OrbitItem.display">
+            <summary>
+            Represents the Direct3D Device used by this item to load resources into
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.OrbitItem._Icon">
+            <summary>
+            Icon that represents this item
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.OrbitItem._HoverIcon">
+            <summary>
+            Icon that represents this item when it's hovered
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.OrbitItem.SpriteVertexBuffer">
+            <summary>
+            Represents the vertex buffer used by this item
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.#ctor">
+            <summary>
+            Creates a new instance of the OrbitItem class
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.ValidateDevice(Microsoft.DirectX.Direct3D.Device)">
+            <summary>
+            Validates the device passed on by a creator
+            </summary>
+            <param name="D3DDevice">Direct3D Device to be validated</param>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.ValidatePath(System.String)">
+            <summary>
+            Validates the Images path passed on by a creator
+            </summary>
+            <param name="DefaultImagesPath">Path to validate</param>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.InitializeResources">
+            <summary>
+            Initializes common resources for this item
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.Dispose">
+            <summary>
+            Disposes the OrbitItem object
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.UnloadTexture(Microsoft.DirectX.Direct3D.Texture)">
+            <summary>
+            Unloads the specified texture from memory
+            </summary>
+            <param name="texture">texture to unload</param>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.UnloadTexture(Orbit.Utilities.OrbitTexture@)">
+            <summary>
+            Unloads the specified texture from memory
+            </summary>
+            <param name="texture">texture to unload</param>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.SetIcon(Orbit.Utilities.OrbitTexture)">
+            <summary>
+            Loads the icon for the item from a path
+            </summary>
+            <param name="texture">Texture to set</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.SetIcon(System.String)">
+            <summary>
+            Loads the icon for the item from a path
+            </summary>
+            <param name="Path">Path to load the icon from</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.SetIcon(System.Drawing.Image)">
+            <summary>
+            Loads the icon for the item from a bitmap
+            </summary>
+            <param name="NewImage">Bitmap to load the icon from</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.SetHoverIcon(System.String)">
+            <summary>
+            Loads the hover icon for the item
+            </summary>
+            <param name="Path">Path to load the icon from</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.SetToggledIcon(System.String)">
+            <summary>
+            Sets the path to be loaded when this element is set to toggled
+            </summary>
+            <param name="Path">Path to load the icon from</param>
+            <returns>True if verified path exists</returns>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.CannotLoadIcon">
+            <summary>
+            Loads the embedded texture loading error texture.
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.CannotLoadHoverIcon">
+            <summary>
+            Loads the embedded texture loading error texture.
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.OnPaint">
+            <summary>
+            Raises the Paint event
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.OnColorKeyChange">
+            <summary>
+            Occurs when the ColorKey is changed
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.Draw(System.Single,System.Single)">
+            <summary>
+            Draws this element once the scene has begun
+            </summary>
+            <param name="XOffset">Offset on the X axis</param>
+            <param name="YOffset">Offset on the Y axis</param>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.Draw(Orbit.Utilities.OrbitTexture)">
+            <summary>
+            Draws another texture using this element's vertex buffer
+            </summary>
+            <param name="overrideTexture">Texture to be drawn on this item's vertex buffer</param>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.DrawTextureOnBuffer(Microsoft.DirectX.Direct3D.VertexBuffer,Microsoft.DirectX.Direct3D.Texture,System.Drawing.RectangleF,System.Drawing.Color)">
+            <summary>
+            Draws a Texture on a VertexBuffer moving it to the specified RectangleF and using the vertex Colors specified
+            </summary>
+            <param name="vertexBuffer">VertexBuffer to use when drawing</param>
+            <param name="texture">Texture to draw to the VertexBuffer</param>
+            <param name="rectangle">RectangleF with the new position for the VertexBuffer's quad</param>
+            <param name="colorKey">Color for the Vertexes of the VertexBuffer</param>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.UpdateBufferData(Microsoft.DirectX.Direct3D.VertexBuffer,System.Drawing.Color)">
+            <summary>
+            Updates the vertex buffer to be a quad with 1pt in width/height and with the pivot in the center of it
+            </summary>
+            <param name="vertexBuffer">Vertex Buffer to update</param>
+            <param name="colorKey">Color Key to apply to the buffer</param>
+        </member>
+        <member name="M:Orbit.Items.OrbitItem.Equals(Orbit.Items.OrbitItem)">
+            <summary>
+            Verifies if an item is equal to another
+            </summary>
+            <param name="Item">Item to compare with</param>
+            <returns>True if this item equals the one specified</returns>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.Name">
+            <summary>
+            Gets or sets the name of this item
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.Description">
+            <summary>
+            Gets or sets the descrption of this item
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.Parent">
+            <summary>
+            Gets or sets the parent item for this item
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.Enabled">
+            <summary>
+            Enables/Disables this item
+            </summary>
+            <remarks>Disabled items still take up a position in a loop but will not be shown</remarks>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.IsShown">
+            <summary>
+            Shows/Hides this item
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.IsMouseOver">
+            <summary>
+            Sets the item state as having or not the mouse over
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.IsToggled">
+            <summary>
+            Sets the item to toggled mode or not
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.RunAndLeave">
+            <summary>
+            Determines if this item causes Orbit to leave after it's run
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.Rectangle">
+            <summary>
+            Gets or sets the boundaries of this item
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.Line">
+            <summary>
+            Gets or sets the Loop index in which this item is
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.RotationOffset">
+            <summary>
+            Gets or sets the rotation offset for this item in the loop
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.ColorKey">
+            <summary>
+            Gets or sets the color key for this item
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.AnimationState">
+            <summary>
+            Gets or sets the animation state for this item
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.VertexBuffer">
+            <summary>
+            Gets the Vertex Buffer for ths item
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.OrbitItem.MenuFlags">
+            <summary>
+            Gets which context menu items are shown for this item
+            </summary>
+        </member>
+        <member name="E:Orbit.Items.OrbitItem.Paint">
+            <summary>
+            Occurs when an item requests a repaint
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.StoredOrbitItem._ItemPath">
+            <summary>
+            The path to the folder where the item was loaded from
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.StoredOrbitItem.IsInsideFolder(System.String)">
+            <summary>
+            Tells if an item is stored in a folder or one of its subfolders
+            </summary>
+            <param name="Path">Path to check if the item is inside</param>
+            <returns>True if item is inside that folder</returns>
+        </member>
+        <member name="P:Orbit.Items.StoredOrbitItem.ItemPath">
+            <summary>
+            Gets the path where the virtual item is stored
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.ConfigurationItem.#ctor(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Creates a new instance of a configuration Item
+            </summary>
+            <param name="Device">Direct3D Device to load the resources into</param>
+            <param name="Path">Path to a INI used to create the item</param>
+        </member>
+        <member name="T:Orbit.Items.EmptyItem">
+            <summary>
+            Represents an item that pops up when the folder is empty
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.EmptyItem.#ctor(Microsoft.DirectX.Direct3D.Device)">
+            <summary>
+            Creates a new instance of an "Empty" item
+            </summary>
+            <param name="Device">Direct3D Device to load the resources to</param>
+        </member>
+        <member name="T:Orbit.Items.FileSystemDirectoryItem">
+            <summary>
+            An item that represents a directory on the disk
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.LoaderItem">
+            <summary>
+            Represents an OrbitItem which is enumerateable and has support for a loading progress bar
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.IEnumeratorItem">
+            <summary>
+            This interface provides methods for items that contain more items
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.IEnumeratorItem.GetItems">
+            <summary>
+            Gets the items contained by this item
+            </summary>
+            <returns>Returns an array of OrbitItems</returns>
+        </member>
+        <member name="F:Orbit.Items.LoaderItem._LoadedPercentage">
+            <summary>
+            Indicates how much of this item's childs have been loaded
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.LoaderItem.Dispose">
+            <summary>
+            Disposes the StoredLoaderItem object
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.LoaderItem.InitializeLoadingResources">
+            <summary>
+            Initializes the resources for the loading progress bars
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.LoaderItem.Draw(System.Single,System.Single)">
+            <summary>
+            Draws this element once the scene has begun
+            </summary>
+            <param name="XOffset">Offset on the X axis</param>
+            <param name="YOffset">Offset on the Y axis</param>
+        </member>
+        <member name="M:Orbit.Items.LoaderItem.GetItems">
+            <summary>
+            Gets the items contained by this item
+            </summary>
+            <returns>Returns an array of OrbitItems</returns>
+        </member>
+        <member name="P:Orbit.Items.LoaderItem.LoadedPercentage">
+            <summary>
+            Gets/Sets the percentage of loading for this item
+            </summary>
+            <remarks>Must be set to 0 before anything. Otherwise, the loading indicator will always show up, instead of only after 400ms</remarks>
+        </member>
+        <member name="M:Orbit.Items.FileSystemDirectoryItem.#ctor">
+            <summary>
+            Creates a new instance of the FileSystemDirectoryItem class
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.FileSystemDirectoryItem.#ctor(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Creates a new instance of a File System Directory Item
+            </summary>
+            <param name="Device">Direct3D Device to load the resources into</param>
+            <param name="Path">Path to a directory used to create the item from or to the INI to create the folder from</param>
+        </member>
+        <member name="M:Orbit.Items.FileSystemDirectoryItem.GetItems">
+            <summary>
+            Gets the OrbitItems from this item
+            </summary>
+            <returns>An Array of OrbitItems</returns>
+            <remarks>This will not load thumbnail previews for image files. It's up to the calling method to call the thumbnail acquiring method.</remarks>
+        </member>
+        <member name="P:Orbit.Items.FileSystemDirectoryItem.Path">
+            <summary>
+            Gets the path to the physical file represented by this item
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.FileSystemFileItem">
+            <summary>
+            An item that represents a file on the disk
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.PreviewableItem">
+            <summary>
+            Represents an Orbit item that has a preview image attached to it
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.PreviewableItem.Dispose">
+            <summary>
+            Disposes the PreviewableItem object
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.PreviewableItem.OnColorKeyChange">
+            <summary>
+            Updates our internal vertex buffers with new color key information
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.PreviewableItem.Draw(System.Single,System.Single)">
+            <summary>
+            Draws this element once the scene has begun
+            </summary>
+            <param name="XOffset">Offset on the X axis</param>
+            <param name="YOffset">Offset on the Y axis</param>
+        </member>
+        <member name="M:Orbit.Items.PreviewableItem.InitializePreviewResources">
+            <summary>
+            Initializes resources needed for task preview matters
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.PreviewableItem.SetOverlay(System.Drawing.Image)">
+            <summary>
+            Sets the overlay badge for the preview
+            </summary>
+            <param name="NewImage">Image to set that to</param>
+        </member>
+        <member name="M:Orbit.Items.PreviewableItem.SetBackground(System.Drawing.Image)">
+            <summary>
+            Sets the background image (the actual preview image)
+            </summary>
+            <param name="NewImage">Image to set that to</param>
+        </member>
+        <member name="M:Orbit.Items.PreviewableItem.Compose">
+            <summary>
+            Starts the preview and overlay composing
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.PreviewableItem.GetPreview">
+            <summary>
+            Implements how the inheritant class acquires the preview images
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.PreviewableItem.GetThumbnailIfPossible">
+            <summary>
+            Acquires a thumbnail image for the running task
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.IOpenItem">
+            <summary>
+            This interface provides methods for Open()ing an item
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.IOpenItem.Open">
+            <summary>
+            Open this item
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.FileSystemFileItem.#ctor(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Creates a new instance of a File System File Item
+            </summary>
+            <param name="Device">Direct3D Device to load the resources into</param>
+            <param name="Path">Path to a file used to create the item from</param>
+        </member>
+        <member name="M:Orbit.Items.FileSystemFileItem.Open">
+            <summary>
+            Opens (runs) the file represented by this item
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.FileSystemFileItem.GetPreview">
+            <summary>
+            Gets the file preview image
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.FileSystemFileItem.Path">
+            <summary>
+            Gets the path to the physical file represented by this item
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.FileSystemFolderItem">
+            <summary>
+            An item that shows the content of a folder on disk
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.StoredLoaderItem">
+            <summary>
+            Represents a physically stored OrbitItem which is enumerateable and has support for a loading progress bar
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.StoredLoaderItem._LoadedPercentage">
+            <summary>
+            Indicates how much of this item's childs have been loaded
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.StoredLoaderItem.Dispose">
+            <summary>
+            Disposes the StoredLoaderItem object
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.StoredLoaderItem.InitializeLoadingResources">
+            <summary>
+            Initializes the resources for the loading progress bars
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.StoredLoaderItem.Draw(System.Single,System.Single)">
+            <summary>
+            Draws this element once the scene has begun
+            </summary>
+            <param name="XOffset">Offset on the X axis</param>
+            <param name="YOffset">Offset on the Y axis</param>
+        </member>
+        <member name="M:Orbit.Items.StoredLoaderItem.GetItems">
+            <summary>
+            Gets the items contained by this item
+            </summary>
+            <returns>Returns an array of OrbitItems</returns>
+        </member>
+        <member name="P:Orbit.Items.StoredLoaderItem.LoadedPercentage">
+            <summary>
+            Gets/Sets the percentage of loading for this item
+            </summary>
+            <remarks>Must be set to 0 before anything. Otherwise, the loading indicator will always show up, instead of only after 400ms</remarks>
+        </member>
+        <member name="M:Orbit.Items.FileSystemFolderItem.#ctor">
+            <summary>
+            Creates a new instance of the FileSystemDirectoryItem class
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.FileSystemFolderItem.#ctor(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Creates a new instance of a File System Directory Item
+            </summary>
+            <param name="Device">Direct3D Device to load the resources into</param>
+            <param name="Path">Path to a directory used to create the item from or to the INI to create the folder from</param>
+        </member>
+        <member name="M:Orbit.Items.FileSystemFolderItem.GetItems">
+            <summary>
+            Gets the OrbitItems from this item
+            </summary>
+            <returns>An Array of OrbitItems</returns>
+            <remarks>This will not load thumbnail previews for image files. It's up to the calling method to call the thumbnail acquiring method.</remarks>
+        </member>
+        <member name="P:Orbit.Items.FileSystemFolderItem.Path">
+            <summary>
+            Gets the path to the physical file represented by this item
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.FolderItem">
+            <summary>
+            Summary description for FolderItem.
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.FolderItem.#ctor(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Creates a new instance of a Folder Item
+            </summary>
+            <param name="Device">Direct3D Device to load the resources into</param>
+            <param name="Path">Path to a INI used to create the item from</param>
+        </member>
+        <member name="M:Orbit.Items.FolderItem.GetItems">
+            <summary>
+            Gets the OrbitItems from this item
+            </summary>
+            <returns>An Array of OrbitItems</returns>
+        </member>
+        <member name="T:Orbit.Items.ItemMenuFlags">
+            <summary>
+            Flags that represents the possible context menu items shown by Orbit Items
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.ItemMenuFlags.None">
+            <summary>
+            No items
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.ItemMenuFlags.AddItemToItem">
+            <summary>
+            Add Item to this Item menu
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.ItemMenuFlags.AddItemToLevel">
+            <summary>
+            Add Item to this level menu
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.ItemMenuFlags.RemoveItem">
+            <summary>
+            Remove this item menu
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.ItemMenuFlags.ItemProperties">
+            <summary>
+            Item Properties menu
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.ItemMenuFlags.OpenInStart">
+            <summary>
+            Start Loops here menu
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.ItemMenuFlags.OpenInExplorer">
+            <summary>
+            Open In Explorer menu
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.ItemMenuFlags.IgnoreWindow">
+            <summary>
+            Ignore this window menu
+            </summary>
+        </member>
+        <member name="F:Orbit.Items.ItemMenuFlags.MenuSeparator">
+            <summary>
+            Separator between Item Properties menu and other menus
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.OrbitItemLoader">
+            <summary>
+            Provides means of loading physically-stored Orbit items
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.OrbitItemLoader.GetType(System.String)">
+            <summary>
+            Gets the type of an item from an INI
+            </summary>
+            <param name="Path">Path to the item's INI</param>
+            <returns>Type object with the item's type</returns>
+        </member>
+        <member name="M:Orbit.Items.OrbitItemLoader.FromIni(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Loads an OrbitItem off a INI file
+            </summary>
+            <param name="Device">Direct3D Device to load the resources into</param>
+            <param name="Path">Path to the INI file to load this item from</param>
+            <returns>An OrbitItem object corresponding to the INI file</returns>
+        </member>
+        <member name="M:Orbit.Items.OrbitItemLoader.LoadOrbitFolder(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Loads the first loop
+            </summary>
+            <param name="Device">Direct3D Device to load the resources into</param>
+            <param name="Path">Path to the INI file to load this item from</param>
+            <returns>An OrbitItem object corresponding to the root loop</returns>
+        </member>
+        <member name="T:Orbit.Items.ShortcutItem">
+            <summary>
+            Summary description for ShortcutItem.
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.ShortcutItem.#ctor(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Creates a new instance of a URL Item
+            </summary>
+            <param name="Device">Direct3D Device to load the resources into</param>
+            <param name="Path">Path to the INI file to load this item from</param>
+        </member>
+        <member name="M:Orbit.Items.ShortcutItem.Open">
+            <summary>
+            Opens (runs) the file represented by this item
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.ShortcutItem.Path">
+            <summary>
+            Gets/Sets the path that this item points to
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.ShortcutItem.Arguments">
+            <summary>
+            Gets/Sets the arguments with which to run this shortcut
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.TaskItem">
+            <summary>
+            An item that represents a running task
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.TaskItem.#ctor(Microsoft.DirectX.Direct3D.Device,Orbit.Utilities.WindowInformation)">
+            <summary>
+            Creates a new instance of a Task Item
+            </summary>
+            <param name="Device">Direct3D Device to load the resources into</param>
+            <param name="WindowInformation">Information about the window that this object represents</param>
+        </member>
+        <member name="M:Orbit.Items.TaskItem.SwitchTo">
+            <summary>
+            ALT+TABs to the window represented by this item
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.TaskItem.IgnoreWindow">
+            <summary>
+            Adds a window class name to the exclusion list
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.TaskItem.GetPreview">
+            <summary>
+            Gets the task preview image
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.TaskItem.Name">
+            <summary>
+            Gets the title of the window
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.TaskItem.Description">
+            <summary>
+            Gets the description of this window
+            </summary>
+        </member>
+        <member name="T:Orbit.Items.TasksFolderItem">
+            <summary>
+            Summary description for FolderItem.
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.TasksFolderItem.#ctor(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Creates a new instance of a URL Item
+            </summary>
+            <param name="Device">Direct3D Device to load the resources into</param>
+            <param name="Path">Path to a INI used to create the item from</param>
+        </member>
+        <member name="M:Orbit.Items.TasksFolderItem.GetItems">
+            <summary>
+            Gets an array of OrbitItems representing the running tasks
+            </summary>
+            <returns>Array of OrbitItems</returns>
+        </member>
+        <member name="M:Orbit.Items.TasksFolderItem.GetTasks(Microsoft.DirectX.Direct3D.Device)">
+            <summary>
+            Gets all the running tasks as OrbitItems
+            </summary>
+            <param name="device">Direct3D Device to load resources to</param>
+            <returns>An array of OrbitItems</returns>
+        </member>
+        <member name="T:Orbit.Items.URLItem">
+            <summary>
+            Summary description for URLItem.
+            </summary>
+        </member>
+        <member name="M:Orbit.Items.URLItem.#ctor(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Creates a new instance of a URL Item
+            </summary>
+            <param name="Device">Direct3D Device to load the resources into</param>
+            <param name="Path">Path to a INI used to create the item from</param>
+        </member>
+        <member name="M:Orbit.Items.URLItem.Open">
+            <summary>
+            Opens (runs) the file represented by this item
+            </summary>
+        </member>
+        <member name="P:Orbit.Items.URLItem.URL">
+            <summary>
+            Gets/Sets the URL that this item points to
+            </summary>
+        </member>
+        <member name="T:Orbit.Reference.KnownVendors">
+            <summary>
+            Known VendorIds
+            </summary>
+        </member>
+        <member name="F:Orbit.Reference.KnownVendors.ATI">
+            <summary>
+            ATI
+            </summary>
+        </member>
+        <member name="F:Orbit.Reference.KnownVendors.nVidia">
+            <summary>
+            nVidia
+            </summary>
+        </member>
+        <member name="F:Orbit.Reference.KnownVendors.Matrox">
+            <summary>
+            Matrox
+            </summary>
+        </member>
+        <member name="F:Orbit.Reference.KnownVendors.Trident">
+            <summary>
+            Trident
+            </summary>
+        </member>
+        <member name="T:Orbit.Utilities.BackgroundProvider">
+            <summary>
+            Template class for background providers
+            </summary>
+        </member>
+        <member name="F:Orbit.Utilities.BackgroundProvider.display">
+            <summary>
+            Direct3D Device
+            </summary>
+        </member>
+        <member name="F:Orbit.Utilities.BackgroundProvider.SpritePainter">
+            <summary>
+            Sprite object that paints the background
+            </summary>
+        </member>
+        <member name="F:Orbit.Utilities.BackgroundProvider.BG">
+            <summary>
+            Texture
+            </summary>
+        </member>
+        <member name="F:Orbit.Utilities.BackgroundProvider._StretchMode">
+            <summary>
+            Defines how the background is stretched
+            </summary>
+        </member>
+        <member name="F:Orbit.Utilities.BackgroundProvider._BackgroundSize">
+            <summary>
+            Defines the size of the background image
+            </summary>
+        </member>
+        <member name="F:Orbit.Utilities.BackgroundProvider._BackgroundPath">
+            <summary>
+            Defines the path to the background image
+            </summary>
+        </member>
+        <member name="F:Orbit.Utilities.BackgroundProvider._BackgroundColor">
+            <summary>
+            Defines the background color
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.BackgroundProvider.#ctor">
+            <summary>
+            Initiates a new instance of the BackgroundProvider class
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.BackgroundProvider.#ctor(Microsoft.DirectX.Direct3D.Device,Microsoft.DirectX.Direct3D.Sprite)">
+            <summary>
+            Initiates a new instance of the BackgroundProvider class
+            </summary>
+            <param name="D3DDevice">Direct3D Device to load the background to</param>
+            <param name="D3DSprite">Direct3D Sprite to use to paint the background</param>
+        </member>
+        <member name="M:Orbit.Utilities.BackgroundProvider.Dispose">
+            <summary>
+            Disposes the BackgroundProvider object
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.BackgroundProvider.Draw(System.Boolean,System.Drawing.Size,System.Drawing.Point)">
+            <summary>
+            Draws the Non Transparent Mode background Texture
+            </summary>
+            <param name="InitSprite">Indicates whether to initialize the Sprite object or not (if it's already initialized)</param>
+            <param name="ReferenceSize">Size to compare and scale the image to</param>
+            <param name="Offset">Offset from the top left corner of the screen</param>
+        </member>
+        <member name="M:Orbit.Utilities.BackgroundProvider.Prepare">
+            <summary>
+            Tells the BackgroundProvider to check all its resources
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.BackgroundProvider.SetBg(System.String)">
+            <summary>
+            Sets the Non Transparent background Texture
+            </summary>
+            <param name="Path">Path to load the Texture from</param>
+            <returns>True if succeeded</returns>
+        </member>
+        <member name="P:Orbit.Utilities.BackgroundProvider.StretchMode">
+            <summary>
+            Gets the BackgroundStretchMode for this background
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.BackgroundProvider.BackgroundSize">
+            <summary>
+            Gets the Size of the background image
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.BackgroundProvider.BackgroundPath">
+            <summary>
+            Gets or Sets the background image path
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.BackgroundProvider.BackgroundColor">
+            <summary>
+            Gets or sets the background color
+            </summary>
+        </member>
+        <member name="T:Orbit.Utilities.CaptureMode">
+            <summary>
+            Selects the capture mode for the ScreenGrabber class
+            </summary>
+        </member>
+        <member name="F:Orbit.Utilities.CaptureMode.Clipboard">
+            <summary>
+            Uses PrintScreen to capture the screen to the clipboard and then copies it to memory. 
+            Can be used in threaded capturing (loading Bitmap while screen is already hidden)
+            </summary>
+        </member>
+        <member name="F:Orbit.Utilities.CaptureMode.BitBlt">
+            <summary>
+            Uses BitBlt() to capture the screen to memory directly. 
+            Can't be used in threaded capturing or else will result in the current screen being captured
+            </summary>
+        </member>
+        <member name="T:Orbit.Utilities.FolderPopper">
+            <summary>
+            Summary description for FolderPopper.
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.FolderPopper.#ctor">
+            <summary>
+            Creates a new instance of the FolderPopper class
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.FolderPopper.Run(Orbit.Items.OrbitItem)">
+            <summary>
+            Starts the pop up counter for the given item
+            </summary>
+            <param name="item">Item to open when the timer runs out</param>
+        </member>
+        <member name="P:Orbit.Utilities.FolderPopper.Enabled">
+            <summary>
+            Gets/sets the enabled state of the pop up timer
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.FolderPopper.Timeout">
+            <summary>
+            Gets/sets the timeout interval
+            </summary>
+        </member>
+        <member name="E:Orbit.Utilities.FolderPopper.Tick">
+            <summary>
+            Occurs when the pop up interval is done
+            </summary>
+        </member>
+        <member name="T:Orbit.Utilities.MouseHook">
+            <summary>
+            Hooks the Mouse
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.MouseHook.#ctor">
+            <summary>
+            Creates a new instance of the MouseHook class
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.MouseHook.Dispose">
+            <summary>
+            Disposes the MouseHook object and undoes the hook
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.MouseHook.StartHook(System.IntPtr)">
+            <summary>
+            Starts the Mouse hook process
+            </summary>
+            <param name="hWnd">Handle to bind the hook to</param>
+            <returns></returns>
+        </member>
+        <member name="M:Orbit.Utilities.MouseHook.StopHook(System.IntPtr)">
+            <summary>
+            Stops the Mouse hook process
+            </summary>
+            <param name="hWnd">Handle to unbind the hook from</param>
+            <returns></returns>
+        </member>
+        <member name="M:Orbit.Utilities.MouseHook.SetShortcutKey(System.Windows.Forms.Keys)">
+            <summary>
+            Sets the shortcut key
+            </summary>
+            <param name="vKey">Mouse button to hook to</param>
+        </member>
+        <member name="T:Orbit.Utilities.OrbitTexture">
+            <summary>
+            Encapsulates a Direct3D Texture object
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTexture.#ctor(Microsoft.DirectX.Direct3D.Texture)">
+            <summary>
+            Creates a new instance of the OrbitTexture class
+            </summary>
+            <param name="sourceTexture">Direct3D Texture object to use as base for this object</param>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTexture.#ctor(Microsoft.DirectX.Direct3D.Texture,System.String)">
+            <summary>
+            Creates a new instance of the OrbitTexture class
+            </summary>
+            <param name="sourceTexture">Direct3D Texture object to use as base for this object</param>
+            <param name="path">Path to the file that originated this texture</param>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTexture.Dispose">
+            <summary>
+            Disposes the texture. You should never call this method manually. Use FreeReference() instead
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTexture.GetReference">
+            <summary>
+            Gets a reference to this object
+            </summary>
+            <returns>A reference of this object</returns>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTexture.FreeReference">
+            <summary>
+            Frees this reference of this object. When the reference count gets to zero, this class will self-dispose. You should call this method instead of Dispose()
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.OrbitTexture.Texture">
+            <summary>
+            Gets the underlying Direct3D Texture object
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.OrbitTexture.Description">
+            <summary>
+            Gets the description parameters of the texture
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.OrbitTexture.Path">
+            <summary>
+            Gets the path to the file that originated this texture. Null if generated from a bitmap in memory
+            </summary>
+        </member>
+        <member name="E:Orbit.Utilities.OrbitTexture.Disposed">
+            <summary>
+            Occurs when this texture is effectively disposed. This is NOT triggered when you free a reference, but only when ALL references are freed.
+            </summary>
+        </member>
+        <member name="T:Orbit.Utilities.OrbitTextureCache">
+            <summary>
+            Provides means to share OrbitTexture instances across the program. Helps avoiding the creation of multiple instances of the same icon.
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTextureCache.IsInCache(System.String)">
+            <summary>
+            Verifies if a given OrbitTexture id exists in the cache
+            </summary>
+            <param name="id">OrbitTexture id to look for</param>
+            <returns>True if the OrbitTexture already exists. False otherwise</returns>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTextureCache.GetReference(System.String)">
+            <summary>
+            Returns a reference to an existing OrbitTexture in the cache
+            </summary>
+            <param name="id">OrbitTexture id to return</param>
+            <returns>The reference to the requested OrbitTexture. The instance was already notified of a new reference request - no need to call GetReference() on it</returns>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTextureCache.InsertInCache(Orbit.Utilities.OrbitTexture,System.String)">
+            <summary>
+            Inserts an user-created OrbitTexture into the cache for future reference
+            </summary>
+            <param name="texture">The instance of the OrbitTexture to insert in the cache</param>
+            <param name="id">The proposed Id of the OrbitTexture</param>
+            <returns>True if successfully inserted. False otherwise</returns>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTextureCache.RemoveFromCache(Orbit.Utilities.OrbitTexture)">
+            <summary>
+            Removes an user-created OrbitTexture from the cache
+            </summary>
+            <param name="texture">The instance of the OrbitTexture to remove from the cache</param>
+            <returns>True if successfully removed. False otherwise</returns>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTextureCache.RemoveFromCache(System.String)">
+            <summary>
+            Removes an user-created OrbitTexture from the cache
+            </summary>
+            <param name="id">The id</param>
+            <returns>True if successfully removed. False otherwise</returns>
+        </member>
+        <member name="T:Orbit.Utilities.OrbitTextureLoader">
+            <summary>
+            Utility class for loading textures from files
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTextureLoader.FromGDI(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Loads a Texture using the GDI+ Bitmap loading as interim
+            </summary>
+            <param name="device">Direct3D Device to load the texture into</param>
+            <param name="path">Path to load the texture from</param>
+            <returns>A Direct3D Texture object. Null if failed</returns>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTextureLoader.FromLoader(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Loads a Texture using the TextureLoader as interim
+            </summary>
+            <param name="device">Direct3D Device to load the texture into</param>
+            <param name="path">Path to load the texture from</param>
+            <returns>A Direct3D Texture object. Null if failed</returns>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTextureLoader.FromIcon(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Loads a Texture from an icon using the GDI+ Bitmap loading as interim
+            </summary>
+            <param name="device">Direct3D Device to load the texture into</param>
+            <param name="path">Path to load the texture from</param>
+            <returns>A Direct3D Texture object. Null if failed</returns>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTextureLoader.Load(Microsoft.DirectX.Direct3D.Device,System.String)">
+            <summary>
+            Loads a Texture trying both TextureLoader and GDI as interim
+            </summary>
+            <param name="device">Direct3D Device to load the texture into</param>
+            <param name="path">Path to load the texture from</param>
+            <returns>A Direct3D Texture object. Null if failed</returns>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTextureLoader.Load(Microsoft.DirectX.Direct3D.Device,System.Drawing.Bitmap)">
+            <summary>
+            Loads a Texture from a GDI+ Bitmap
+            </summary>
+            <param name="device">Direct3D Device to load the texture into</param>
+            <param name="sourceBitmap">Bitmap from which to create the texture</param>
+            <returns>A OrbitTexture object. Null if failed</returns>
+        </member>
+        <member name="M:Orbit.Utilities.OrbitTextureLoader.Load(Microsoft.DirectX.Direct3D.Device,System.IO.Stream)">
+            <summary>
+            Loads a Texture from a GDI+ Bitmap
+            </summary>
+            <param name="device">Direct3D Device to load the texture into</param>
+            <param name="sourceStream">Stream from which to create the texture</param>
+            <returns>A OrbitTexture object. Null if failed</returns>
+        </member>
+        <member name="T:Orbit.Utilities.ScreenGrabber">
+            <summary>
+            Class specialized in capturing screenshots
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.ScreenGrabber.#ctor(Microsoft.DirectX.Direct3D.Device,Microsoft.DirectX.Direct3D.Sprite,System.Drawing.Rectangle)">
+            <summary>
+            Initiates a new instance of the ScreenGrabber class
+            </summary>
+            <param name="D3DDevice">Direct3D Device to load the screens to</param>
+            <param name="D3DSprite">Direct3D Sprite to use to paint the screens</param>
+            <param name="SourceRectangle">Area of the screen that the ScreenGrabber class should capture</param>
+        </member>
+        <member name="M:Orbit.Utilities.ScreenGrabber.Animate">
+            <summary>
+            Sets the next frame in the animation of the Screenshot
+            </summary>
+            <returns>The recommended LoopState for the next loop</returns>
+        </member>
+        <member name="M:Orbit.Utilities.ScreenGrabber.Render(System.Boolean)">
+            <summary>
+            Renders the Screenshot
+            </summary>
+            <param name="InitSprite">Tells the render method if it should Begin() the Sprite object or not</param>
+        </member>
+        <member name="M:Orbit.Utilities.ScreenGrabber.Capture(Orbit.Utilities.CaptureMode)">
+            <summary>
+            Captures the screenshot and readies for rendering
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.ScreenGrabber.Dispose">
+            <summary>
+            Disposes the ScreenGrabber class
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.ScreenGrabber.ScreenGrab">
+            <summary>
+            Gets the captured Texture
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.ScreenGrabber.CaptureRegion">
+            <summary>
+            Gets or sets the area of the screen to be captured
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.ScreenGrabber.AlphaStage">
+            <summary>
+            Gets the blend-in stage of this background provider
+            </summary>
+        </member>
+        <member name="E:Orbit.Utilities.ScreenGrabber.Paint">
+            <summary>
+            UNKNOWN
+            </summary>
+        </member>
+        <member name="T:Orbit.Utilities.WindowsBackgroundProvider">
+            <summary>
+            Provides means to acquire the Windows Wallpaper
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsBackgroundProvider.#ctor(Microsoft.DirectX.Direct3D.Device,Microsoft.DirectX.Direct3D.Sprite)">
+            <summary>
+            Initiates a new instance of the WindowsBackgroundProvider class
+            </summary>
+            <param name="D3DDevice">Direct3D Device to load the background to</param>
+            <param name="D3DSprite">Direct3D Sprite to use to paint the background</param>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsBackgroundProvider.Prepare">
+            <summary>
+            Resyncs the Windows Wallpaper if needed
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.WindowsBackgroundProvider.BackgroundSize">
+            <summary>
+            Gets the background image size
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.WindowsBackgroundProvider.BackgroundPath">
+            <summary>
+            Gets the background image path
+            </summary>
+        </member>
+        <member name="T:Orbit.BuildInformation">
+            <summary>
+            Information regarding the build of Orbit
+            </summary>
+        </member>
+        <member name="F:Orbit.BuildInformation.BuildDate">
+            <summary>
+            Date in which Orbit was built
+            </summary>
+        </member>
+        <member name="F:Orbit.BuildInformation.BuildTime">
+            <summary>
+            Time in which Orbit was built
+            </summary>
+        </member>
+        <member name="F:Orbit.BuildInformation.BuildNumber">
+            <summary>
+            Full Orbit build number
+            </summary>
+        </member>
+        <member name="T:Orbit.LoopInfo">
+            <summary>
+            Definition of a loop information object
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopInfo.StartIndex">
+            <summary>
+            Index of the first item in this loop that is shown
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopInfo.RotatedDegrees">
+            <summary>
+            Amount of degrees that this loop is rotated in relation to the origin
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopInfo.ShowsMoreIndicator">
+            <summary>
+            Indicates if this loop has a Scroll Up/Down indicator
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopInfo.AbsoluteRadius">
+            <summary>
+            Precalculated radius of this Loop
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopInfo.RelativeRadius">
+            <summary>
+            Precaulculates radius of this loop relative to the first loop
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopInfo.MaxVisibleItems">
+            <summary>
+            Maximum amount of items that can be visible at one time
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopInfo.VisibleItems">
+            <summary>
+            Amount of items that are, by rule, visible at one time
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopInfo.Count">
+            <summary>
+            Amount if items
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopInfo.TS">
+            <summary>
+            The ThumbnailSync object for this loop
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopInfo.LevelPath">
+            <summary>
+            Path to this level on the hard disk
+            </summary>
+        </member>
+        <member name="T:Orbit.LoopState">
+            <summary>
+            directx drawing states: (should draw, animate - what directx is doing)
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopState.Nothing">
+            <summary>
+            The Program Start State. to restart the program set the state to this
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopState.Checking">
+            <summary>
+            Checking keys and veritication times
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopState.Loading">
+            <summary>
+            Loading state. will display a loading message onscreen.
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopState.Loop">
+            <summary>
+            Main loop. Drawing and setting up a frame of the scene and presenting it to the screen
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopState.AnimatingFrame">
+            <summary>
+            Setting up a frame.
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopState.DrawingFrame">
+            <summary>
+            Rendering a frame.
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopState.Configuring">
+            <summary>
+            Configuration Dialog is open.
+            </summary>
+        </member>
+        <member name="F:Orbit.LoopState.NotInit">
+            <summary>
+            Direct3D hasn't been initialized yet.
+            </summary>
+        </member>
+        <member name="T:Orbit.MainProgram">
+            <summary>
+            Summary description for MainProgram.
+            </summary>
+        </member>
+        <member name="M:Orbit.MainProgram.Main(System.String[])">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:Orbit.OrbitWindow">
+            <summary>
+            Main Program
+            </summary>
+        </member>
+        <member name="F:Orbit.OrbitWindow.ShowOnTop">
+            <summary>
+            Indicates that Orbit should have Always-On-Top windows
+            </summary>
+        </member>
+        <member name="M:Orbit.OrbitWindow.#ctor">
+            <summary>
+            Creates a new instance of the OrbitWindow class
+            </summary>
+        </member>
+        <member name="M:Orbit.OrbitWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Orbit.OrbitWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Orbit.OrbitWindow.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            Message processing method
+            </summary>
+            <param name="m">Window Message</param>
+        </member>
+        <member name="M:Orbit.OrbitWindow.AddItemSomewhere(System.String)">
+            <summary>
+            Helper method for the adding item to "blah" event handlers
+            </summary>
+            <param name="path">Path to add item to</param>
+        </member>
+        <member name="P:Orbit.OrbitWindow.ShowFPS">
+            <summary>
+            Gets/Sets whether the renderer should show the FPS meter onscreen
+            </summary>
+        </member>
+        <member name="P:Orbit.OrbitWindow.ShowTrayIcon">
+            <summary>
+            Gets/Sets whether the tray icon is visible or not
+            </summary>
+        </member>
+        <member name="T:Orbit.OrbitTransparentWindow">
+            <summary>
+            Summary description for Form2.
+            </summary>
+        </member>
+        <member name="F:Orbit.OrbitTransparentWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Orbit.OrbitTransparentWindow.#ctor(System.Boolean)">
+            <summary>
+            Creates a new instance of the OrbitTransparentWindow class
+            </summary>
+            <param name="ClickThrough">Indicates if the window should be Click-Through</param>
+        </member>
+        <member name="M:Orbit.OrbitTransparentWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Orbit.OrbitTransparentWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Orbit.OrbitTransparentWindow.Update(System.Drawing.Bitmap,System.Drawing.Rectangle)">
+            <summary>
+            Updates the content of this window with a Bitmap
+            </summary>
+            <param name="Bmp">Bitmap to update this window with</param>
+            <param name="Rect">Rectangle where this window should be located</param>
+        </member>
+        <member name="M:Orbit.OrbitTransparentWindow.Clear">
+            <summary>
+            Updates the layered window with a transparent bitmap (essentially clears the contents of that window)
+            </summary>
+        </member>
+        <member name="T:Orbit.ProgramState">
+            <summary>
+            program state: (should fade out, just carry normal operation - what the program should do/appear as)
+            </summary>
+        </member>
+        <member name="F:Orbit.ProgramState.ToHide">
+            <summary>
+            Program is about to hide
+            </summary>
+        </member>
+        <member name="F:Orbit.ProgramState.Hidden">
+            <summary>
+            Program is hidden
+            </summary>
+        </member>
+        <member name="F:Orbit.ProgramState.Nothing">
+            <summary>
+            Program is started and has nothing special to do
+            </summary>
+        </member>
+        <member name="F:Orbit.ProgramState.FadeOut">
+            <summary>
+            program is fading out
+            </summary>
+        </member>
+    </members>
+</doc>

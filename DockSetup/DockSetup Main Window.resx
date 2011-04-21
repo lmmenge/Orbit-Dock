@@ -1,0 +1,2000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 1.3
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">1.3</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1">this is my long string</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        [base64 mime encoded serialized .NET Framework object]
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        [base64 mime encoded string representing a byte array form of the .NET Framework object]
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used forserialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LocationsPanel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LocationsPanel.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="LocationsPanel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LocationsPanel.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 4</value>
+  </data>
+  <data name="LocationsPanel.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="LocationsPanel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="panel2.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="panel2.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="panel2.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="panel2.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 4</value>
+  </data>
+  <data name="panel2.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="panel2.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ImagesDirBrowse.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ImagesDirBrowse.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ImagesDirBrowse.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ImagesDirDisplay.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ImagesDirDisplay.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ImagesDirDisplay.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="PreferredImagesLocationLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="PreferredImagesLocationLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="PreferredImagesLocationLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemsDirBrowse.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ItemsDirBrowse.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemsDirBrowse.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemsDirDisplay.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ItemsDirDisplay.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemsDirDisplay.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemsStructureLocationLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ItemsStructureLocationLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemsStructureLocationLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LocationsLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LocationsLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LocationsLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LocationsPicture.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LocationsPicture.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LocationsPicture.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ClosePictureBox.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ClosePictureBox.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ClosePictureBox.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ClosePictureBox.Image" type="System.Drawing.Bitmap, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAewQAA
+        HsEBw2lUUwAABIpJREFUSEu1VntQVHUUPmzsuj4IQnksAgpLERBQGcqIqMMrVFAxdEqbSd7Tw0kKlVJK
+        E2umsvqjaXLKKQPRQZMisRGTLBTWJkVAmMqBWJ7GQ5YFAWPvfp3f3UGCjYlm4jdz5t753XvP9zvf+b4z
+        1wYATesSANMZd5PfDiL6ewwEEvVzGP0ovFdLuT1aKum8n2o6fOh6qzed0y+kdxu9KPY3L7Kp8yS6Np/o
+        Z81YjB56coAAetSopW8NoY4wpMWgb89W9O3YCEPKcnRv8Efbcjc0+KrwiztdqvOgqP8G4EfpxkDl7f79
+        L2C44ixMl4phLjwI83sZMOesgyl7Ne5krYIhPRz6SC/Uet4jXdXQvilVMOBHScYQewyWFEDq+B2oLAYK
+        3gTeSQF2xwHZq4BXVssh8f1g5uNo3RCMK54q6Jwpp9KFSIQVRQPcg4EAWmQMUA4OFufB/IceuFgEfLEP
+        yH0S2BU7llzcZ64EsiIg7WKQF6PRtMYfFS4KlM+j+HKnfwCQG6qlc/17M2Bqb7Qk//x14LMc4IcTwNtJ
+        wMsRwM4YYM9a4LujDP4GA62A9FIU+lLDUBOiQZkD1Zc5ktqqAlbLEsPSudJwZSmgOw3k8ceHXwVu3eR3
+        eXU2Awc286kjgZpyy54kAUf2AtuWYTgjDM3x/rjgqsRZe+KSLfK/yxVL8YDh2TiYdGeAY28B+/md0iOW
+        RKOrvQGo143fa/4VeH4pRtJD0Z0YCJ2vA0rmUL4VQI8PnTGyFM0n3wcOplr4zn0K6GC6Jlt/DgEfZgLp
+        IZDSFsOQGICqICcUz6YqKwA2UbVx5yaYP3iOOY63AHAT5Ur09dYQ/b2W5MkPAxlLICU9AkOCL6qDnfDV
+        bGqxArjpQ7WG1BWs8/VjahENlTn/0Rqgq5WfsZq2BgIpiyA9/RB613ijKsARX84kfjihB2z/0u4Ef9lE
+        ss6z+WNxrSqbnKKWG8D2KGCLH0Y2+aIrygM6n3tROINqrQDEbGlb6YZhcSqRmOWH04fGJx8aAHrax+9d
+        rwQSvTG0diFalrnivJsax1TEup5QAQ+uyAa/GTx3wmXzyJoXHjCzFMUauQN8lAXs4GfC4aOr6GOY4t3R
+        G+2OumBHFNkpUKAkVskEgBtepODBpWuKWMD2j7GACLcWsGQbueLDDJYcDDzDnGezCGorgK8/gbTOEwOx
+        7tCHOqHMbSaOKklfoCJ7K4B6Hrn1PBVrPRTmloQgDG6PhokdKkyEbeGyFIVaREOx+UGYN2phipsvJ28N
+        c8FlrR2Oq22Qr6RkBrGeRdXuRCKuaWj31QUqNMUFwMD2Fw4VJpJSF8tSFGoRDRWcC1r0oc647GOHE7MU
+        yLOlTxmARFhVcMWNaDQuO9NrFa4K1DymQXOcP7qeCEQvm8iw3he3WIqdrJaWMA3qghyZFrV8ck5+iBPb
+        TgngJ1eii/MogQdXzQUXJXQPOMgOFSYSOhdSPK9R49QcheC8Md+W0kYTTx2AR+73c0nNg2uLmC3fsP2F
+        Q0/NorZCNdUeV9FJbmYGx32C838FGOXs/75O6x+FOOxf1ztz9hZkenwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox2.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="pictureBox2.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="pictureBox2.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="OrbitConfigurationLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="OrbitConfigurationLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="OrbitConfigurationLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="pictureBox3.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="pictureBox3.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="pictureBox3.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="ImagesPanel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ImagesPanel.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="ImagesPanel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ImagesPanel.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 4</value>
+  </data>
+  <data name="ImagesPanel.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="ImagesPanel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="panel3.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="panel3.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="panel3.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="panel3.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 4</value>
+  </data>
+  <data name="panel3.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="panel3.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BgImageUseWindowsLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BgImageUseWindowsLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BgImageUseWindowsLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ScrollDownLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ScrollDownLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ScrollDownLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ScrollDownBrowse.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ScrollDownBrowse.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ScrollDownBrowse.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ScrollDownDisplay.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ScrollDownDisplay.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ScrollDownDisplay.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ScrollUpLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ScrollUpLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ScrollUpLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ScrollUpBrowse.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ScrollUpBrowse.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ScrollUpBrowse.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ScrollUpDisplay.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ScrollUpDisplay.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ScrollUpDisplay.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="SelectedItemLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="SelectedItemLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="SelectedItemLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconSelectedImageDisable.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconSelectedImageDisable.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconSelectedImageDisable.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="IconSelectedImageBrowse.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconSelectedImageBrowse.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconSelectedImageBrowse.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="IconSelectedDisplay.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="IconSelectedDisplay.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconSelectedDisplay.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="PickColor.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="PickColor.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="PickColor.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="BgColorDisplay.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="BgColorDisplay.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BgColorDisplay.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="NonTransparentColorLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="NonTransparentColorLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="NonTransparentColorLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconAreaBackgroundLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="IconAreaBackgroundLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconAreaBackgroundLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconBgImageDisable.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconBgImageDisable.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconBgImageDisable.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="IconBgImageBrowse.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconBgImageBrowse.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconBgImageBrowse.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="IconBgDisplay.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="IconBgDisplay.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconBgDisplay.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BgImageDisable.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BgImageDisable.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BgImageDisable.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="BgImageBrowse.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BgImageBrowse.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BgImageBrowse.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="BgDisplay.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="BgDisplay.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BgDisplay.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="NonTransparentBackgroundLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="NonTransparentBackgroundLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="NonTransparentBackgroundLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ImagesLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ImagesLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ImagesLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ImagesPicture.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ImagesPicture.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ImagesPicture.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AppearancePanel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="AppearancePanel.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="AppearancePanel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AppearancePanel.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 4</value>
+  </data>
+  <data name="AppearancePanel.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="AppearancePanel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="panel4.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="panel4.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="panel4.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="panel4.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="panel4.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 4</value>
+  </data>
+  <data name="panel4.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconMagnifiedSize.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconMagnifiedSize.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconMagnifiedSize.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="FakeTransparency.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="FakeTransparency.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="FakeTransparency.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="GroupIcons.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="GroupIcons.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="GroupIcons.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemsShownPerLineLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemsShownPerLineLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemsShownPerLineLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ShowThumbnails.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ShowThumbnails.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ShowThumbnails.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="UseMultipleWindows.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="UseMultipleWindows.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="UseMultipleWindows.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="UseTransparency.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="UseTransparency.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="UseTransparency.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ShowItemLabels.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ShowItemLabels.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ShowItemLabels.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="OtherSettingsLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="OtherSettingsLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="OtherSettingsLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AppearanceDisplay.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="AppearanceDisplay.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AppearanceDisplay.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AppearanceDescription.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="AppearanceDescription.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AppearanceDescription.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="UseSliderLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="UseSliderLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="UseSliderLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="MouseWheelLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="MouseWheelLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="MouseWheelLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="AnimSpeedLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AnimSpeedLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AnimSpeedLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="BgOpacityLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BgOpacityLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BgOpacityLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="IconOpacityLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconOpacityLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconOpacityLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="IconSizeLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconSizeLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="IconSizeLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="SelectASettingLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="SelectASettingLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="SelectASettingLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AppearanceBar.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="AppearanceBar.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AppearanceBar.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AppearanceLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="AppearanceLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AppearanceLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AppearancePicture.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="AppearancePicture.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AppearancePicture.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BehaviorPanel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="BehaviorPanel.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="BehaviorPanel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BehaviorPanel.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 4</value>
+  </data>
+  <data name="BehaviorPanel.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="BehaviorPanel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="panel1.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="panel1.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="panel1.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="panel1.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 4</value>
+  </data>
+  <data name="panel1.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="panel1.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ManageExcludedTasksLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ManageExcludedTasksLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ManageExcludedTasksLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ExcludedTasksLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ExcludedTasksLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ExcludedTasksLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="PopUpKeyLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="PopUpKeyLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="PopUpKeyLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="PopKey.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="PopKey.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="PopKey.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="StartWithWindows.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="StartWithWindows.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="StartWithWindows.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BehaviorOtherSettingsLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="BehaviorOtherSettingsLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BehaviorOtherSettingsLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="OpenOnMouseOver.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="OpenOnMouseOver.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="OpenOnMouseOver.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="OpenInStart.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="OpenInStart.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="OpenInStart.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ClickAndMouseResponseLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ClickAndMouseResponseLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ClickAndMouseResponseLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ZoomOut.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ZoomOut.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ZoomOut.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="SlideOut.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="SlideOut.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="SlideOut.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="SpinOut.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="SpinOut.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="SpinOut.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="TransitionEffectsLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="TransitionEffectsLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="TransitionEffectsLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BehaviorLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="BehaviorLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BehaviorLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BehaviorPicture.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="BehaviorPicture.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BehaviorPicture.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="OrbitConfigurationDescriptionLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="OrbitConfigurationDescriptionLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="OrbitConfigurationDescriptionLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemPicture.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ItemPicture.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemPicture.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemPicture.Image" type="System.Drawing.Bitmap, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ItemSelectedPicture.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ItemSelectedPicture.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemSelectedPicture.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ItemSelectedPicture.Image" type="System.Drawing.Bitmap, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAewQAA
+        HsEBw2lUUwAABJVJREFUSEu1VllMVGcYvTZlX9SRnQGRYYZhmBl2poCEqohIsex1EMpWltbYqIhLtLQx
+        qQUBwUQkAhrZUiJKQmXfHKYgDItpBVP6UEiLtgLapGni8gCe/v/FAe1tK33gJifzMjnn+84955tZB4BZ
+        04cKrCWWyRPVcuY19MmYBJWMUfZKAmM6RV9Gd4hao9qcxyOane+FNwm7QxsFRTsbBKHbv96yLrDanvG9
+        bMt4XbJehnbofxVIULl6xnWL2pP7fJEzGovPvk/CkbEIpA/4I75HiqgWMUIaHBFUu/n21ir7YMX/EYhX
+        STITVPIn+ZMHcW2+HFWzhSic2o9j42H4ZMwXmSOeyNB4Iknthoibzgioslv0qbA5vaoNCHlqstobdQ9L
+        0fWkCdWzBcj/KRNHx0Px8ZgPskY9CbxYUKH0IQ/EtUugqLSFW6llrvyCJUPBtahPTjyXeu27JX1a89sF
+        lvzqbD7OEvKcl+SZr5CviHghbdAD75NNCDFcis32SErMuQL0hcZ1C7vzJj9dIZ9aIX91ci05/cwgW6QM
+        uUGpckVgrT2EBbwfCPQ5G+ztlShS1IrFa/OVqJ4rwtmpLByd2M3a8k+Ta8lTNe5IHJQjTiVBSJMA4mIz
+        OJzZoOQIxHQKz5y4o0TtXPES+fhupI+4IVkjRsqw5HVoXJA0JEb8bRFi+52wd0CCSJUYO1scISuzAP+0
+        aR1HILrDuS33bhLOTR9gJ6fkBZNp0DxuxcjvHRwMP27H0KM21EwXIFotRliPE95tdoCswhLWX5h8xxEg
+        Jbp7ZCwSJ+6Fs7akkCkn/hgg3/vvZ+HFAhJJN7Z12CGgyQ6SCnNY5hrd5wiQhk5kDARg/5iC9Tx12BU/
+        /jn6Jn4sYgH7vvWHf4s1vG/YQFjGg/lJwwccgfeaRF3xPTKS7aWMpxLf637+CnPPZ/Do+QPMs7iPuWdL
+        mH02g4dPZ6CebcOOTgF8vrGGrN4CDuc3gHfMYIIjENroVBTVKmYbqo1h+ogcB+74ka38kDWiQJrGB0mD
+        XlD2eyCmT449vRIEtvOhaLaBe6MVxNVmsMkzwfocvescAXK4duy6LmDrr92CCn004k7ehwwJg1J80O+C
+        SLUIYb0CBHc5LJG32MKzyRqu9eZwvLQRvFMGMMnWTecIbK/f8lZQ3WYNbWQ6aSYVoSVKIzn/kORcOSAl
+        aXFB+C0RQroFCOrYjHda+Sy5tMECTld5sMozhvFh3V8I1nMEAmvsGYJgcrhexJLbQuufMui2TB7zd/IW
+        PjxekgureeCXmMI0Rw9Gh3TSjA7rcE+F3xU+Q+FbaXuKnF6QVLH1j+uTIIqUKLxXiJAucp7byeQ3bVnP
+        qS1CMjm/hPh+XB+GB3UuGx7SYSg4G3iX2zBauF+0+lxeaomtNfbYReofQhq6jZSI5pxGUVZvCXGNGes5
+        tYVOTsjLCfHbqxLwKLNiyEWMIkdr3PncJsguWkBOGkpLRHNOo0jTwjtpAONs3WliS4aWeNUCrufNGVHh
+        Jn1yuBLobbEh9acNJSX6lXfcYIJE8YZJtl4WEdhIPX+jwFr98K/pPwo69F/wrQOgIHrwzwAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="SavePictureBox.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="SavePictureBox.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="SavePictureBox.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="SavePictureBox.Image" type="System.Drawing.Bitmap, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAewQAA
+        HsEBw2lUUwAABIxJREFUSEu1lnlM02ccxn8u4z7EChS5r9JS6AF0kA2YAxXZ0AFqNw7DFY5o5kBAJTrc
+        TCQgIJiBRMBFro2BMjsQEYGVLlpOI5fiFjFjuo1jjn8GG8vw2fvW4WZ+cbA/aPJNk7Z5Pu/79Hm+7ToA
+        zJo+KGAt55n4XpWYeW66RUy0UsREdAn9d7e7nNx1zaU1/Cp/JLSFP7ZDwesIbnIq3NboFBz4mcM6/2pb
+        xvu8FeN1btOzWT70CwHRSjdPeYdLW2y3NzIH9uCDoRhkDIYi8cZriOx0R/gVAYIaHbG51u6mX5XtVp//
+        A4hUCpOjleL5vPFUNMyUo2qqAAUT+3F45C3sG/RGcr8nkno9EaOSILSZD98qm6VXKixPrOoGRDw+ViVD
+        3U+luD6vQPVUPvLuJ+PQSDBSBryQNCDVPNOhoMQeD8jbhPCptIKklJstLuEydNgWdYuJ5+5eUV+5L9T8
+        WKIRvzCVh1MTyUgdCkBcnxDJAx5EWIbYXlfE97n9DfFCgtoDb5ObEGG4FpnuFBabsQH0C5V38Dpyxw/8
+        I05OfmDIHyfvREE53YDvfr2D7+fv4ebslyi8l4jYPlck9nsgrkeCCKUb/Gttwcvn3CWjy7rBu11CnziV
+        z1LDTCWqpwuRP5GC94deR8X9LPz+5wL5/POPJ1jC55MFiFLzsVcthlwpRJDCCYIiU9jnmESwALvbeTlZ
+        tyJQO11EbElB2nAAPhqT44+l31ji/34hZywBYSpHhCkF2HbFEaIyc1ifMK5jAXZd41/NHo7B6Qfv4dDo
+        m8RzV3ROffqf4vTNW49V2Kl0REinM95osYeogotNHxrdZgFIiYYzBsOQNbYDKYMyJPVLMTk/viLg8eIU
+        5CopAtvt4KuwgbDCDNxsg4csAGnoaNINX+wf9NGI0xg+Wvh2RcDc4iyxRwLfVmvILlmCV8aB2VH9RyxA
+        iMLlemSniGT7acZjewVQzzavCBidG4BfmxW8my0hqjeH/RkTcA7rjbIAwU3OheGtAk1DKSCe5D7vbtyK
+        gOO390GiMIG0yQKCalNY5hphfabORRaALK4t2y86aeq/fAtari8elrwQopishVeLOaSXuXCrN4PjuQ3g
+        HNODUbp2IgsQWO/w0uY6u17ayETSTAqhJYpWC/DxNxkYmevBL4szmFv8GdSWwrEsyIi45LIZ3BvN4XyB
+        A4tcQxge1J4ks54F8K+xZchsJYvryR6yW2j949RSUiIRybkDQrud8c7XnghXSuHfZgMxtYWcnIrzqjmw
+        LjaGcaYODNK0EgwOarFXxaufWDN0vCutjpHVC5IqTf3l3UIiKkBIlzO2kCj6tT79Qqnn1BYeObl1MfH9
+        iC70U7XO66dpMXRYN5CVWzLLIz1rcVxcyoVfjS22k/oHkYYGkBLRnNMoiuq5ENSYajynttCTE/FyIvzy
+        qgAeZRYM2YjhZGmN8E9vhOisOcSkobRENOc0ijQtnKN6MEzXfkBsSVoWXjXA7YwZ41KwUZcsrmi6WyxJ
+        /WlDSYl+4BzRGyVRvGSUrpNCABuo5ysC1uqHf03/UdBD/wU8+EmzVR5sNQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="AboutPanel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="AboutPanel.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="AboutPanel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AboutPanel.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 4</value>
+  </data>
+  <data name="AboutPanel.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="AboutPanel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="panel6.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="panel6.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="panel6.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="panel6.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="panel6.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 4</value>
+  </data>
+  <data name="panel6.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="label19.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="label19.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="label19.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="VersionInfo.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="VersionInfo.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="VersionInfo.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="VersionInformationLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="VersionInformationLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="VersionInformationLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ImproveLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ImproveLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ImproveLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="BugLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BugLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="BugLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="HelpTheProjectLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="HelpTheProjectLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="HelpTheProjectLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AuthorLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AuthorLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AuthorLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="HomepageLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="HomepageLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="HomepageLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="AuthorLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="AuthorLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AuthorLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="OrbitDescriptionLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="OrbitDescriptionLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="OrbitDescriptionLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ProjectName.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="ProjectName.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="ProjectName.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="pictureBox1.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="pictureBox1.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="pictureBox1.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAKJlJREFUeF7tnQe0FdXVgGOUgCDwUMQGghWxIAoKGAtib6Ci2LFgSeyKKMSO0Ygttqho
+        lKiJvffeeyzBhqKiSFQQEKW9fuf/vvPf/dZwg0LQB6yVN2vtNX3mnN3b3LtYlmW/algWIgYkQAMsPBw0
+        IH8hM2ADARoIsPDEf1FQvQ0S0CABDRLQIAULUQoakL8QkZ9isEXBEP0vj6GBAAtbAuYzCF+seJ9rYXFg
+        iRL4NfsB8/maReI25xfzyM/TbSFwsEAGGwPxpSK8UdOmTRt36tSp6TrrrNNivfXWW3q11VZrueSSSzbl
+        XGPgN15THKj3LspLMFWM0fGKYOfQxDXLkmVlZU1btmy5FNCUecb8xIXXlz7jF59vUFukNmEwzQ877LB1
+        /vjHPx45YsSI0+++++6RL7300lX333//caeddtoWO+ywQzsG2pxrlywSYlElQqlEi9DGMFezZZdddqnf
+        /va3K/Xt27f3wQcffNwVV1xx1j333HPxY489durNN9+8S69evVYszk9i1Pv8Qhx9WfPjjz9+g+OOO+6B
+        Ll26VA0fPjz75JNPssmTJ2c//PBDVlFRMXbixIl33XDDDTuussoqy3C9UuF9ctWiuIQqbQRnL9m+ffvm
+        PXr0WOWAAw44eN99971///33/+qvf/1r4dlnn80++OCDrKqqCt8hm8D2uVtsscXKTKhZcX71SoRQPUu1
+        adOm9ZFHHjkMscy6deuWTZgwwQFlb7/9dsZAs9tuuy376KOPssrKyrEvv/zy4N133321xRdffKmiOIfu
+        XBQIEUzVaIkllmjSrl071elqqNWDUanP7rjjjpVIdzZ+/Hjnkhjs2muvzf7whz9k33//vVOufOihh45H
+        GwST1fvcVD9lK6644uqbbLLJA2xnQ4YMSchPLDFhQjnIH3viiSdO2HvvvbMzzjgjGz16dMVXX301Aonp
+        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
+</value>
+  </data>
+  <data name="AboutLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="AboutLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AboutLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AboutPicture.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="AboutPicture.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="AboutPicture.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="FontsPanel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="FontsPanel.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="FontsPanel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="FontsPanel.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 4</value>
+  </data>
+  <data name="FontsPanel.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="FontsPanel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="panel7.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="panel7.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="panel7.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="panel7.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 4</value>
+  </data>
+  <data name="panel7.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="panel7.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionBorder.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="DescriptionBorder.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionBorder.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelBorder.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LabelBorder.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelBorder.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionColorChange.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionColorChange.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionColorChange.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="DescriptionBorderColorChange.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionBorderColorChange.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionBorderColorChange.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="DescriptionColor.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="DescriptionColor.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionColor.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionBorderColor.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="DescriptionBorderColor.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionBorderColor.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionFillLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionFillLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="DescriptionFillLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionBorderLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="DescriptionBorderLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionBorderLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionColorsLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="DescriptionColorsLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionColorsLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionFontChangeLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionFontChangeLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionFontChangeLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="DescriptionFontFamilyDisplay.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="DescriptionFontFamilyDisplay.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionFontFamilyDisplay.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionFontLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="DescriptionFontLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="DescriptionFontLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelColorChange.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelColorChange.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelColorChange.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LabelBorderColorChange.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelBorderColorChange.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelBorderColorChange.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LabelColor.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LabelColor.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelColor.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelBorderColor.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LabelBorderColor.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelBorderColor.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelFillLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LabelFillLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelFillLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelBorderLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LabelBorderLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelBorderLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelColorsLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LabelColorsLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelColorsLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelFontChangeLink.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelFontChangeLink.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelFontChangeLink.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LabelFontFamilyDisplay.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LabelFontFamilyDisplay.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelFontFamilyDisplay.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelFontLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="LabelFontLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="LabelFontLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="FontsLabel.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="FontsLabel.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="FontsLabel.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="FontsPicture.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="FontsPicture.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="FontsPicture.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="$this.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>(Default)</value>
+  </data>
+  <data name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="$this.Name">
+    <value>DockSetup</value>
+  </data>
+  <data name="$this.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 4</value>
+  </data>
+  <data name="$this.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="$this.TrayHeight" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>80</value>
+  </data>
+  <data name="$this.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="$this.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAMAEBAAAAEAIABoBAAANgAAACAgAAABACAAqBAAAJ4EAAAwMAAAAQAgAKglAABGFQAAKAAAABAA
+        AAAgAAAAAQAgAAAAAABABAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wDLy8tOxMTE0/T0
+        9Lv///8kcHBwIqOjo1axsbFloaGhPBwcHAm+vr5m3NzcxfHx8bH///8c////AP///wD///8AxsbGZ62t
+        rcnGxsa2xsbG89/f3+bh4eH+5+fn/87OzvWtra3o3d3d4LCwsJTV1dW4////Gv///wD///8A////ALGx
+        sQ2lpaWwo6Ojtaurq//Kysr/5+fn/8LCwv+6urr/5OTk/7i4uMiKioqf8fHxav///wD///8A////AP//
+        /wD///8AX19fRo6Ojv+urq7/k5OT/7S0tP/S0tL/xMTE/7W1tf+cnJz/np6em////wD///8A////AP//
+        /wD6+vo119fXk7q6utmsrKz/tLS0/7Ozs//Nzc3/8/Pz/8XFxf+ysrL/ra2t/66uruTQ0NCS+Pj4Sv//
+        /wb29vZt4uLiuunp6aKpqanHlZWV/pOTk/+0tLT/0dHR/4+Pj//AwMD/0NDQ/6enp/6YmJjh3t7eoePj
+        47z19fWF4uLicaysrK/AwMBVampqnWVlZf+RkZH/x8fH/5mZmf+ampr/hYWF/8XFxf+np6f/XV1d1QAA
+        AByNjY2A1tbWab+/vwSpqalKkZGRl1NTU7BgYGD809PT/6ioqP+YmJj/nJyc/6Ojo/+fn5//v7+//2Rk
+        ZMwHBwdOQ0NDKn9/fwL///8A////AP///wCvr69tnp6e+bCwsP/Ozs7/zs7O/8/Pz//b29v/urq6/21t
+        bfzu7u7g////H////wD///8A////AP///wC4uLgZrKys0rKysnE+Pj7iTExM/4KCgv+MjIz/X19f/0pK
+        SvdSUlKCs7Ozx/r6+qr///8B////AP///wD///8AvLy8gaOjo9ivr69ZlpaWfkRERJIuLi7SLi4u2jc3
+        N6yJiYmZ4ODgq46OjqXY2Nja////KP///wD///8A////ANDQ0FfJycm+zc3NXP///wH///8A////AP//
+        /wD///8A////AKqqqkXIyMie6urqqv///xn///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD//wAA//8AAMQjAADAAwAAwAMAAOAH
+        AACAAQAAAAAAAAAAAACAAQAA4AcAAMADAADAAwAAx+MAAP//AAD//wAAKAAAACAAAABAAAAAAQAgAAAA
+        AACAEAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAgAAAAcAAAALAAAACQAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAYAAAAJAAAACAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAIAAAAMAAAAGgAAACgAAAAmAAAAGQAAAAsAAAADAAAABAAAAAoAAAAQAAAAFAAA
+        ABcAAAAVAAAAEQAAAAoAAAADAAAAAgAAAAgAAAATAAAAHwAAACMAAAAcAAAADgAAAAIAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAB8bGxt0cXFxm19fX4USEhJMAAAAKwAAACAAAAAjAAAAMwAA
+        AEsAAABZAwMDXgAAAFsAAABJAAAAMQAAACEAAAAdAAAAIwAAAEAdHR1yZWVlmWNjY3kFBQUhAAAABAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAwMDV4iIiP3Ozs7039/f/+Hh4eNjY2OUAAAAYAcH
+        B4JCQkK6f39/35ycnO2pqanzoaGh8Hx8fN01NTWvAgICcQAAAFsQEBCFfn5+3uHh4f/U1NTsxsbG9T09
+        PT0AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAhSoKCg+0pKSnE1NTWVpqam+vT0
+        9P6UlJTbpKSk9uzs7P/6+vr/+/v7//v7+//9/f3/+/v7/+vr6/+CgoLuQEBA2re3t//r6+vlfHx8eRUV
+        FXOTk5PqNDQ0LwAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlSUlLSiYmJrwAA
+        AEQRERGfgYGB/uDg4P//////6enp/+Li4v/k5OT/5OTk/+fn5//u7u7/yMjI/6CgoP/e3t7/1tbW9SUl
+        JW4AAAAsNDQ0wKamprgICAgLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEB
+        AVWwsLD+fHx8uVpaWtrGxsb+g4OD/8DAwP//////4eHh/9TU1P/a2tr/3Nzc/5aWlv+Xl5f/9fX1//Pz
+        8//MzMz9KysrrQEBAY6np6f0UlJSQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAFDk5OcWjo6P/wcHB/8/Pz//Jycn/fHx8/62trf//////3Nzc/8rKyv+Li4v/oqKi//z8
+        /P/j4+P/z8/P/9vb2/+Xl5f4Xl5e85iYmJgAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAMAAAARBgYGiHh4eP+/v7//vLy8/8HBwf/AwMD/fX19/7CwsP/5+fn/rq6u/6am
+        pv//////3d3d/8TExP/Gxsb/x8fH/7W1tf+NjY3xHx8fSQAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAgAAAAcAAAAPAAAAHAAAADU2Nja0nJyc/4+Pj/+VlZX/i4uL/4WFhf+Hh4f/TExM/46O
+        jv/6+vr/8PDw/5OTk/+EhIT/kZGR/5ycnP+UlJT/qamp/5SUlPcDAwNlAAAAGgAAAAgAAAAEAAAAAQAA
+        AAAAAAAAAAAAAQAAAAYAAAASAAAAHAAAACoAAABMEBAQg1NTU+mJiYn/ioqK/5SUlP+ZmZn/q6ur/7W1
+        tf+0tLT/09PT///////8/Pz/s7Oz/6enp/+jo6P/l5eX/4CAgP+MjIz/goKC/xwcHLAAAABDAAAAHgAA
+        ABEAAAAMAAAAAwAAAAAAAAAFAAAAEwEBASw3NzdoZmZmpKGhoejPz8//4eHh/+Hh4f/o6Oj/6+vr/+zs
+        7P/m5ub/zMzM///////8/Pz/19fX/8jIyP///////////+jo6P/u7u7/7e3t/+Tk5P/i4uL/z8/P/6qq
+        qu2CgoKxPT09aAEBASgAAAAPAAAAAwAAAAgeHh40srKyveDg4PnLy8vltLS0uX9/f51lZWXtfn5+/YWF
+        hf+Ojo7/g4OD/1hYWP+vr6//9fX1/62trf+Xl5f/bm5u/5aWlv/9/f3/r6+v/5WVlf+enp7/j4+P/3x8
+        fPVubm7Znp6essjIyNzl5eX/rKyswRYWFi4AAAAGAAAAA2xsbG3b29v0JSUlawEBAS4AAAAcAAAAP05O
+        Tu9xcXH/hYWF/5eXl/9dXV3/m5ub//////+1tbX/kpKS/5qamv+dnZ3/Xl5e/6Kiov//////sbGx/5yc
+        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
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD////////////////+////+BgOD/gA
+        AA/4AAAP+AAAD/gIAA/8BAAf/AIAP/wAIB/wAAAfwACAA4ACMAGAAAABgAQIAYAAABHAAAAD8AAAB/wA
+        AB/8AAAf+AAAD/gAAA/4AAAP+AAAD/geOA/4f/4f/////////////////////ygAAAAwAAAAYAAAAAEA
+        IAAAAAAAgCUAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAEAAAADAAAABQAAAAUAAAAFAAAAAwAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAAAwAA
+        AAQAAAAEAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAQAAAAcAAAAOAAAAFgAAABoAAAAXAAAAEQAAAAkAAAAEAAAAAQAAAAAAAAAAAAAAAQAA
+        AAMAAAAEAAAABgAAAAgAAAAIAAAACAAAAAcAAAAFAAAAAwAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAwAA
+        AAkAAAAPAAAAFAAAABYAAAATAAAADAAAAAUAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAABAAAABgAAABEAAAAhAAAALAAAADQAAAAzAAAAKwAAAB4AAAASAAAACgAA
+        AAYAAAAHAAAACwAAABEAAAAXAAAAGwAAAB8AAAAhAAAAIQAAAB4AAAAaAAAAFAAAAA0AAAAIAAAABAAA
+        AAUAAAAKAAAAEgAAAB0AAAApAAAALwAAAC4AAAAnAAAAHAAAAA4AAAAEAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAADQAAAB0FBQU9ODg4cFBQUHcwMDBlAgICSQAA
+        ADkAAAAtAAAAIQAAABoAAAAeAAAAJgAAADAAAAA4AAAAPQAAAEIAAABEAAAARQAAAEIAAAA+AAAANQAA
+        ACoAAAAfAAAAFwAAABkAAAAhAAAALAAAADUAAABGFxcXYElJSXJGRkZgBwcHMgAAABgAAAAIAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAADgAAADofHx/M1NTU//v7
+        +//5+fnvuLi4wkNDQ3UAAABMAAAAQwAAAEAAAABBAAAATwAAAGQODg6AGBgYoBgYGLMXFxe6GxsbtSIi
+        IqgYGBiJAAAAawAAAFMAAABDAAAAPQAAADsAAAA9AAAATR8fH4ddXV3Mu7u78/Pz8//7+/vzh4eHggEB
+        ARkAAAAKAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAACwAA
+        AGVubm7/4+Pj45KSkt+5ubn///////////anp6e/Hh4eeQAAAGwEBASJKSkpvnh4eOCpqan1vr6++8/P
+        z/7Z2dn/1tbW/8zMzP+3t7f7hISE5zMzM8UMDAyOAAAAawAAAGYPDw+RT09P1L+/v////////v7+7qWl
+        pc60tLT/2dnZsgsLCxoAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAADAAAACgICAld9fX3/ubm5uAwMDE43NzePb29v6MDAwP//////2tra6ltbW9WMjIzz2dnZ//j4
+        +P/6+vr/9/f3//b29v/19fX/9vb2//j4+P/7+/v//Pz8/+Dg4P+oqKj6Pj4+1isrK9aOjo7/9vb2////
+        //GdnZ2TNTU1SBISEoCnp6f/t7e3kgMDAxAAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAABAAAABwUFBShFRUXg4eHh7zY2Nl0AAAA6ERERaDc3N8WCgoL/8/Pz////
+        ///6+vr/6+vr/+bm5v/n5+f/6Ojo/+jo6P/o6Oj/6enp/+np6f/q6ur/7e3t//b29v+1tbX/Z2dn/8jI
+        yP//////u7u7yT4+PmgAAAAtAAAAKhYWFsHX19f/ZWVlUQAAAAkAAAAEAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAEBAQcKCgp+lJSU/9DQ0MkFBQVbAAAAYBYW
+        FqlpaWn8bm5u/8/Pz///////9fX1/+Hh4f/e3t7/4ODg/+Dg4P/h4eH/4eHh/+Hh4f/o6Oj/3d3d/3l5
+        ef+CgoL/5ubm///////S0tL9JycnsQAAAFMAAAA8DQ0Nc3Jycv7W1tayERERFAAAAAcAAAABAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAUAAAAqICAg2uvr
+        6/96enqlDg4OqXx8fPbi4uL/r6+v/15eXv+srKz///////r6+v/h4eH/1dXV/9jY2P/Z2dn/2tra/+Hh
+        4f/AwMD/Y2Nj/52dnf/8/Pz//////+fn5//g4OD/jIyM+QkJCZ8DAwNgIiIi4NbW1vZaWlpFAAAABwAA
+        AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAQAAAAIAAAAcmtra//Hx8f1d3d3+M7Ozv/Ozs7/1NTU/729vf9iYmL/jY2N//7+/v//////4eHh/83N
+        zf/Q0ND/2dnZ/6Ojo/9XV1f/wsLC///////29vb/29vb/9PT0//X19f/3t7e/3BwcO0HBwfKlpaW/6io
+        qI0DAwMPAAAABwAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAIAAAANBgYGLg8PD8BeXl7/urq6/8bGxv/CwsL/wsLC/8jIyP/ExMT/a2tr/3Jy
+        cv/z8/P//////+Dg4P/Gxsb/iIiI/1tbW//Y2Nj//////+3t7f/Nzc3/ycnJ/8zMzP/MzMz/0tLS/7Oz
+        s/9lZWX/4ODg4y0tLT4AAAAMAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAQAAAATAgICKwwMDINzc3P/srKy/7m5uf+4uLj/uLi4/7m5
+        uf++vr7/wsLC/3BwcP9nZ2f/6urq//////+3t7f/bGxs/+np6f//////5eXl/8LCwv/AwMD/wsLC/8LC
+        wv/ExMT/vr6+/6urq/+EhIT/Pz8/jwAAACkAAAARAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAMAAAAGAAAADAAAABUAAAApAAAARTIyMreenp7/lZWV/6mp
+        qf+1tbX/tbW1/7W1tf+ysrL/srKy/7e3t/92dnb/V1dX/9fX1//4+Pj/+Pj4//39/f/W1tb/tbW1/7a2
+        tv+6urr/vb29/76+vv+8vLz/oqKi/6urq/+zs7P/IyMjrwAAADgAAAAcAAAACQAAAAMAAAACAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAGAAAADAAAABQAAAAcAAAAJgAAADEAAABCAAAAcEtL
+        S/GZmZn/gICA/3Jycv9wcHD/ZmZm/1RUVP9LS0v/RUVF/0hISP9LS0v/HBwc/5iYmP///////////9jY
+        2P9QUFD/SUlJ/1RUVP9cXFz/ZmZm/3R0dP9oaGj/dXV1/56env+0tLT/VFRU7gAAAFwAAAAsAAAAGwAA
+        ABIAAAAMAAAABwAAAAMAAAABAAAAAAAAAAAAAAAAAAAABAAAAAoAAAAVAAAAHwAAACoAAAAxAAAAPgAA
+        AFsVFRWFJCQkyktLS/+EhIT/m5ub/6Ojo/+srKz/t7e3/7q6uv/Pz8//2dnZ/97e3v/g4OD/6enp//v7
+        +/////////////7+/v/j4+P/1tbW/8/Pz//Hx8f/vLy8/6+vr/+enp7/m5ub/5CQkP90dHT/R0dH/woK
+        CqIAAABUAAAANQAAACEAAAAdAAAAGAAAAA8AAAAHAAAAAgAAAAAAAAADAAAACgAAABcAAAAlAAAAMQ0N
+        DUogICB5VVVVtqOjo+bGxsb/4+Pj//n5+f////////////////////////////////////////////T0
+        9P/////////////////5+fn/8PDw//n5+f//////////////////////////////////////////////
+        ///4+Pj/5+fn/8vLy/+np6freXl5x0hISJQeHh5NAAAAKAAAAB8AAAAUAAAABwAAAAIAAAAGAAAAFAAA
+        ACQZGRk/dnZ2lcrKyuHo6Oj////////////////+0dHR+bi4uPuxsbH+rKys/6ioqP+np6f/mJiY/5iY
+        mP+qqqr/YmJi/39/f//39/f//////8TExP+hoaH/goKC/1BQUP/f39///////+Xl5f+ioqL/mZmZ/7Cw
+        sP+2trb/sbGx/7i4uP/BwcH9zMzM/Orq6v////////////b29v/V1dXreHh4nhISEkAAAAAfAAAAEAAA
+        AAQAAAAIAAAAFj4+PkvU1NTS/////9ra2v+vr6/UpaWlpnV1dYVQUFBmOjo6slNTU/dtbW38dHR0/3t7
+        e/+NjY3/h4eH/4CAgP9QUFD/ZGRk//Dw8P//////ycnJ/5WVlf+Wlpb/np6e/2lpaf9HR0f/6Ojo////
+        ///Nzc3/ioqK/5qamv+bm5v/iYmJ/4GBgf9jY2PyTk5O7T09PbRcXFx3g4ODjqqqqsTS0tL//////8/P
+        z9IqKipDAAAAEwAAAAYAAAAIAQEBEp+fn4j8/Pz/cXFxwhsbG3EVFRU4DAwMIQAAABwAAAAmIiIin2tr
+        a/9ycnL/cnJy/4uLi/+Tk5P/mZmZ/2JiYv8+Pj7/4+Pj///////V1dX/lpaW/5aWlv+ZmZn/mpqa/6Gh
+        of9dXV3/X19f//Hx8f//////ycnJ/5ubm/+hoaH/mpqa/35+fv99fX3+eXl5/h8fH5wAAAAcDw8PFBMT
+        EyIsLCxlhISEy/Pz8/+KioqEAQEBEAAAAAYAAAAGAwMDDZaWlo7U1NT6Ojo6VwAAACMAAAAoAAAAJgAA
+        ACkBAQExFxcXmlpaWv9nZ2f/eHh4/5WVlf+ZmZn/d3d3/zs7O//R0dH//////9bW1v+ampr/l5eX/5ub
+        m/+bm5v/m5ub/5+fn/+fn5//Wlpa/2xsbP/09PT//////8TExP+enp7/paWl/4aGhv90dHT/dXV1/x0d
+        HZMAAAAXAAAADwEBARMAAAAVLy8vO+Xl5fegoKCmBAQECgAAAAUAAAADAAAAB0FBQT17e3vjt7e34IyM
+        jIFUVFRaNjY2SQsLCzQAAAA2CAgIjkhISPpeXl7/g4OD/6CgoP+Hh4f/MzMz/7+/v///////29vb/4aG
+        hv+QkJD/oKCg/5+fn/+goKD/oqKi/56env+JiYn/jo6O/15eXv90dHT/+/v7//v7+/+9vb3/qKio/5OT
+        k/9sbGz/ZmZm/xISEn0RERESLy8vCC0tLQM3NzcflpaWoYeHh/YVFRVQAAAAAgAAAAMAAAAAAAAABAUF
+        BQQuLi47IiIivHNzc/63t7f/3Nzc79DQ0LaZmZmNbGxsqElJSfxUVFT/jY2N/5ycnP83Nzf/pqam////
+        ///p6en/qKio/42Njf+Ghob/m5ub/6ampv+oqKj/o6Oj/42Njf+Ojo7/p6en/62trf9aWlr/gYGB////
+        ///29vb/vr6+/5aWlv9lZWX/SkpK9R0dHVQpKSkXPT09M1paWm9dXV3OICAg0AQEBFAAAAACAAAABAAA
+        AAAAAAAAAAAAAAAAAAMAAAAAAAAABwAAAE8BAQGxFRUV7FxcXP+Wlpb/jIyM/zw8PP9FRUX/gICA/0xM
+        TP+Dg4P///////Hx8f+xsbH/pqam/6qqqv+ZmZn/jo6O/6Ojo/+qqqr/lJSU/5WVlf+tra3/srKy/7Oz
+        s/+rq6v/VFRU/5iYmP//////8vLy/5GRkf9QUFD/JiYm7gUFBaMUFBTCDAwM4QUFBcUAAABtAAAADwAA
+        AAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAADAAAAKAAAAGkAAACoAAAA0hcX
+        F/UwMDD/HBwc/2BgYP/6+vr/8vLy/6enp/+RkZH/mJiY/5ubm/+cnJz/lZWV/5eXl/+ampr/lZWV/52d
+        nf+ioqL/n5+f/5ycnP+bm5v/mJiY/2VlZf+1tbX//////729vf8wMDD+CgoK4gAAAMIAAACIAAAAOAAA
+        AAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+        AAAAAAAGAAAAIiIiInoUFBT2Li4u/+Tk5P//////w8PD/6Kiov+mpqb/paWl/6ampv+np6f/pKSk/52d
+        nf+cnJz/oqKi/6qqqv+qqqr/q6ur/62trf+vr6//tbW1/6qqqv9ZWVn/x8fH//////9tbW33AAAAcAAA
+        ACYAAAAHAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAEAAAANAAAAIQwMDFEaGhrtwcHB///////g4OD/y8vL/8rKyv/Kysr/ysrK/83N
+        zf/ExMT/rKys/7Kysv+3t7f/qqqq/8DAwP/R0dH/0dHR/9LS0v/T09P/1NTU/+Li4v+ioqL/Ojo6/+Tk
+        5P/19fX6UVFRggAAADMAAAAaAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAcAAAAaAAAALgAAAJCDg4P//////5+fn/9eXl7/yMjI/+Li
+        4v/Z2dn/2NjY/83Nzf+zs7P/u7u7/9bW1v/a2tr/x8fH/7Ozs//IyMj/3d3d/93d3f/f39//6urq/9PT
+        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
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAA
+        AAMCAgICBwcHEBUVFRUMDAwJAAAABAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD/g///8H8AAP8A
+        YAOAPwAA/gAAAAA/AAD+AAAAAB8AAP4GAAAIPwAA/gEAABA/AAD/AEAAQH8AAP+AIACAfwAA/4AQAQD/
+        AAD/wAQEAP8AAP+AAggA/wAA/4ABEAD/AAD+AAAAAP8AAPAAAMAAHwAAwAAAwAAHAACAD/cf8AMAAIHA
+        AggBgQAAiAAEBAARAACAAAgCAAEAAIAAEAEAAQAAwAAgAADDAADgAEAAgAcAAPgAgABADwAA/gAAACB/
+        AAD/wQAAEf8AAP+CAAAA/wAA/4QAAAh/AAD/AAAABD8AAP8AAIACPwAA/gAAAAA/AAD+AAAAAR8AAP4A
+        AAAAHwAA/gDwBwA/AAD/Af//gD8AAP8D///gfwAA/4////n/AAD///////8AAP///////wAA////////
+        AAD///////8AAP///////wAA////////AAA=
+</value>
+  </data>
+</root>

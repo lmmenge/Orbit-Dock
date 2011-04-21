@@ -1,0 +1,87 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orbit", "Orbit.csproj", "{EAAA73BE-EA93-4E07-A489-A5F52DFDEF71}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7FE5047D-90DC-40A1-AC17-6FA1935BFC23} = {7FE5047D-90DC-40A1-AC17-6FA1935BFC23}
+		{9D916FD6-06FD-46A6-99D6-F42F3F78BAF8} = {9D916FD6-06FD-46A6-99D6-F42F3F78BAF8}
+		{3E0D63DE-B8CE-4E49-8B70-075AEB892855} = {3E0D63DE-B8CE-4E49-8B70-075AEB892855}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockSetup", "..\DockSetup\DockSetup.csproj", "{3E0D63DE-B8CE-4E49-8B70-075AEB892855}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemSetup", "..\ItemSetup\ItemSetup.csproj", "{7FE5047D-90DC-40A1-AC17-6FA1935BFC23}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitUpdate", "..\OrbitUpdate\OrbitUpdate.csproj", "{68A20F8E-0D0D-4DEA-8A5D-37462812B21F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin Extension", "..\PlugMgr\Plugin Extension.csproj", "{44C3DB79-4C91-47AD-9465-C5A57CCA4243}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitServicesClient", "..\OrbitServicesClient\OrbitServicesClient.csproj", "{9D916FD6-06FD-46A6-99D6-F42F3F78BAF8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageLoader", "..\LanguageLoader\LanguageLoader.csproj", "{C0F6C056-3F02-407C-873A-E9F7D0F963DE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug Agora = Debug Agora
+		Debug Aurora = Debug Aurora
+		Release Agora = Release Agora
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EAAA73BE-EA93-4E07-A489-A5F52DFDEF71}.Debug Agora.ActiveCfg = Debug Agora|.NET
+		{EAAA73BE-EA93-4E07-A489-A5F52DFDEF71}.Debug Agora.Build.0 = Debug Agora|.NET
+		{EAAA73BE-EA93-4E07-A489-A5F52DFDEF71}.Debug Aurora.ActiveCfg = Debug Aurora|.NET
+		{EAAA73BE-EA93-4E07-A489-A5F52DFDEF71}.Debug Aurora.Build.0 = Debug Aurora|.NET
+		{EAAA73BE-EA93-4E07-A489-A5F52DFDEF71}.Release Agora.ActiveCfg = Release Agora|.NET
+		{EAAA73BE-EA93-4E07-A489-A5F52DFDEF71}.Release Agora.Build.0 = Release Agora|.NET
+		{3E0D63DE-B8CE-4E49-8B70-075AEB892855}.Debug Agora.ActiveCfg = Debug Agora|.NET
+		{3E0D63DE-B8CE-4E49-8B70-075AEB892855}.Debug Agora.Build.0 = Debug Agora|.NET
+		{3E0D63DE-B8CE-4E49-8B70-075AEB892855}.Debug Aurora.ActiveCfg = Debug Aurora|.NET
+		{3E0D63DE-B8CE-4E49-8B70-075AEB892855}.Debug Aurora.Build.0 = Debug Aurora|.NET
+		{3E0D63DE-B8CE-4E49-8B70-075AEB892855}.Release Agora.ActiveCfg = Release Agora|.NET
+		{3E0D63DE-B8CE-4E49-8B70-075AEB892855}.Release Agora.Build.0 = Release Agora|.NET
+		{7FE5047D-90DC-40A1-AC17-6FA1935BFC23}.Debug Agora.ActiveCfg = Debug Agora|.NET
+		{7FE5047D-90DC-40A1-AC17-6FA1935BFC23}.Debug Agora.Build.0 = Debug Agora|.NET
+		{7FE5047D-90DC-40A1-AC17-6FA1935BFC23}.Debug Aurora.ActiveCfg = Debug Agora|.NET
+		{7FE5047D-90DC-40A1-AC17-6FA1935BFC23}.Debug Aurora.Build.0 = Debug Agora|.NET
+		{7FE5047D-90DC-40A1-AC17-6FA1935BFC23}.Release Agora.ActiveCfg = Release Agora|.NET
+		{7FE5047D-90DC-40A1-AC17-6FA1935BFC23}.Release Agora.Build.0 = Release Agora|.NET
+		{68A20F8E-0D0D-4DEA-8A5D-37462812B21F}.Debug Agora.ActiveCfg = Debug Agora|.NET
+		{68A20F8E-0D0D-4DEA-8A5D-37462812B21F}.Debug Agora.Build.0 = Debug Agora|.NET
+		{68A20F8E-0D0D-4DEA-8A5D-37462812B21F}.Debug Aurora.ActiveCfg = Debug Agora|.NET
+		{68A20F8E-0D0D-4DEA-8A5D-37462812B21F}.Debug Aurora.Build.0 = Debug Agora|.NET
+		{68A20F8E-0D0D-4DEA-8A5D-37462812B21F}.Release Agora.ActiveCfg = Release Agora|.NET
+		{68A20F8E-0D0D-4DEA-8A5D-37462812B21F}.Release Agora.Build.0 = Release Agora|.NET
+		{44C3DB79-4C91-47AD-9465-C5A57CCA4243}.Debug Agora.ActiveCfg = Debug Agora|.NET
+		{44C3DB79-4C91-47AD-9465-C5A57CCA4243}.Debug Agora.Build.0 = Debug Agora|.NET
+		{44C3DB79-4C91-47AD-9465-C5A57CCA4243}.Debug Aurora.ActiveCfg = Debug Agora|.NET
+		{44C3DB79-4C91-47AD-9465-C5A57CCA4243}.Debug Aurora.Build.0 = Debug Agora|.NET
+		{44C3DB79-4C91-47AD-9465-C5A57CCA4243}.Release Agora.ActiveCfg = Release Agora|.NET
+		{44C3DB79-4C91-47AD-9465-C5A57CCA4243}.Release Agora.Build.0 = Release Agora|.NET
+		{9D916FD6-06FD-46A6-99D6-F42F3F78BAF8}.Debug Agora.ActiveCfg = Debug Agora|.NET
+		{9D916FD6-06FD-46A6-99D6-F42F3F78BAF8}.Debug Agora.Build.0 = Debug Agora|.NET
+		{9D916FD6-06FD-46A6-99D6-F42F3F78BAF8}.Debug Aurora.ActiveCfg = Debug Agora|.NET
+		{9D916FD6-06FD-46A6-99D6-F42F3F78BAF8}.Debug Aurora.Build.0 = Debug Agora|.NET
+		{9D916FD6-06FD-46A6-99D6-F42F3F78BAF8}.Release Agora.ActiveCfg = Release Agora|.NET
+		{9D916FD6-06FD-46A6-99D6-F42F3F78BAF8}.Release Agora.Build.0 = Release Agora|.NET
+		{C0F6C056-3F02-407C-873A-E9F7D0F963DE}.Debug Agora.ActiveCfg = Debug|.NET
+		{C0F6C056-3F02-407C-873A-E9F7D0F963DE}.Debug Agora.Build.0 = Debug|.NET
+		{C0F6C056-3F02-407C-873A-E9F7D0F963DE}.Debug Aurora.ActiveCfg = Debug|.NET
+		{C0F6C056-3F02-407C-873A-E9F7D0F963DE}.Debug Aurora.Build.0 = Debug|.NET
+		{C0F6C056-3F02-407C-873A-E9F7D0F963DE}.Release Agora.ActiveCfg = Release|.NET
+		{C0F6C056-3F02-407C-873A-E9F7D0F963DE}.Release Agora.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

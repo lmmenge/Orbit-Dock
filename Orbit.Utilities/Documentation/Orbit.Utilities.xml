@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Orbit.Utilities</name>
+    </assembly>
+    <members>
+        <member name="T:Orbit.Utilities.ExcludedWindow">
+            <summary>
+            Information required for an excluded window
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.ExcludedWindow.#ctor">
+            <summary>
+            Creates a new instance of the ExcludedWindow class
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.ExcludedWindow.#ctor(System.String,System.String)">
+            <summary>
+            Creates a new instance of the ExcludedWindow class
+            </summary>
+            <param name="className">Class name of the window to be excluded</param>
+            <param name="processName">Process name of the window to be excluded</param>
+        </member>
+        <member name="P:Orbit.Utilities.ExcludedWindow.ClassName">
+            <summary>
+            Gets/Sets the window's Class name
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.ExcludedWindow.ProcessName">
+            <summary>
+            Gets/Sets the window's Process name
+            </summary>
+        </member>
+        <member name="T:Orbit.Utilities.ImageHelper">
+            <summary>
+            Class specialized in converting Icon objects to Bitmap objects which contain 8-bit alpha channels
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.ImageHelper.GetBitmapFromIcon(System.Drawing.Icon)">
+            <summary>
+            Converts an Icon to a Bitmap
+            </summary>
+            <param name="icon">Icon object to convert</param>
+            <returns>Bitmap object with the Icon's image</returns>
+        </member>
+        <member name="M:Orbit.Utilities.ImageHelper.GetBestSizeFor(System.Drawing.Image,System.Drawing.Size)">
+            <summary>
+            Gets the best size for the goal size
+            </summary>
+            <param name="originalImage">Original Image to be shrunk</param>
+            <param name="newSize">Size to fit the image in</param>
+            <returns>A clone of the Image if the originalImage's size is smaller than the newSize or a new Image if the originalImage should be resized to fit</returns>
+        </member>
+        <member name="M:Orbit.Utilities.ImageHelper.GetAspectThumbnail(System.Drawing.Image,System.Drawing.Size)">
+            <summary>
+            Gets a thumbnail of an image
+            </summary>
+            <param name="originalImage">Orginal image to get the thumbnail from</param>
+            <param name="newSize">Size of the thumbnail</param>
+            <returns>A thumbnail of the image</returns>
+        </member>
+        <member name="M:Orbit.Utilities.ImageHelper.GetAspectSizeThatFits(System.Drawing.Size,System.Drawing.Size)">
+            <summary>
+            Gets a size that fits another size, keeping the original aspect ratio of the first size
+            </summary>
+            <param name="previousSize">Size we want to scale</param>
+            <param name="toFitIn">Size we want to fit in</param>
+            <returns>A Floating point size with the new size.</returns>
+        </member>
+        <member name="T:Orbit.Utilities.WindowInformation">
+            <summary>
+            Contains information on an enumerated window
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.WindowInformation.#ctor(System.String,System.IntPtr)">
+            <summary>
+            Creates a new instance of the WindowInformation class
+            </summary>
+            <param name="name">Name of the window</param>
+            <param name="handle">Handle to the window</param>
+        </member>
+        <member name="P:Orbit.Utilities.WindowInformation.Name">
+            <summary>
+            Gets the Title bar text for the window
+            </summary>
+        </member>
+        <member name="P:Orbit.Utilities.WindowInformation.Handle">
+            <summary>
+            Gets the handle to the window
+            </summary>
+        </member>
+        <member name="T:Orbit.Utilities.WindowListedEventHandler">
+            <summary>
+            Delegate that receives a window when enumerating all windows
+            </summary>
+        </member>
+        <member name="T:Orbit.Utilities.WindowListedEventArgs">
+            <summary>
+            Argument class for the WindowListedEventHandler delegate
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.WindowListedEventArgs.#ctor(System.String,System.IntPtr)">
+            <summary>
+            Creates a new instance of the WindowListedEventArgs class
+            </summary>
+            <param name="name">Name of the window</param>
+            <param name="handle">Handle to the window</param>
+        </member>
+        <member name="P:Orbit.Utilities.WindowListedEventArgs.WindowInformation">
+            <summary>
+            Gets the window information
+            </summary>
+        </member>
+        <member name="T:Orbit.Utilities.WindowsTaskManager">
+            <summary>
+            Windows shots Capturing
+            </summary>
+        </member>
+        <member name="F:Orbit.Utilities.WindowsTaskManager.HideMinimizedWindows">
+            <summary>
+            Indicates whether the task manager should hide minimized tasks
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.#ctor(System.IntPtr[])">
+            <summary>
+            Creates a new instance of the WindowsTaskManager class
+            </summary>
+            <param name="handlesToIgnore">Array with window handles to ignore</param>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.EnumWindows">
+            <summary>
+            Gets the handles to all windows in their appearance order
+            </summary>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.GetWindowHandles">
+            <summary>
+            Gets the handles to all windows in their appearance order
+            </summary>
+            <returns>Returns handles to all open windows</returns>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.GetWindowHandles(Orbit.Utilities.ExcludedWindow[])">
+            <summary>
+            Gets the handles to all windows in their appearance order
+            </summary>
+            <param name="excludedWindowsList">List with all the excluded windows</param>
+            <returns>Returns handles to all open windows</returns>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.IsTaskExcluded(System.IntPtr,Orbit.Utilities.ExcludedWindow[])">
+            <summary>
+            Tells if a window is in the provided ExcludedWindowList
+            </summary>
+            <param name="handle">Handle to the window to verify</param>
+            <param name="excludedWindowsList">List with the excluded windows</param>
+            <returns>True if window belongs in the excluded window list</returns>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.LoadExcludedClassWindows(System.String)">
+            <summary>
+            Loads the window exclusion list from a file
+            </summary>
+            <param name="path">Path to the file containing the exclusion list</param>
+            <returns>The exclusion list. Null if failed.</returns>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.SaveExcludedClassWindows(System.String,Orbit.Utilities.ExcludedWindow[])">
+            <summary>
+            Saves the window exclusion list to a file
+            </summary>
+            <param name="path">Path to the file to save the exclusion list to</param>
+            <param name="excludedWindowsList">Exclusion list to save</param>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.GetWindowText(System.IntPtr)">
+            <summary>
+            Gets the title text on a window
+            </summary>
+            <param name="handle">Handle to the window you want to get the title from</param>
+            <returns>A string with the window title</returns>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.GetWindowClass(System.IntPtr)">
+            <summary>
+            Gets the class name of a window
+            </summary>
+            <param name="handle">Handle to the window you want to get the title from</param>
+            <returns>A string with the window title</returns>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.GetWindowBounds(System.IntPtr)">
+            <summary>
+            Gets the bounds of a window
+            </summary>
+            <param name="handle">Handle to the window</param>
+            <returns>A Rectangle with the window bounds</returns>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.GetWindowIcon(System.IntPtr)">
+            <summary>
+            Gets the icon to a window
+            </summary>
+            <param name="handle">Handle to a window to retrieve the icon from</param>
+            <returns>An Icon object with the windows' icon</returns>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.IsTaskWindow(System.IntPtr)">
+            <summary>
+            Determines if a window is a task window or not
+            </summary>
+            <param name="handle">Handle to the window</param>
+            <returns>True if it is a task window</returns>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.GetExecutableName(System.IntPtr)">
+            <summary>
+            Gets the name of the executable that owns this window
+            </summary>
+            <param name="handle">Handle to the window</param>
+            <returns>String with the process executable</returns>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.GetWindowBitmap(System.String)">
+            <summary>
+            Captures a screenshot of a window
+            </summary>
+            <param name="windowName">The Title of the window to capture</param>
+            <returns>A Bitmap with the image of the window</returns>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.GetWindowBitmap(System.IntPtr)">
+            <summary>
+            Captures a screenshot of a window
+            </summary>
+            <param name="windowHandle">The Handle of the window to capture</param>
+            <returns>A Bitmap with the image of the window</returns>
+        </member>
+        <member name="M:Orbit.Utilities.WindowsTaskManager.SwitchTo(System.IntPtr)">
+            <summary>
+            Switches the active Window
+            </summary>
+            <param name="handle">Handle to the Window to switch to</param>
+        </member>
+        <member name="E:Orbit.Utilities.WindowsTaskManager.WindowListed">
+            <summary>
+            Occurs when a window's properties are received
+            </summary>
+        </member>
+    </members>
+</doc>
